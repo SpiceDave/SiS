@@ -26,25 +26,42 @@
 *
 ****************/
 
+/*body*/
+body{margin:0; background:#666;}
+
 /*headings*/
 h1{}
 
 /*links*/
 a{}
+a img{border:0; display:block}
 
 /*forms*/
 input{}
+input:focus {outline: none;}
 button{}
 select{}
 
+/*container*/
+#container{width:100%;}
+/*outer wrapper*/
+#wrapper{margin: 0 auto; width:1024px; position:relative}
+
 /*header*/
-#header{}
+#header{height:99px;background:#171717; color:#ffffff; }
+#search-box{position:absolute; right:70px; top:52px}
+#search-box-bg{position:absolute; right:30px; top:50px;}
+#search-box input{border:0; padding:5px; background:none; width:220px;}
+#top-search-glass{position:absolute; top:4px; right:4px; padding:5px; cursor:pointer}
 
 /*content container*/
-#content{}
+#content{background:#ffffff;padding:15px;}
 
 /*footer*/
-#footer{}
+#footer{/*text colors etc*/}
+
+#footer-nav{height:186px; background:#1e1e1e;}
+#footer-legal{height:66px; background:#171717}
 
 /*custom components*/
 

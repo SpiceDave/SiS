@@ -9,19 +9,27 @@
 
 <body>
 <div id="container">
-
-	<div id="header">
-    	<div>&nbsp;</div>
-    </div><!-- #header -->
-    
-    <div id="content">
-    	<div>&nbsp;</div>
-    </div><!-- #content -->
-    
-    <div id="footer">
-    	<div>&nbsp;</div>
-    </div><!-- #footer -->
-    
+	<div id="wrapper">
+        <div id="header">
+            <div>&nbsp;</div>
+            <div id="search-box-bg"><img src="../img/ui/hdrSearchBg.png" height="32" width="277" alt="" />
+            	<div id="top-search-glass"><img src="../img/ui/magnifier.gif" height="16" width="16" alt="Search" title="Search" /></div>
+            </div>
+            <div id="search-box">
+            	<!-- uses html5 search field - might need to add js alternative too -->
+            	<input name="search" type="search" value="ENTER KEYWORD OR PRODUCT CODE" size="30" maxlength="50">
+            </div>
+        </div><!-- #header -->
+        
+        <div id="content">
+            <div>&nbsp;</div>
+        </div><!-- #content -->
+        
+        <div id="footer">
+            <div id="footer-nav">&nbsp;</div>
+            <div id="footer-legal">&nbsp;</div>
+        </div><!-- #footer -->
+   	</div><!--  #wrapper -->
 </div><!-- #container -->
 </body>
 <script src="../js/jquery-1.10.2.min.js"></script>
