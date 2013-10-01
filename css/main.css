@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/************************************************
+*
+* Main stylesheet for SiS ecommerce templates
+*
+* Created by Spicerack Media Ltd
+*
+************************************************/
+
+
+/*css reset*/
+
+/****************
+*
+* fonts
+*
+****************/
+
+
+
+
+/****************
+*
+* Global styles
+*
+****************/
+
+/*headings*/
+h1{}
+
+/*links*/
+a{}
+
+/*forms*/
+input{}
+button{}
+select{}
+
+/*header*/
+#header{}
+
+/*content container*/
+#content{}
+
+/*footer*/
+#footer{}
+
+/*custom components*/
+
+
+/****************
+*
+* individual styles
+*
+****************/
