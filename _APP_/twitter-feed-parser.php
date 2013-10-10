@@ -2,17 +2,55 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<!--
+/* @license
+ * MyFonts Webfont Build ID 2662269, 2013-10-10T06:20:34-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed ../webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Helvetica 55 Roman by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-55-roman/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted (c) 1988, 1990, 1993, 1996, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype Librar
+ * 
+ * Webfont: Helvetica 75 Bold by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-75-bold/
+ * Copyright: Copyright (c) 1988, 1990, 1993, 1996, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software may not be reproduced, used, displayed, modified, disclosed or transferred without the express written approval of Linotype Library GmbH
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2662269
+ * Licensed pageviews: 250,000
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+-->
+
 <title>SiS tweets app.</title>
 <style type="text/css">
+
+@font-face {font-family: 'HelveticaNeueCE-Roman';src: url('../webfonts/289F7D_0_0.eot');src: url('../webfonts/289F7D_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/289F7D_0_0.woff') format('woff'),url('../webfonts/289F7D_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'HelveticaNeueCE-Bold';src: url('../webfonts/289F7D_1_0.eot');src: url('../webfonts/289F7D_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/289F7D_1_0.woff') format('woff'),url('../webfonts/289F7D_1_0.ttf') format('truetype');}
+
+body{
+	margin:0;
+}
+
 #container{
 	background-color: #48C4D9;
 	height:150px;
 	width:410px;
-	font-family:Arial, Helvetica, sans-serif;
+	font-family: HelveticaNeueCE-Roman;
 }
 #inner{
 	left:29px;
-	top:22px;
+	top:14px;
 	width:352px;
 	position:relative;
 }
@@ -23,10 +61,10 @@
 	font-size:20px;
 }
 .tweet{
-	font-weight:bold;
-	font-size:16px;
+	font-size:20px;
 	padding-top:10px;
 	line-height:20px;
+	font-family: HelveticaNeueCE-Bold;
 }
 .tweeter a, .follow-us a{
 	color:#A9E9F3;
@@ -36,12 +74,24 @@
 }
 .follow-us{
 	right: 0;
-	top: -5px;
 	position: absolute;
 	width:180px;
 	height:40px;
 	text-align: right;
 	font-size:14px;
+}
+.twitter_date{
+	text-transform:uppercase;
+	font-size: 11px;
+	color: #A9E9F3;
+	top: 100px;
+	right: 0px;
+	position: absolute;
+}
+.button{
+	top: 100px;
+	left: 0px;
+	position: absolute;
 }
 a img{
 	border:0;
@@ -136,7 +186,7 @@ if (!$twitter_debug) {
 	
 			ob_start(); // Start buffer
 			
-			$tweets = '<div id="container"><div id="inner"><div class="follow-us"><a href="http://twitter.com/'.$tweet->user->screen_name.'" target="_blank"><span>Follow us on </span><img src="../bird.gif" alt="twitter" width="30" height="25" /></a></div>'; // Start display element
+			$tweets = '<div id="container"><div id="inner"><div class="follow-us"><a href="http://twitter.com/'.$tweet->user->screen_name.'" target="_blank"><span>Follow us on </span><img src="../bird.gif" alt="twitter" width="30" height="30" /></a></div>'; // Start display element
 			$tweet_count = 0; // Initialize tweet start count
 				
 			foreach ($twitter_stream as $tweet){
@@ -147,13 +197,16 @@ if (!$twitter_debug) {
 				if ($tweet_start_char != '@' || $ignore_replies == false) {
 				
 					// Let's create links from hashtags, mentions, urls
-					$tweet_text = preg_replace('/(https?:\/\/[^\s"<>]+)/','<a href="$1">$1</a>', $tweet_text);
-					$tweet_text = preg_replace('/(^|[\n\s])@([^\s"\t\n\r<:]*)/is', '$1<a href="http://twitter.com/$2">@$2</a>', $tweet_text);
-					$tweet_text = preg_replace('/(^|[\n\s])#([^\s"\t\n\r<:]*)/is', '$1<a href="http://twitter.com/search?q=%23$2">#$2</a>', $tweet_text);
+					$tweet_text = preg_replace('/(https?:\/\/[^\s"<>]+)/','<a target="_blank" href="$1">$1</a>', $tweet_text);
+					$tweet_text = preg_replace('/(^|[\n\s])@([^\s"\t\n\r<:]*)/is', '$1<a target="_blank" href="http://twitter.com/$2">@$2</a>', $tweet_text);
+					$tweet_text = preg_replace('/(^|[\n\s])#([^\s"\t\n\r<:]*)/is', '$1<a target="_blank" href="http://twitter.com/search?q=%23$2">#$2</a>', $tweet_text);
 					
 					// Building tweets display element
-					$tweets .= '<div class="tweeter"><a href="http://twitter.com/'.$tweet->user->screen_name.'" target="_blank">@'.$tweet->user->screen_name.'</a></div>';
-					$tweets .= '<div class="tweet">'.$tweet_text.' <span class="twitter_date">'.ago($tweet->created_at,$tweet->id,$tweet->user->screen_name).'</span></div>'."\n";
+					$tweets .= '<div class="tweeter"><a href="http://twitter.com/'.$tweet->user->screen_name.'" target="_blank">@'.$tweet->user->screen_name.':</a></div>';
+					$tweets .= '<div class="tweet">'.$tweet_text.'</div>'."\n";
+					$tweets .= '<div class="twitter_date">'.tweetDate($tweet->created_at).'</div>';
+					$tweets .= "<div class='button'><a href='https://twitter.com/ScienceinSport' class='twitter-follow-button' data-show-count='false' data-show-screen-name='false'>Follow @ScienceinSport</a></div>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>";
 					
 					// Count tweets and quit if necessary
 					$tweet_count++; if ($tweet_count >= $number_tweets) break;
@@ -197,17 +250,11 @@ if (!$tweet_flag) {
 	echo $tweets = '<ul class="twitter_stream twitter_error"><li>Oops, something went wrong with our twitter feed - <a href="http://twitter.com/'.$twitter_username.'/">Follow us on Twitter!</a></li></ul>';
 }
 
-// Simple function to get Twitter style "time ago"
-function ago($tweet_time,$tweet_id,$tweet_name) {
-		
-    	$m = time()-strtotime($tweet_time); $o='just now';
-    	$t = array('year'=>31556926,'month'=>2629744,'week'=>604800,'day'=>86400,'hour'=>3600,'minute'=>60,'second'=>1);
-    	foreach($t as $u=>$s){
-        	if($s<=$m){$v=floor($m/$s); $o='about '.$v.' '.$u.($v==1?'':'s').' ago'; break;}
-    	}
-	return '<a href="http://twitter.com/'.$tweet_name.'/statuses/'.$tweet_id.'">('.$o.')</a>';
-	
+function tweetDate($twitterTime){
+	$timestamp = strtotime($twitterTime);
+	return date('l j F o', $timestamp);
 }
+
 ?>
 </body>
 </html>
