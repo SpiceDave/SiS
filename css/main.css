@@ -56,7 +56,7 @@
 ****************/
 
 /*body*/
-body{margin:0; background:#666; font-family: HelveticaNeueCE-Roman;}
+body{margin:0; background:#ffffff; font-family: HelveticaNeueCE-Roman;}
 
 /*headings*/
 h1{}
@@ -78,10 +78,24 @@ select{}
 
 /*header*/
 #header{height:99px;background:#171717; color:#ffffff; }
+#SiS-logo{top:5px; left:5px; position:relative; height:78px; width:163px}
 #search-box{position:absolute; right:70px; top:52px}
 #search-box-bg{position:absolute; right:30px; top:50px;}
 #search-box input{border:0; padding:5px; background:none; width:220px;}
 #top-search-glass{position:absolute; top:4px; right:4px; padding:5px; cursor:pointer}
+
+/*menu*/
+ul, ul-1, ul-2{margin-left:-38px}/*use -40px for 0 offset*/
+#mega-dropdown{text-transform:uppercase; font-size:0.7em; background:rgba(23, 23, 23, 0.8)}
+#mega-dropdown ul {list-style-type:none;}
+#mega-dropdown a{font-weight:bold; text-decoration:none}
+.li-0 a{color:#fff}
+.li-1 a{color:#a4a4a4}
+.li-2 a, .li-2 span{color:#656565; font-size:0.7em}
+
+
+.li-0 a:hover, .li-1 a:hover{color:#ffe100}
+
 
 /*content container*/
 #content{background:#ffffff;padding:15px;}
