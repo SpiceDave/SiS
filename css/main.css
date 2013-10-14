@@ -1,5 +1,31 @@
 @charset "UTF-8";
 
+/* @license
+ * MyFonts Webfont Build ID 2662269, 2013-10-10T06:20:34-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed ../webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Helvetica 55 Roman by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-55-roman/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted (c) 1988, 1990, 1993, 1996, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype Librar
+ * 
+ * Webfont: Helvetica 75 Bold by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-75-bold/
+ * Copyright: Copyright (c) 1988, 1990, 1993, 1996, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software may not be reproduced, used, displayed, modified, disclosed or transferred without the express written approval of Linotype Library GmbH
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2662269
+ * Licensed pageviews: 250,000
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+
 /************************************************
 *
 * Main stylesheet for SiS ecommerce templates
@@ -17,7 +43,10 @@
 *
 ****************/
 
-
+@font-face {font-family: 'HelveticaNeueCE-Roman';src: url('../webfonts/28A949_0_0.eot');src: url('../webfonts/28A949_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/28A949_0_0.woff') format('woff'),url('../webfonts/28A949_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'HelveticaNeueCE-Bold';src: url('../webfonts/28A949_1_0.eot');src: url('../webfonts/28A949_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/28A949_1_0.woff') format('woff'),url('../webfonts/28A949_1_0.ttf') format('truetype');}
 
 
 /****************
@@ -27,7 +56,7 @@
 ****************/
 
 /*body*/
-body{margin:0; background:#666;}
+body{margin:0; background:#666; font-family: HelveticaNeueCE-Roman;}
 
 /*headings*/
 h1{}
@@ -37,7 +66,7 @@ a{}
 a img{border:0; display:block}
 
 /*forms*/
-input{}
+input{font-family: HelveticaNeueCE-Roman;}
 input:focus {outline: none;}
 button{}
 select{}
