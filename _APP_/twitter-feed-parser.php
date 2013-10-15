@@ -203,7 +203,7 @@ if (!$twitter_debug) {
 					
 					// Building tweets display element
 					$tweets .= '<div class="tweeter"><a href="http://twitter.com/'.$tweet->user->screen_name.'" target="_blank">@'.$tweet->user->screen_name.':</a></div>';
-					$tweets .= '<div class="tweet">'.$tweet_text.'</div>'."\n";
+					$tweets .= '<div class="tweet" style="font-size:'.tweetSize(mb_strlen($tweet->text)).'; line-heignt:'.tweetSize(mb_strlen($tweet->text)).'">'.$tweet_text.'</div>'."\n";
 					$tweets .= '<div class="twitter_date">'.tweetDate($tweet->created_at).'</div>';
 					$tweets .= "<div class='button'><a href='https://twitter.com/ScienceinSport' class='twitter-follow-button' data-show-count='true' data-show-screen-name='false'>Follow @ScienceinSport</a></div>
 					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>";
@@ -253,6 +253,12 @@ if (!$tweet_flag) {
 function tweetDate($twitterTime){
 	$timestamp = strtotime($twitterTime);
 	return date('l j F o', $timestamp);
+}
+
+function tweetSize($length){
+	//my algoritm to calculate font size for a given number of characters
+	$fontSize = (1/sqrt($length))*120;
+	return ceil($fontSize).'px';
 }
 
 ?>
