@@ -85,20 +85,23 @@ select{}
 #top-search-glass{position:absolute; top:4px; right:4px; padding:5px; cursor:pointer}
 
 /*menu*/
-ul, ul-1, ul-2{margin-left:-38px}/*use -40px for 0 offset*/
-#mega-dropdown{text-transform:uppercase; font-size:0.7em; background:rgba(23, 23, 23, 0.8)}
+#main-menu{top:66px; left:170px; position:absolute;}
+.ul-1, .ul-2{margin-left:-38px}/*use -40px for 0 offset*/
+.ul-0{float:left; padding:10px}
+.ul-1, .ul-2{display:block}
+#mega-dropdown{text-transform:uppercase; font-size:0.7em; background:rgba(23, 23, 23, 0.95); height: 295px; position: absolute;left: 15px;top: 99px;width: 994px;}
 #mega-dropdown ul {list-style-type:none;}
-#mega-dropdown a{font-weight:bold; text-decoration:none}
-.li-0 a{color:#fff}
-.li-1 a{color:#a4a4a4}
-.li-2 a, .li-2 span{color:#656565; font-size:0.7em}
+#mega-dropdown a{text-decoration:none}
+.top-level{font-size:0.65em; text-decoration:none; padding:5px; text-transform:uppercase}
+.li-0 a, .top-level{color:#fff; }
+.li-1 a{color:#a4a4a4; }
+.li-2 a, .li-2 span{color:#656565; font-size:0.7em;}
+.li-0 a:hover, .li-1 a:hover,  .top-level:hover{color:#ffe100}
 
-
-.li-0 a:hover, .li-1 a:hover{color:#ffe100}
 
 
 /*content container*/
-#content{background:#ffffff;padding:15px;}
+#content{background:#ffffff;padding:15px; height:600px /*for testing only*/}
 
 /*footer*/
 #footer{/*text colors etc*/}
