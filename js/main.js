@@ -41,6 +41,20 @@ jQuery(
 			menu(menuId);
 		});
 		
+		//clear floats so next row vertically aligns left and top properly (every fifth sub-menu cat.)
+		jQuery('.ul-1').each(function(){
+			//for each subcat
+			jQuery(this).find('.li-1').each(function(index){
+				//on 5th, 9th, 13th etc. 
+				if(index %4 == 0)
+				{
+					//clear floats.
+					jQuery(this).css('clear','both');
+				}
+			});
+			
+		});
+		
 		jQuery('#main-menu').mouseenter(function(){
 			//show the menu with appropriate categories already loaded
 			jQuery('#mega-dropdown').slideDown(100, function(){});
