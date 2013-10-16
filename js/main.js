@@ -10,7 +10,7 @@
 jQuery(
 	function(){
 		//hide the menu
-		//jQuery('#mega-dropdown, .ul-1, .ul-2').hide();
+		jQuery('#mega-dropdown, .ul-0').hide();
 		
 		//copy top level menu items to header
 		var topLevelMenu = '';
@@ -27,13 +27,34 @@ jQuery(
 		jQuery('#main-menu').append(topLevelMenu);
 		
 		//remove the existing top level items
-		jQuery('.li-0').find('span').hide();
+		jQuery('.li-0').find('.cat-title').hide();
 		
 		
 		//bind newly created menu buttons
-		jQuery('.top-level').click(function(){console.log(jQuery(this).attr('class'))});
-	}
-	
-	
+		jQuery('.top-level').hover(function(){
+			//get the name(s) of the selected class(es)
+			var menuItemNo = String(jQuery(this).attr('class'));
+			//get the length of the string containing the class names
+			var count = menuItemNo.length;
+			// the final character contains the reference to the selected class, so grab it.
+			var menuId = menuItemNo.charAt(count-1);
+			menu(menuId);
+		});
+		
+		jQuery('#main-menu').mouseenter(function(){
+			//show the menu with appropriate categories already loaded
+			jQuery('#mega-dropdown').slideDown(100, function(){});
+		})
+		jQuery('#mega-dropdown').mouseleave(function(){
+			//show the menu with appropriate categories already loaded
+			jQuery('#mega-dropdown').slideUp(100, function(){});
+		})
+	}		
 );
 
+function menu(id){
+	//hide the other categories - grab the root ul
+	jQuery('.li-1').parents('.ul-0').hide();
+	//show the correct submenu categories, again by the root ul
+	jQuery('.menu-list-'+ id).parents('.ul-0').show();
+}
