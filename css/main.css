@@ -77,11 +77,11 @@ select{}
 #wrapper{margin: 0 auto; width:1024px; position:relative}
 
 /*header*/
-#header{height:99px;background:#171717; color:#ffffff; }
+#header{height:99px;background:#000; color:#ffffff; }
 #SiS-logo{top:5px; left:5px; position:relative; height:78px; width:163px}
-#search-box{position:absolute; right:70px; top:52px}
-#search-box-bg{position:absolute; right:30px; top:50px;}
-#search-box input{border:0; padding:5px; background:none; width:220px;}
+#search-box{position:absolute; right:55px; top:52px}
+#search-box-bg{position:absolute; right:15px; top:50px;}
+#search-box input{border:0; padding:5px; background:none; width:235px; color:#656565;}
 #top-search-glass{position:absolute; top:4px; right:4px; padding:5px; cursor:pointer}
 
 /*menu*/
@@ -90,16 +90,20 @@ select{}
 .ul-0{padding:10px;}
 #mega-dropdown{text-transform:uppercase; font-size:0.7em; background:rgba(23, 23, 23, 0.95);  position: absolute;left: 15px;top: 99px;width: 994px;}
 #mega-dropdown ul {list-style-type:none; line-height:15px;}
-#mega-dropdown a{text-decoration:none}
+#mega-dropdown a, #account-menu a{text-decoration:none}
 .top-level{font-size:0.7em; text-decoration:none; padding:5px; text-transform:uppercase}
-.li-0 a, .top-level{color:#fff; }
+.li-0 a, .top-level, #account-menu a{color:#fff; }
 .li-1 a{color:#a4a4a4; }
 .li-2 a, .li-2 span{color:#656565; font-size:0.7em;}
-.menu-more a{font-size:0.7em;}
-.li-0 a:hover, .li-1 a:hover,  .top-level:hover{color:#ffe100}
-
+.menu-more a, #account-menu a{font-size:0.7em;}
+.li-0 a:hover, .li-1 a:hover,  .top-level:hover, #account-menu a:hover{color:#ffe100}
 .li-1{width:205px; float:left; padding: 0 10px 30px}
 .li-2{list-style-type:disc;color:#656565;}
+#account-menu{position:absolute; top:15px; right:15px; width: 350px; text-transform:uppercase; height:34px}
+.acc-menu-item{float:right;}
+.acc-menu-item img, .acc-menu-item a{height:34px; vertical-align:middle; display:table-cell;}
+.acc-menu-item span{padding:0 0 0 5px;}
+
 
 
 /*content container*/
