@@ -12,7 +12,23 @@
 	<div id="wrapper">
         <div id="header">
             <div id="SiS-logo"><a href="http://www.scienceinsport.com"><img src="../img/ui/sis.png" alt="Science in Sport logo" title="SiS" height="78" width="163" /></a></div>
-            <div id="main-menu"></div>
+            <div id="main-menu">
+            <!-- top menu items are loaded here with javascript -->
+            
+            <noscript>
+            	<!--show top level menu items for users without Javascript emabled -->
+            	<style type="text/css">
+					/* hide the mega dropdown for non-js users */
+					#mega-dropdown{display:none}
+				</style>
+            	<span class="cat-title"><a  class="top-level"href="#" title="About">About</a></span>
+                <span class="cat-title"><a class="top-level" href="#" title="Training &amp; Advice">Training &amp; Advice</a></span>
+                <span class="cat-title"><a  class="top-level"href="#" title="Sponsorship &amp; Partners">Sponsorship &amp; Partners</a></span>
+                <span class="cat-title"><a  class="top-level"href="#" title="News &amp Events">News &amp Events</a></span>
+                <span class="cat-title"><a  class="top-level"href="#" title="Videos">Videos</a></span>
+                <span class="cat-title"><a  class="top-level"href="#" title="Shop">Shop</a></span>
+            </noscript>
+            </div>
             <div id="account-menu">
             	<div class="acc-menu-item"><a href="#"><span>[2 Items]</span></a></div>
             	<div class="acc-menu-item"><a href="#" style="color:#656565">Cart</a></div>
@@ -323,6 +339,7 @@
                         </ul>
                     </li>
                 </ul>
+                
                 <ul class="ul-0">
                 	<li class="li-0"><span class="cat-title"><a  class="top-level"href="#" title="News &amp Events">News &amp Events</a></span>
                     	<ul class="ul-1">

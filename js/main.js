@@ -52,7 +52,6 @@ jQuery(
 					jQuery(this).css('clear','both');
 				}
 			});
-			
 		});
 		
 		jQuery('#main-menu').mouseenter(function(){
