@@ -57,6 +57,7 @@
 
 /*body*/
 body{margin:0; background:#E0E0C0; font-family: HelveticaNeueCE-Roman;}
+p{font-family: HelveticaNeueCE-Roman;}
 
 /*headings*/
 h1{}
@@ -111,6 +112,12 @@ select{}
 
 /*footer*/
 #footer{/*text colors etc*/}
+#footer-columns{top:15px; left:45px; position:relative}
+.footer-column{width:215px; float:left}
+.footer-column p{color:#a4a4a4; font-size:0.8em;}
+.footer-column ul{margin-left:-20px; color:#656565;}
+.footer-column a{color:#656565; font-size:0.8em; text-decoration:none; line-height:20px}
+.footer-column a:hover{color:#ffe100}
 
 #footer-nav{height:186px; background:#1e1e1e;}
 #footer-legal{height:66px; background:#171717}

@@ -41,7 +41,7 @@ jQuery(
 			menu(menuId);
 		});
 		
-		//clear floats so next row vertically aligns left and top properly (every fifth sub-menu cat.)
+		//clear floats so next row vertically aligns left and top properly (every fourth sub-menu cat.)
 		jQuery('.ul-1').each(function(){
 			//for each subcat
 			jQuery(this).find('.li-1').each(function(index){
