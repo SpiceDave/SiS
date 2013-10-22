@@ -3,3 +3,6 @@
 .ul-2, .footer-column ul{
 	margin-left:15px;
 }
+
+#footer-email input[type=text]{height:16px;}
+#footer-email input[type=submit]{height: 30px;}
