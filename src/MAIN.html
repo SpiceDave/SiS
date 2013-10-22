@@ -34,9 +34,9 @@
             </noscript>
             </div>
             <div id="account-menu">
-            	<div class="acc-menu-item"><a href="#"><span>[2 Items]</span></a></div>
-            	<div class="acc-menu-item"><a href="#" style="color:#656565">Cart</a></div>
-            	<div class="acc-menu-item"><a href="#"><img src="../img/ui/trolley.png" alt='Cart' title='2 items' height="34" width="36" /></a></div>
+            	<div class="acc-menu-item"><a class="basket-over" href="#"><span>[2 Items]</span></a></div>
+            	<div class="acc-menu-item"><a class="basket-over" href="#" style="color:#656565">Cart</a></div>
+            	<div class="acc-menu-item"><a class="basket-over" href="#"><img src="../img/ui/trolley.png" alt='Cart' title='2 items' height="34" width="36" /></a></div>
             	<div class="acc-menu-item"><a href="#"><span>Login/Register</span></a></div>
             	<div class="acc-menu-item"><a href="#"><span>Help</span></a></div>
             	<div class="acc-menu-item"><a href="#"><span>Home</span></a></div>               
@@ -423,7 +423,7 @@
         </div><!-- #header -->
         
         <div id="content">
-            <div>&nbsp;</div>
+            
         </div><!-- #content -->
         
         <div id="footer">
@@ -495,4 +495,5 @@
 </body>
 <script src="../js/jquery-1.10.2.min.js"></script>
 <script src="../js/main.js"></script>
+<script>jQuery( "#content" ).load( "filename.html" );</script>
 </html>

@@ -62,6 +62,9 @@ jQuery(
 			//show the menu with appropriate categories already loaded
 			jQuery('#mega-dropdown').slideUp(100, function(){});
 		})
+		
+		//bind the rollovers for the mini-basket **************TODO*****************
+		jQuery('.basket-over').hover(function(){/*show the mini basket*/}, function(){/*hide the mini basket*/});
 	}		
 );
 

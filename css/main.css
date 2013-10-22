@@ -87,7 +87,7 @@ select{}
 /*header*/
 #header{height:99px;background:#171717; color:#ffffff; }
 #SiS-logo{top:5px; left:5px; position:relative; height:78px; width:163px}
-#search-box{position:absolute; right:55px; top:52px}
+#search-box{position:absolute; right:55px; top:55px}
 #search-box-bg{position:absolute; right:15px; top:50px;}
 #search-box input{border:0; padding:5px; background:none; width:225px; color:#656565;}
 #top-search-glass{position:absolute; top:4px; right:4px; padding:5px; cursor:pointer}
