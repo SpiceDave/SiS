@@ -84,14 +84,14 @@ select{}
 #SiS-logo{top:5px; left:5px; position:relative; height:78px; width:163px}
 #search-box{position:absolute; right:55px; top:52px}
 #search-box-bg{position:absolute; right:15px; top:50px;}
-#search-box input{border:0; padding:5px; background:none; width:235px; color:#656565;}
+#search-box input{border:0; padding:5px; background:none; width:225px; color:#656565;}
 #top-search-glass{position:absolute; top:4px; right:4px; padding:5px; cursor:pointer}
 
 /*menu*/
 #main-menu{top:66px; left:170px; position:absolute;}
 .ul-1, .ul-2{margin-left:-25px}/*use -40px for 0 offset*/
 .ul-0{padding:10px;}
-#mega-dropdown{text-transform:uppercase; font-size:0.7em; background:rgba(23, 23, 23, 0.95);  position: absolute;left: 15px;top: 99px;width: 994px;}
+#mega-dropdown{text-transform:uppercase; font-size:0.7em;  background-color: #000; background-color:rgba(23, 23, 23, 0.95);  *background-color: #000; position: absolute;left: 15px;top: 99px;width: 994px;}
 #mega-dropdown ul {list-style-type:none; line-height:15px;}
 #mega-dropdown a, #account-menu a{text-decoration:none}
 .top-level{font-size:0.7em; text-decoration:none; padding:5px; text-transform:uppercase}
@@ -118,7 +118,7 @@ select{}
 .footer-column{width:170px; float:left}
 #footer-email {float:right}
 #footer-email input{border:0; padding:5px;  color:#656565;}
-#footer-email input[type=text]{width:145px; background:#e9e9e9; height: 18px }
+#footer-email input[type=text]{width:145px; background:#e9e9e9; height: 18px; margin-right: -2px;}
 #footer-email input[type=submit]{width:110px; background:#FEEA00 url(../img/ui/sign-up.gif); padding-right:25px;color:#1c1800; font-weight:bold; height: 28px;}
 
 .footer-column p{color:#a4a4a4; font-size:0.8em;}
