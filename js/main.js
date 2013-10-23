@@ -9,6 +9,13 @@
 //to execute when the DOM is ready...
 jQuery(
 	function(){
+		/* load inner page -REMOVE--BEFORE--DELIVERY- *****/
+		var query = (window.location.href).split('?');
+		var filename = query[1];
+		alert(filename);
+		jQuery( "#content" ).load(filename);
+		/**************************************************/
+		
 		//hide the menu
 		jQuery('#mega-dropdown, .ul-0').hide();
 		
