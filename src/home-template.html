@@ -1,0 +1,134 @@
+<style type="text/css">
+#rotating-image-container, .advert-zone-full-width, ._640-15-340, ._410-15-568, ._568-15-410{width:994px; overflow-y: hidden; position: relative;}
+.left{float:left}
+._15{width:15px;}
+._339{width:339px;}
+._640{width:640px;}
+._568{width:568px}
+._410{width:410}
+.h-divider{height:15px; clear:both}
+#slider{height:343px; width:994px; overflow:hidden; z-index:0;}
+#slider-nav{width:88px; height:42px; position:absolute; right:0px; top:145px; }
+#next-slide, #previous-slide{height:42px; width:42px; float:left; background-repeat: no-repeat; background-image: url('../img/ui/slider-nav-sprite.png'); cursor:pointer}
+#next-slide{background-position: -46px 0px;}
+#previous-slide {margin-right: 4px; background-position: 0px 0px;}
+#next-slide:hover{background-position: -46px -46px;}
+#previous-slide:hover {background-position: 0px -46px;}
+.text-overlaid{position:relative}
+.ad-text{position:absolute; top:28px; left:28px}
+.ad-text h2{margin:0; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
+.ad-text h3, .ad-text h4{margin:0; font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif; font-weight:normal}
+.ad-text h4{font-size:0.8em}
+.news-events-ad{background-color:#458B55; height:163px;}
+#home-wrapper{padding:15px}
+
+
+
+
+
+
+
+.pics {  
+    height:  343px;  
+    width:   994px;  
+    padding: 0;  
+    margin:  0;  
+} 
+ 
+.pics img {  
+    background-color: #eee;  
+    width:  994px; 
+    height: 343px; 
+    top:  0; 
+    left: 0 
+} 
+
+
+</style>
+<!-- homepage content -->
+<div id="home-wrapper">
+<section>
+    <div id="rotating-image-container" style="position:relative">
+    	<div id="slider" class="pics"> 
+            <a href="#" alt="slider image" title="Slider Image"><img src="../img/dummy/slider-img-1.jpg" width="994" height="343" /></a>
+            <a href="#" alt="slider image" title="Slider Image"><img src="../img/dummy/slider-img-2.jpg" width="994" height="343" /></a>
+            <a href="#" alt="slider image" title="Slider Image"><img src="../img/dummy/slider-img-3.jpg" width="994" height="343" /></a>
+        </div>
+          <div id="slider-nav">
+            <div id="previous-slide"></div>
+            <div id="next-slide"></div>
+        </div> 
+        <script src="../js/jQueryPlugins.js"></script>
+        <script>
+		jQuery('#slider').cycle({ 
+			fx: 'scrollHorz',
+			easing: 'easeOutQuart',
+			speed: 1000,
+			next: '#next-slide', 
+    		prev: '#previous-slide' 
+		});
+		</script>
+    </div>
+    <div class="h-divider">&nbsp;</div>
+</section>
+
+<section>
+    <div class="advert-zone-full-width"><a alt="advert zone" title="advert zone" href="#"><img src="../img/dummy/header-advert-zone.jpg" width="994" height="auto" /></a></div>
+    <div class="h-divider"></div>
+</section>
+
+<section>
+    <div class="_640-15-340">
+        <div class="_640 adzone left text-overlaid">
+        	<a href="#" title="Advert Zone" alt="Advert Zone">
+                <img src="../img/dummy/yt-video-lg.jpg" height="341" width="640" />
+                <div class="ad-text">
+                    <h2><span class="yellow">Sir Chris Hoy &amp; SiS</span></h2>
+                    <h3><span class="white">Leaders in Endurance Nutrition</span></h3>
+                </div>
+            </a>
+        </div>
+        
+        <div class="_15 adzone left">&nbsp;</div>
+        <div class="_339 left">
+            <div class="_339 adzone text-overlaid news-events-ad">
+            <a href="#" title="Advert Zone" alt="Advert Zone">
+                <div class="ad-text">
+                    <h2><span class="dark-gray">News &amp; Events</span></h2>
+                    <h4><span class="dark-gray">"SiS launch NEW Innovative Rego + Fruitflow</span></h4>
+                    <h4><span class="white">Science in Sport has added SiS REGO + Fruitflow to its product line...</span></h4>
+                </div>
+            </a>
+            </div>
+            <div class="_339 adzone">&nbsp;</div>
+        </div>
+    </div>
+    <div class="h-divider"></div>
+</section>
+
+<section>
+	<div class="_568-15-410">
+        <div class="_568 adzone left"></div>
+        <div class="_15 adzone left">&nbsp;</div>
+        <div>
+            <div class="_410 adzone">&nbsp;</div>
+            <div class="h-divider">&nbsp;</div>
+            <div class="_410 adzone">&nbsp;</div>
+        </div>
+    </div>
+    <div class="h-divider"></div>
+</section>
+
+<section>
+    <div class="_410-15-568 social">
+        <div class="_410 left">
+            <div class="_410 adzone"><iframe height="150px" width="410px" scrolling="no" frameborder="0" margin="0" src="http://54.247.98.191/SiS-Tweets/twitter-feed-parser.php/"></iframe></div>
+            <div class="h-divider">&nbsp;</div>
+            <div class="_410 adzone">&nbsp;</div>
+        </div>
+        <div class="_15 left"></div>
+        <div class="_568 adzone left">&nbsp;</div>
+        <div class="h-divider"></div>
+    </div>
+</section>
+</div>

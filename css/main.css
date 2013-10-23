@@ -49,6 +49,9 @@
 @font-face {font-family: 'HelveticaNeueCE-Bold';src: url('../webfonts/28A949_1_0.eot');src: url('../webfonts/28A949_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/28A949_1_0.woff') format('woff'),url('../webfonts/28A949_1_0.ttf') format('truetype');}
 
 .white{color:#ffffff}
+.yellow{color:#FFF200}
+.dark-gray{color:#1B3722}
+
 
 
 /****************
@@ -58,18 +61,18 @@
 ****************/
 
 /*body*/
-body{margin:0; background:#E0E0C0; font-family: HelveticaNeueCE-Roman;}
-p{font-family: HelveticaNeueCE-Roman;}
+body{margin:0; background:#E0E0C0; font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
+p{font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
 
 /*headings*/
 h1{}
 
 /*links*/
-a{}
+a{text-decoration:none}
 a img{border:0; display:block}
 
 /*forms*/
-input{font-family: HelveticaNeueCE-Roman;}
+input{font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
 input:focus {outline: none;}
 button::-moz-focus-inner,
 input::-moz-focus-inner {
@@ -115,7 +118,7 @@ select{}
 
 
 /*content container*/
-#content{background:#ffffff;padding:15px;}
+#content{background:#ffffff;overflow:hidden}
 
 /*footer*/
 #footer{/*text colors etc*/}
