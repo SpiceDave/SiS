@@ -1,0 +1,680 @@
+<style>
+@charset "UTF-8";
+
+/* @license
+ * MyFonts Webfont Build ID 2662269, 2013-10-10T06:20:34-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed ../webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Helvetica 55 Roman by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-55-roman/
+ * Copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted (c) 1988, 1990, 1993, 1996, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype Librar
+ * 
+ * Webfont: Helvetica 75 Bold by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-75-bold/
+ * Copyright: Copyright (c) 1988, 1990, 1993, 1996, 2003 Linotype Library GmbH, www.linotype.com. All rights reserved. This software may not be reproduced, used, displayed, modified, disclosed or transferred without the express written approval of Linotype Library GmbH
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=2662269
+ * Licensed pageviews: 250,000
+ * 
+ * © 2013 MyFonts Inc
+*/
+
+
+
+/************************************************
+*
+* Main stylesheet for SiS ecommerce templates
+*
+* Created by Spicerack Media Ltd
+*
+************************************************/
+
+
+/*css reset*/
+
+/****************
+*
+* fonts
+*
+****************/
+
+@font-face {font-family: 'HelveticaNeueCE-Roman';src: url('../webfonts/28A949_0_0.eot');src: url('../webfonts/28A949_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/28A949_0_0.woff') format('woff'),url('../webfonts/28A949_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'HelveticaNeueCE-Bold';src: url('../webfonts/28A949_1_0.eot');src: url('../webfonts/28A949_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/28A949_1_0.woff') format('woff'),url('../webfonts/28A949_1_0.ttf') format('truetype');}
+
+.white{color:#ffffff}
+.yellow{color:#FFE100}
+.dark-gray{color:#1B3722}
+.grey {color: #9e9e9e;}
+.black{ color: #000000;}
+.red {color: #ff0055;}
+
+.small{font-size: 12px;}
+
+
+/****************
+*
+* Global styles
+*
+****************/
+
+/*body*/
+body{margin:0; background:#E0E0C0; font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
+p{font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
+
+/*headings*/
+/* h1 on page titles */
+h1{
+	font-family: HelveticaNeueCE-Bold;
+	font-size: 26px;
+	margin: 30px 0 0 30px;
+}
+p.h1-sub-heading{
+	font-size:16px;
+	font-color: #9e9e9e;
+	margin: 0 0 7px 30px;
+	line-height: 12px;
+}
+
+/*links*/
+a{text-decoration:none}
+a img{border:0; display:block}
+
+/*forms*/
+input{font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
+input:focus {outline: none;}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+button{}
+select{}
+
+/*container*/
+#container{width:100%;}
+/*outer wrapper*/
+#wrapper{margin: 0 auto; width:1024px; position:relative}
+
+/*header*/
+#header{height:99px;background:#171717; color:#ffffff; }
+#SiS-logo{top:5px; left:5px; position:relative; height:78px; width:163px}
+#search-box{position:absolute; right:55px; top:55px}
+#search-box-bg{position:absolute; right:15px; top:50px;}
+#search-box input{border:0; padding:5px; background:none; width:225px; color:#656565;}
+#top-search-glass{position:absolute; top:4px; right:4px; padding:5px; cursor:pointer}
+
+/*menu*/
+#main-menu{top:66px; left:170px; position:absolute;}
+.ul-1, .ul-2{margin-left:-25px}/*use -40px for 0 offset*/
+.ul-0{padding:10px;}
+#mega-dropdown{text-transform:uppercase; font-size:0.7em;  background-color: #000; background-color:rgba(23, 23, 23, 0.95);  *background-color: #000; position: absolute;left: 15px;top: 99px;width: 994px; display:none; z-index:9999}
+#mega-dropdown ul {list-style-type:none; line-height:15px;}
+#mega-dropdown a, #account-menu a{text-decoration:none}
+.top-level{font-size:0.7em; text-decoration:none; padding:5px; text-transform:uppercase}
+.li-0 a, .top-level, #account-menu a{color:#fff; }
+.li-1 a{color:#a4a4a4; }
+.li-2 a, .li-2 span{color:#656565; font-size:0.7em;}
+.menu-more a, #account-menu a{font-size:0.7em;}
+.li-0 a:hover, .li-1 a:hover,  .top-level:hover, #account-menu a:hover{color:#ffe100}
+.li-1{width:205px; float:left; padding: 0 10px 30px}
+.li-2{list-style-type:disc;color:#656565;}
+#account-menu{position:absolute; top:15px; right:15px; width: 350px; text-transform:uppercase; height:34px}
+.acc-menu-item{float:right;}
+.acc-menu-item img, .acc-menu-item a{height:34px; vertical-align:middle; display:table-cell;}
+.acc-menu-item span{padding:0 0 0 5px;}
+
+
+
+/*content container*/
+#content{background:#ffffff;overflow:hidden}
+
+/*footer*/
+#footer{/*text colors etc*/}
+#footer-columns{top:15px; left:45px; position:relative; width: 934px;}
+.footer-column{width:170px; float:left}
+#footer-email {float:right}
+#footer-email input{border:0;color:#656565; font-weight:bold; }
+#footer-email input[type=text]{width:145px; background:#e9e9e9; padding:7px 0 7px 3px; margin-right: -2px; }
+#footer-email input[type=submit]{width:110px; background:#FEEA00 url(../img/ui/sign-up.gif); color:#1c1800;  padding: 7px 25px 7px 0;  }
+
+.footer-column p{color:#a4a4a4; font-size:0.8em;}
+.news-offers{margin-top: -5px; display: block;}
+.telephone, .news-offers{color:#656565; font-size:0.8em;}
+.sign-up{color:#a4a4a4; font-size:0.7em;}
+.call-us{font-size:0.8em}
+.footer-column ul{margin-left:-20px; color:#656565;}
+.footer-column a{color:#656565; font-size:0.7em; text-decoration:none; line-height:20px;}
+.footer-column a:hover{color:#ffe100}
+#last-footer-column{padding-top:10px}
+#footer-nav{height:186px; background:#1e1e1e;}
+#sign-up-copy{width:152px; float:left; text-align:right; margin-right:3px}
+#footer-legal, #footer-follow{height:66px; background:#171717; color:#656565; float:left}
+#footer-legal{width:760px; text-align:right; font-size:0.55em}
+#footer-legal span{padding:30px 10px; display:block;}
+#footer-follow {width:264px}
+#footer-follow a {display: inline-block; margin:20px 0 0 7px}
+#footer-follow h2 {display:block;font-size:0.8em;padding-right:0px; margin:27px 5px 0 35px; float:left; font-weight:bold}
+.social-icon {display: block;width: 29px; height: 29px; background-repeat: no-repeat; background-image: url('../img/ui/social-icons-sprite.png');background-position: 0px 0px;}
+#contact-info {text-align:right}
+.opening-hours{color:#656565; font-size:0.75em; margin-top:-3px; display:block}
+#i-s-logo{float:right; margin: 20px 0;}
+
+a.social-icon.twitter {background-position: -90px 0px;}
+a.social-icon.facebook {background-position: -120px 0px;}
+a.social-icon.youtube {background-position: -150px 0px;}
+a.social-icon.twitter:hover {background-position: 0px 0px;}
+a.social-icon.facebook:hover {background-position: -30px 0px;}
+a.social-icon.youtube:hover {background-position: -60px 0px;}
+
+/*custom components*/
+
+
+/****************
+*
+* individual styles
+*
+****************/
+/** Checkout page - still includes some global styles**/
+.left{	float:left;}
+.right{float:right;}
+.clear{clear:both;}
+
+.inline{display: inline;}
+
+.text-button{padding: 0; cursor:pointer;}
+.remove-button {border: 0; background: url(../img/ui/remove.png) no-repeat; padding-left: 15px;color: #ff0055;}
+
+.pound{font-family: helvetica, sans-serif; font-weight:bold;}
+.hide{display: none;}
+
+
+#ad-title-space{
+	padding:15px 15px 0 15px;
+}
+
+#grey-bg-wrapper{
+	background:#f6f6f6 url(../img/ui/header-gradient.png) repeat-x;
+	margin: 0;
+	overflow: auto;
+	padding-bottom: 10px;
+}
+.check-product-list{
+	clear: both;
+	padding-top: 50px;
+}
+
+.check-product-list ul{
+	margin: 0;
+	padding:0;
+}
+/*sets padding for first product row*/
+.check-items >div:first-child + div >ul, .check-items >div:first-child + div >div.check-item-price,
+.check-items >div:first-child + div >div.check-delivery, .check-items >div:first-child + div >form.check-amounts{
+	margin-top: 50px;
+}
+
+/*sets height of first row to be less */
+.check-items >div:first-child + div{ height: 150px;}
+
+
+div:first-child + div >div.check-item-image{
+	margin-top: 10px;
+}
+.check-item-row ul, .check-item-price, .check-delivery, .check-item-price, .check-amounts, .check-final-price{
+	margin-top: 60px;
+}
+
+.check-item-image{
+	margin:25px 0;
+}
+
+.check-product-list li{
+	list-style-type: none;
+}
+
+.check-wysiwyg{
+	width: 512px;
+	padding: 15px;
+	height: auto;
+	overflow: auto;
+	line-height: 14px;
+}
+
+.check-wysiwyg.right{
+	text-align: right;
+	margin-right: 30px;
+}
+
+.check-wysiwyg .left{
+	margin-left: 30px;
+}
+
+.check-empty-basket{
+	text-align: center;
+}
+.check-items{
+	margin: 0 135px;
+}
+.check-items-title {
+		position: relative;
+		border-bottom: gray dotted 1px;
+		top: 20px;
+		margin-left: 125px;
+		font-size: 16px;
+		font-family: HelveticaNeueCE-Bold;
+		padding-bottom: 20px;
+	}
+.check-item-product-name{
+	font-size: 14px;
+}
+
+.check-item-row {
+	border-bottom: gray dotted 1px;
+	height: 160px;
+	font-size: 12px;
+}
+
+.check-row-product-name {
+	font-size: 14px;
+}
+
+.check-item-image{
+	width: 124px;
+	height: 100px;
+	float: left;
+}
+
+.check-item-item, .item-title  {
+	width: 186px;
+	float: left;
+}
+
+.check-delivery, .delivery-title{
+	width: 124px;
+	float: left;
+	padding-left: 34px;
+}
+
+.delivery-title{
+	height: 20px;
+}
+
+
+/* pricing */
+.check-item-price, .price-title{
+	width:62px;
+	float: left;
+	font-size: 16px;
+	padding-left: 20px;
+}
+.check-amounts, .quantity-title{
+	width: 62px;
+	float: left;
+	padding-left: 45px;
+}
+.check-amounts input{
+	border: 0;
+	background: #dddddd;
+	padding: 4px;
+}
+
+.check-final-price, .total-title{
+	float: right;
+	text-align: right;
+}
+.check-final-price, .check-discount-amount{
+	font-size: 18px;
+	color:#9e9e9e;
+	float: right;
+	font-family: HelveticaNeueCE-Bold;
+}
+
+.check-discount-amount{
+	line-height: 30px;
+}
+
+.check-total-price{
+	width:280px;
+	font-size: 12px;
+	border-bottom: gray dotted 1px;
+	padding-bottom: 15px;
+	float: right;
+	text-align: right;
+	margin-top: 40px;
+	line-height: 30px;
+}
+
+.check-total-price .left-col{
+	width: 155px;
+	float: left;
+}
+
+.basket-subtotal, .delivery-price, .checkout-total-price{
+	font-size: 18px;
+	font-family: HelveticaNeueCE-Bold;
+}
+
+.check-item-item li{
+	list-style-type: none;
+}
+.check-offer-row{
+	font-size: 12px;
+	border-bottom: gray dotted 1px;
+	height: 30px; 
+	padding: 10px 0;
+}	
+
+.check-offer-name{
+	margin-left: 124px;
+	width: 493px;
+	float: left;
+	font-size: 14px;	
+	line-height: 30px;
+}
+
+
+/* promo code box */
+.promo-code-box{
+	display: block;
+	float: left;
+	width: 424px;
+	margin-top:40px;
+}
+
+.promo-label{
+	font-family: HelveticaNeueCE-Bold;
+	float: left;
+	clear: both;
+}
+
+.promo-input{
+	height: 25px;
+	background-color:#dddddd;
+	float: left;
+	clear: left;
+	border: 1px solid #cacaca;
+	padding: 2px;
+	
+}
+
+.promo-code-box p{
+	padding-top: 5px;
+	line-height: 20px;
+	width: 270px;	
+}
+
+/* checkout advertisement */
+.check-advert{
+	clear: both;
+}
+
+.check-continue-shopping{
+	padding-top: 30px;
+	float: left;
+}
+
+.check-checkout{
+	float: right;
+	padding-top: 30px;
+}
+
+/*buttons*/
+.text-button  {border: 0; background: none;}
+
+
+/* yellow-button*/
+.button-container{
+	width: auto;
+	height: 46px;
+	float: left;
+	margin-top: -9px;
+	padding: 0;
+	margin-left: -3px;
+
+}
+
+.yellow-button{
+	background: transparent url(../img/ui/button-bg.png);
+	border: 0;
+	position: relative;
+	top: -38px;
+	padding-left: 12px;
+	height: 31px;
+	font-family: HelveticaNeueCE-Bold;
+	z-index: 40;
+}
+
+.button-bg-l{ 
+	background: transparent url(../img/ui/button-bg-l.png) no-repeat 2px 0px;
+	border: 0;
+	height: 47px;
+	position: relative;
+	z-index: 1;
+	top: 9px;
+	}
+.button-bg-r{ 
+	background: transparent url(../img/ui/button-bg-r.png) no-repeat 3px 8px;
+	height: 56px;
+	position: relative;
+	z-index: 0;
+	top: -77px;
+	left: 21px;
+	width: 110px;
+}
+
+/* black button */
+.black-button{
+	background: #000000;
+	color: #ffffff;
+	font-family: HelveticaNeueCE-Bold;
+	border: 0;
+	height: 31px;
+	padding: 0 20px;
+}
+
+.payment-cards-box{
+	float: left;
+	clear: both;
+	margin: 50px 0 0 135px;
+}
+
+/*************** home template ***************************/
+
+#rotating-image-container, .advert-zone-full-width, ._640-15-340, ._410-15-569, ._569-15-410, ._411-15-568 {width:994px; overflow-y: hidden; position: relative;}
+.left{float:left}
+._15{width:15px; height:15px}
+._184{width:184px;}
+._339{width:339px;}
+._640{width:640px;}
+._568{width:568px}
+._569{width:569px}
+._410{width:410px}
+._411{width:411px}
+.h-divider{height:15px; clear:both}
+#slider{height:343px; width:994px; overflow:hidden; z-index:0;}
+#slider-nav{width:88px; height:42px; position:absolute; right:0px; top:145px; }
+#next-slide, #previous-slide{height:42px; width:42px; float:left; background-repeat: no-repeat; background-image: url('../img/ui/slider-nav-sprite.png'); cursor:pointer}
+#next-slide{background-position: -46px 0px;}
+#previous-slide {margin-right: 4px; background-position: 0px 0px;}
+#next-slide:hover{background-position: -46px -46px;}
+#previous-slide:hover {background-position: 0px -46px;}
+.text-overlaid{position:relative}
+.ad-text{position:absolute; top:28px; left:28px; margin-right:28px}
+.ad-text h2{margin:0; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
+.ad-text h3, .ad-text h4{margin:0; font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif; font-weight:normal}
+.ad-text h4{font-size:0.8em; margin-top:8px;}
+.news-events-ad{background-color:#458B55; height:163px;}
+#home-wrapper{padding:15px 15px 0 15px}
+.facebook-box{background-image:url(../img/ui/facebook-bg.gif); height:150px;}
+.facebook-box iframe{left: 29px;top: 100px;width: 352px;position: relative;}
+.lineheight-fix{line-height:0}
+.cta-btn{margin-top:20px; height:31px; display:block; background-image:url(../img/ui/cta_btn.gif); background-repeat:no-repeat; background-position:right;color:#000; text-decoration:none; font-family:HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
+.cta-btn span{padding: 0 12px; display: block; line-height: 31px;}
+.pics {height:  343px;width:   994px;padding: 0;margin:  0;} 
+.pics img { background-color: #eee;width:  994px;height: 343px;top:  0;left: 0} 
+
+/**********************************************************/
+
+/*category listing template*/
+#breadcrumb{height:31px; background-image:url(../img/ui/bread-crumb-bg-grad.gif); background-repeat:repeat-x; lineheight:31px; padding-left:15px;}
+#breadcrumb a{font-size:0.7em; line-height:31px}
+#category-wysiwyg{margin:45px}
+#category-wysiwyg p{color:#9e9e9e; font-size:0.9em; line-height:1.5em}
+.category-item p{color:#9e9e9e; font-size:0.85em; line-height:1.3em; margin: 5px 0}
+.near-black{color:#151515}
+#category-wysiwyg h2{font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;font-size:24px;}
+.non-home{padding:15px;background-color:#e9e9e9;background-image:url(../img/ui/social-section-grad-top.gif);background-repeat:repeat-x;}
+#category-list{padding:0 26px 30px 41px; overflow:hidden;}
+.category-item{width:319px; height:294px; overflow:hidden; float:left;}
+.category-title{margin:5px 0}
+.category-blurb{margin:0 15px 0 0}
+
+
+/**********************new styles************************************/
+
+
+
+
+#mini-basket-component{width:470px; text-transform:uppercase; font-size:0.7em;  background-color: #f6f6f6;background-image:url(../img/ui/header-gradient.png); background-repeat:repeat-x}
+.mini-basket-header{padding:10px;}
+#mini-product{float:left}
+#mini-total{float:right; width:80px}
+.mini-basket-row{padding:15px 0 15px 15px; overflow:auto; border-top:2px grey dotted; }
+.mini-product-image{height:80px; width:80px; position:relative; float:left}
+.mini-product-image img{ position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
+.mini-product-description, .item-update, .mini-check-amounts{float:left}
+.item-update{width:70px}
+.mini-product-description ul{margin: 0 0 0 -30px;}
+.mini-check-amounts input {border: 0;background: #dddddd;padding: 4px;}
+.mini-check-final-price{font-size: 18px;color: #9e9e9e;float: left; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif; margin:30px 0 0 20px}
+#mini-basket-items{height:450px; overflow-y:scroll}
+
+
+</style>
+<div id="mini-basket-component">
+	<div id="mini-product" class="mini-basket-header">Product</div>
+    <div id="mini-total" class="mini-basket-header">Line Total</div>
+    <div style="clear:both"></div>
+    <div id="mini-basket-items">
+        <div class="mini-basket-row">
+            <div class="mini-product-image">
+                <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
+            </div>
+            <div class="mini-product-description">
+                <ul class="check-item-item">
+                    <li class="check-row-product-name">SIS Rego Rapid Recovery
+                    </li>
+                    <li class="clear grey">#002962
+                    </li>
+                    <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
+                    </li>
+                    <li class="">Flavour: <span class="grey">Strawberry</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="item-update">
+                <form class="mini-check-amounts" method="post" action="#">
+                    <input type="text" name="product-amount" size="7" value="2"> 
+                    <button class="remove-button">Remove</button> 
+                    <button class="text-button">Update</button>
+                </form>
+            </div>
+            <div class="mini-check-final-price">
+                <span class="pound">&pound;</span>55.80
+            </div>
+        </div>
+        
+        <div class="mini-basket-row">
+            <div class="mini-product-image">
+                <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
+            </div>
+            <div class="mini-product-description">
+                <ul class="check-item-item">
+                    <li class="check-row-product-name">SIS Rego Rapid Recovery
+                    </li>
+                    <li class="clear grey">#002962
+                    </li>
+                    <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
+                    </li>
+                    <li class="">Flavour: <span class="grey">Strawberry</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="item-update">
+                <form class="mini-check-amounts" method="post" action="#">
+                    <input type="text" name="product-amount" size="7" value="123"> 
+                    <button class="remove-button">Remove</button> 
+                    <button class="text-button">Update</button>
+                </form>
+            </div>
+            <div class="mini-check-final-price">
+                <span class="pound">&pound;</span>55.80
+            </div>
+        </div>
+        
+        <div class="mini-basket-row">
+            <div class="mini-product-image">
+                <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
+            </div>
+            <div class="mini-product-description">
+                <ul class="check-item-item">
+                    <li class="check-row-product-name">SIS Rego Rapid Recovery
+                    </li>
+                    <li class="clear grey">#002962
+                    </li>
+                    <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
+                    </li>
+                    <li class="">Flavour: <span class="grey">Strawberry</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="item-update">
+                <form class="mini-check-amounts" method="post" action="#">
+                    <input type="text" name="product-amount" size="7" value="12634"> 
+                    <button class="remove-button">Remove</button> 
+                    <button class="text-button">Update</button>
+                </form>
+            </div>
+            <div class="mini-check-final-price">
+                <span class="pound">&pound;</span>55.80
+            </div>
+        </div>
+        
+        <div class="mini-basket-row">
+            <div class="mini-product-image">
+                <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
+            </div>
+            <div class="mini-product-description">
+                <ul class="check-item-item">
+                    <li class="check-row-product-name">SIS Rego Rapid Recovery
+                    </li>
+                    <li class="clear grey">#002962
+                    </li>
+                    <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
+                    </li>
+                    <li class="">Flavour: <span class="grey">Strawberry</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="item-update">
+                <form class="mini-check-amounts" method="post" action="#">
+                    <input type="text" name="product-amount" size="7" value="0"> 
+                    <button class="remove-button">Remove</button> 
+                    <button class="text-button">Update</button>
+                </form>
+            </div>
+            <div class="mini-check-final-price">
+                <span class="pound">&pound;</span>55.80
+            </div>
+        </div>
+     </div>
+     still need to add all of the bottom section and the prices in their different formats
+</div>
