@@ -9,6 +9,16 @@
 //to execute when the DOM is ready...
 jQuery(
 	function(){
+		/* load inner page -REMOVE--BEFORE--DELIVERY- *****/
+		var query = (window.location.href).split('?');
+		var filename = query[1];
+		jQuery( "#content" ).load(filename);
+		/**************************************************/
+		
+		
+		
+		
+		
 		//hide the menu
 		jQuery('#mega-dropdown, .ul-0').hide();
 		
@@ -62,6 +72,9 @@ jQuery(
 			//show the menu with appropriate categories already loaded
 			jQuery('#mega-dropdown').slideUp(100, function(){});
 		})
+		
+		//bind the rollovers for the mini-basket **************TODO*****************
+		jQuery('.basket-over').hover(function(){/*show the mini basket*/}, function(){/*hide the mini basket*/});
 	}		
 );
 

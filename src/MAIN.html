@@ -1,9 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Parent template containing header and footer, linked files etc.</title>
 <link rel="stylesheet" type="text/css" href="../css/main.css" media="screen" />
+
 <!--[if IE 7]>
 	<link rel="stylesheet" type="text/css" href="../css/ie-7.css" media="screen">
 <![endif]-->
@@ -34,9 +35,9 @@
             </noscript>
             </div>
             <div id="account-menu">
-            	<div class="acc-menu-item"><a href="#"><span>[2 Items]</span></a></div>
-            	<div class="acc-menu-item"><a href="#" style="color:#656565">Cart</a></div>
-            	<div class="acc-menu-item"><a href="#"><img src="../img/ui/trolley.png" alt='Cart' title='2 items' height="34" width="36" /></a></div>
+            	<div class="acc-menu-item"><a class="basket-over" href="#"><span>[2 Items]</span></a></div>
+            	<div class="acc-menu-item"><a class="basket-over" href="#" style="color:#656565">Cart</a></div>
+            	<div class="acc-menu-item"><a class="basket-over" href="#"><img src="../img/ui/trolley.png" alt='Cart' title='2 items' height="34" width="36" /></a></div>
             	<div class="acc-menu-item"><a href="#"><span>Login/Register</span></a></div>
             	<div class="acc-menu-item"><a href="#"><span>Help</span></a></div>
             	<div class="acc-menu-item"><a href="#"><span>Home</span></a></div>               
@@ -417,13 +418,13 @@
             </div>
             <div id="search-box">
             	<!-- uses html5 search field - might need to add js alternative too -->
-            	<input name="search" type="search" value="ENTER KEYWORD OR PRODUCT CODE"  maxlength="50">
+            	<input name="search" type="text" value="ENTER KEYWORD OR PRODUCT CODE"  maxlength="50">
                 
             </div>
         </div><!-- #header -->
         
         <div id="content">
-            <div>&nbsp;</div>
+            
         </div><!-- #content -->
         
         <div id="footer">
@@ -431,36 +432,31 @@
             	<div id="footer-columns">
                     <div class="footer-column">
                         <p>About Science in Sport</p>
-                        <p>
-                      		<ul>
-                                <li><a href="#" title="Contact Us">Contact Us</a></li>
-                                <li><a href="#" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
-                                <li><a href="#" title="Cookies and Privacy Policy">Cookies and Privacy Policy</a></li>
-                                <li><a href="#" title="Affiliate Programme">Affiliate Programme</a></li>
-                            </ul>
-                        </p>
+                        <ul>
+                            <li><a href="#" title="Contact Us">Contact Us</a></li>
+                            <li><a href="#" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+                            <li><a href="#" title="Cookies and Privacy Policy">Cookies and Privacy Policy</a></li>
+                            <li><a href="#" title="Affiliate Programme">Affiliate Programme</a></li>
+                        </ul>
+                        
                     </div>
                     <div class="footer-column">
                         <p>Customer Service</p>
-                        <p>
-                      <ul>
-                          <li><a href="#" title="Contact Us">Contact Us</a></li>
-                                <li><a href="#" title="FAQs">FAQs</a></li>
-                                <li><a href="#" title="Delivery &amp; Returns">Delivery &amp; Returns</a></li>
-                             
-                            </ul>
-                        </p>
+                      	<ul>
+                          	<li><a href="#" title="Contact Us">Contact Us</a></li>
+                            <li><a href="#" title="FAQs">FAQs</a></li>
+                            <li><a href="#" title="Delivery &amp; Returns">Delivery &amp; Returns</a></li>
+                       </ul>
+                        
                     </div>
                     <div class="footer-column">
                         <p>Product Range</p>
-                        <p>
-                      		<ul>
-                                <li><a href="#" title="SiS Go Range">SiS Go Range</a></li>
-                                <li><a href="#" title="SiS Rego range">SiS Rego range</a></li>
-                                <li><a href="#" title="Delivery and Returns">Delivery and Returns</a></li>
-                            </ul>
-                        </p>
-                    </div>
+                        <ul>
+                            <li><a href="#" title="SiS Go Range">SiS Go Range</a></li>
+                            <li><a href="#" title="SiS Rego range">SiS Rego range</a></li>
+                            <li><a href="#" title="Delivery and Returns">Delivery and Returns</a></li>
+                        </ul>
+                                            </div>
                     <div id="last-footer-column">
                     	<div id="sign-up-copy">
                             <span class="sign-up">Sign up for</span><br />
@@ -493,6 +489,6 @@
    	</div><!--  #wrapper -->
 </div><!-- #container -->
 </body>
-<script src="../js/jquery-1.10.2.min.js"></script>
-<script src="../js/main.js"></script>
+<script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="../js/main.js" type="text/javascript"></script>
 </html>
