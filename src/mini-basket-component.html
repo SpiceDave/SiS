@@ -543,7 +543,7 @@ div:first-child + div >div.check-item-image{
 
 
 
-#mini-basket-component{width:470px; text-transform:uppercase; font-size:0.7em;  background-color: #f6f6f6;background-image:url(../img/ui/header-gradient.png); background-repeat:repeat-x}
+#mini-basket-component{width:466px; text-transform:uppercase; font-size:0.7em;  background-color: #f6f6f6;background-image:url(../img/ui/header-gradient.png); background-repeat:repeat-x}
 .mini-basket-header{padding:10px;}
 #mini-product{float:left}
 #mini-total{float:right; width:80px}
@@ -553,128 +553,223 @@ div:first-child + div >div.check-item-image{
 .mini-product-description, .item-update, .mini-check-amounts{float:left}
 .item-update{width:70px}
 .mini-product-description ul{margin: 0 0 0 -30px;}
-.mini-check-amounts input {border: 0;background: #dddddd;padding: 4px;}
-.mini-check-final-price{font-size: 18px;color: #9e9e9e;float: left; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif; margin:30px 0 0 20px}
+.mini-check-amounts{margin:0}
+.mini-check-amounts input {border: 0;background: #dddddd;padding: 4px; text-align: center;}
+.mini-check-final-price{/*font-size: 18px;color: #9e9e9e;*/width:60px; float: left; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif; margin: 0px 10px 0 10px; padding:4px}
 #mini-basket-items{height:450px; overflow-y:scroll}
-
+#mini-basket-offers{padding:15px 30px; font-size:1.2em; background-color:#1e1e1e; color:#a4a4a4; margin-top:10px}
+.mini-basket-offer-name{width: 290px;float: left;margin-right: 42px;}
+.mini-basket-offer-discount{float:right; margin-right:10px; padding:0 0 15px}
+.mini-basket-update{float:right; margin-right:0px;padding:0 0 10px; width:402px}
+.mini-basket-offer-row{border-bottom:#333 2px dotted; margin-top:10px}
+.promo-labelo{padding-right:10px}
+.mini-basket-offer-row input{border:0;font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif; font-weight:bold; line-height:31px; padding:0}
+.mini-basket-offer-row input[type=submit] {width: 110px;background: #FEEA00 url(../img/ui/sign-up.gif);color: #1c1800;padding: 0 25px 0 0;}
+.mini-basket-update-button{float:right}
+._150{width:150px}
+#mini-checkout-btn{float:right}
+.line-total{font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif; }
 
 </style>
 <div id="mini-basket-component">
 	<div id="mini-product" class="mini-basket-header">Product</div>
     <div id="mini-total" class="mini-basket-header">Line Total</div>
     <div style="clear:both"></div>
-    <div id="mini-basket-items">
-        <div class="mini-basket-row">
-            <div class="mini-product-image">
-                <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
-            </div>
-            <div class="mini-product-description">
-                <ul class="check-item-item">
-                    <li class="check-row-product-name">SIS Rego Rapid Recovery
-                    </li>
-                    <li class="clear grey">#002962
-                    </li>
-                    <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
-                    </li>
-                    <li class="">Flavour: <span class="grey">Strawberry</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="item-update">
-                <form class="mini-check-amounts" method="post" action="#">
-                    <input type="text" name="product-amount" size="7" value="2"> 
-                    <button class="remove-button">Remove</button> 
-                    <button class="text-button">Update</button>
-                </form>
-            </div>
-            <div class="mini-check-final-price">
-                <span class="pound">&pound;</span>55.80
-            </div>
-        </div>
+    <form class="mini-check-amounts" method="post" action="#">
+        <div id="mini-basket-items">
         
-        <div class="mini-basket-row">
-            <div class="mini-product-image">
-                <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
+             <!-- row start -->
+            <div class="mini-basket-row">
+                <div class="mini-product-image">
+                    <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
+                </div>
+                <div class="mini-product-description">
+                    <ul class="check-item-item">
+                        <li class="check-row-product-name">SIS Rego Rapid
+                        </li>
+                        <li class="clear grey">#002962
+                        </li>
+                        <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
+                        </li>
+                        <li class="">Flavour: <span class="grey">Strawberry</span>
+                        </li>
+                        <li class="">Price: <span class="pound grey">&pound;</span><span class="grey">19.99</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-update">
+                   <label>Qty:</label>
+                   <input type="text" name="product-amount" size="3" value="3"> 
+                </div>
+                <div class="mini-check-final-price">
+                    <span class="pound">&pound;</span><span class="line-total">59.97</span>
+                </div>
             </div>
-            <div class="mini-product-description">
-                <ul class="check-item-item">
-                    <li class="check-row-product-name">SIS Rego Rapid Recovery
-                    </li>
-                    <li class="clear grey">#002962
-                    </li>
-                    <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
-                    </li>
-                    <li class="">Flavour: <span class="grey">Strawberry</span>
-                    </li>
-                </ul>
+            <!-- row end -->
+            
+            <!-- row start -->
+            <div class="mini-basket-row">
+                <div class="mini-product-image">
+                    <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
+                </div>
+                <div class="mini-product-description">
+                    <ul class="check-item-item">
+                        <li class="check-row-product-name">SIS Rego
+                        </li>
+                        <li class="clear grey">#002962
+                        </li>
+                        <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
+                        </li>
+                        <li class="">Flavour: <span class="grey">Strawberry</span>
+                        </li>
+                        <li class="">Price: <span class="pound grey">&pound;</span><span class="grey">19.99</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-update free-product">
+                   <label>Qty:</label>
+                   <input type="text" name="product-amount" size="3" value="1" readonly="readonly"> 
+                </div>
+                <div class="mini-check-final-price">
+                    <del><span class="pound">&pound;</span><span class="line-total">19.99</span></del><br />
+                    <span class="pound">&pound;</span><span class="line-total">0.00</span>
+                </div>
             </div>
-            <div class="item-update">
-                <form class="mini-check-amounts" method="post" action="#">
-                    <input type="text" name="product-amount" size="7" value="123"> 
-                    <button class="remove-button">Remove</button> 
-                    <button class="text-button">Update</button>
-                </form>
+            <!-- row end -->
+            
+            
+            <!-- row start -->
+            <div class="mini-basket-row">
+                <div class="mini-product-image">
+                    <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
+                </div>
+                <div class="mini-product-description">
+                    <ul class="check-item-item">
+                        <li class="check-row-product-name">SIS Rego Rapid Recovery Recovery Rego
+                        </li>
+                        <li class="clear grey">#002962
+                        </li>
+                        <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
+                        </li>
+                        <li class="">Flavour: <span class="grey">Strawberry</span>
+                        </li>
+                        <li class="">Price: <span class="pound grey">&pound;</span><span class="grey">999.99</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-update">
+                   <label>Qty:</label>
+                   <input type="text" name="product-amount" size="3" value="2"> 
+                </div>
+                <div class="mini-check-final-price">
+                    <span class="pound">&pound;</span><span class="line-total">1999.98</span>
+                </div>
             </div>
-            <div class="mini-check-final-price">
-                <span class="pound">&pound;</span>55.80
+            <!-- row end -->
+            
+             <!-- row start -->
+            <div class="mini-basket-row">
+                <div class="mini-product-image">
+                    <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
+                </div>
+                <div class="mini-product-description">
+                    <ul class="check-item-item">
+                        <li class="check-row-product-name">SIS Rego Rapid 
+                        </li>
+                        <li class="clear grey">#002962
+                        </li>
+                        <li class="">Selection: <span class="grey clear">1.6kg (6 servings), Again, quite long</span>
+                        </li>
+                        <li class="">Flavour: <span class="grey">Strawberry</span>
+                        </li>
+                        <li class="">Price: <span class="pound grey">&pound;</span><span class="grey">999.99</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-update">
+                   <label>Qty:</label>
+                   <input type="text" name="product-amount" size="3" value="2"> 
+                </div>
+                <div class="mini-check-final-price">
+                    <del><span class="pound">&pound;</span><span class="line-total">1999.98</span></del><br />
+                    <span class="pound">&pound;</span><span class="line-total">1500.00</span>
+                </div>
             </div>
-        </div>
+            <!-- row end -->
+            
+                     <!-- row start -->
+            <div class="mini-basket-row">
+                <div class="mini-product-image">
+                    <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
+                </div>
+                <div class="mini-product-description">
+                    <ul class="check-item-item">
+                        <li class="check-row-product-name">SIS Rego Rapid
+                        </li>
+                        <li class="clear grey">#002962
+                        </li>
+                        <li class="">Selection: <span class="grey clear">1.6kg (6 servings), Again, quite long</span>
+                        </li>
+                        <li class="">Flavour: <span class="grey">Strawberry</span>
+                        </li>
+                        <li class="">Price: <span class="pound grey">&pound;</span><span class="grey">19.99</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item-update">
+                   <label>Qty:</label>
+                   <input type="text" name="product-amount" size="3" value="3"> 
+                </div>
+                <div class="mini-check-final-price">
+                    <span class="pound">&pound;</span><span class="line-total">59.97</span>
+                </div>
+            </div>
+            <!-- row end -->
+            
+            
         
-        <div class="mini-basket-row">
-            <div class="mini-product-image">
-                <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
-            </div>
-            <div class="mini-product-description">
-                <ul class="check-item-item">
-                    <li class="check-row-product-name">SIS Rego Rapid Recovery
-                    </li>
-                    <li class="clear grey">#002962
-                    </li>
-                    <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
-                    </li>
-                    <li class="">Flavour: <span class="grey">Strawberry</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="item-update">
-                <form class="mini-check-amounts" method="post" action="#">
-                    <input type="text" name="product-amount" size="7" value="12634"> 
-                    <button class="remove-button">Remove</button> 
-                    <button class="text-button">Update</button>
-                </form>
-            </div>
-            <div class="mini-check-final-price">
-                <span class="pound">&pound;</span>55.80
-            </div>
-        </div>
-        
-        <div class="mini-basket-row">
-            <div class="mini-product-image">
-                <img src="../img/dummy/product-mini.png" height="56" width="53" alt="product image" title="Product image" />
-            </div>
-            <div class="mini-product-description">
-                <ul class="check-item-item">
-                    <li class="check-row-product-name">SIS Rego Rapid Recovery
-                    </li>
-                    <li class="clear grey">#002962
-                    </li>
-                    <li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span>
-                    </li>
-                    <li class="">Flavour: <span class="grey">Strawberry</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="item-update">
-                <form class="mini-check-amounts" method="post" action="#">
-                    <input type="text" name="product-amount" size="7" value="0"> 
-                    <button class="remove-button">Remove</button> 
-                    <button class="text-button">Update</button>
-                </form>
-            </div>
-            <div class="mini-check-final-price">
-                <span class="pound">&pound;</span>55.80
-            </div>
-        </div>
-     </div>
-     still need to add all of the bottom section and the prices in their different formats
+         </div>
+         <div id="mini-basket-offers">	
+         
+         	 <div class="mini-basket-offer-row">
+             	<div class="mini-basket-offer-name">Free SiS shaker with every 1.6kg size protein shakes</div>
+                <div class="mini-basket-offer-discount">- <span class="pound">&pound;</span><span class="line-total">555.99</span></div>
+                <div style="clear:both"></div>
+             </div>
+             
+              <div class="mini-basket-offer-row">
+             	<div class="mini-basket-offer-name">Free Delivery for orders over <span class="pound">&pound;</span>40</div>
+                <div class="mini-basket-offer-discount">- <span class="pound">&pound;</span><span class="line-total">6.00</span></div>
+                <div style="clear:both"></div>
+             </div>
+             
+             <div class="mini-basket-offer-row">
+             	<div class="mini-basket-update">
+                	<span class="promo-labelo">Promotion code:</span>
+                	<input type="text" name="promo-code" size="10" value="FreeDel13"> 
+                    <div class="mini-basket-update-button">
+                    	<input type="submit" value="Update">
+                    </div>
+                </div>
+                
+                <div style="clear:both"></div>
+             </div>
+             
+             <div class="mini-basket-offer-row">
+             	<div class="mini-basket-offer-name">Basket Sub Total</div>
+                <div class="mini-basket-offer-discount"><span class="pound">&pound;</span><span class="line-total">3619.92</span></div>
+                <div style="clear:both"></div>
+             </div>
+             
+             <div id="mini-checkout-btn"><a class="cta-btn _150" href="#" title="CTA"><span>Checkout</span></a></div>
+             <div style="clear:both"></div>
+
+         </div>
+         
+         
+         
+     	
+     </form>
+     <div style="clear:both"></div>
+     
 </div>
