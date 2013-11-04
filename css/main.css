@@ -109,12 +109,14 @@ select{}
 #search-box-bg{position:absolute; right:15px; top:50px;}
 #search-box input{border:0; padding:5px; background:none; width:225px; color:#656565;}
 #top-search-glass{position:absolute; top:4px; right:4px; padding:5px; cursor:pointer}
+#ajax-menu-container{top:99px; right:15px; position:absolute; z-index:9999; color:#171717; display:none}
+.xclose{float: right; padding: 10px 10px 0 0; cursor:pointer}
 
 /*menu*/
 #main-menu{top:66px; left:170px; position:absolute;}
 .ul-1, .ul-2{margin-left:-25px}/*use -40px for 0 offset*/
 .ul-0{padding:10px;}
-#mega-dropdown{text-transform:uppercase; font-size:0.7em;  background-color: #000; background-color:rgba(23, 23, 23, 0.95);  *background-color: #000; position: absolute;left: 15px;top: 99px;width: 994px; display:none; z-index:9999}
+#mega-dropdown{text-transform:uppercase; font-size:0.7em;  background-color: #000; background-color:rgba(23, 23, 23, 0.95);  *background-color: #000; position: absolute;left: 15px;top: 99px;width: 994px; display:none; z-index:999}
 #mega-dropdown ul {list-style-type:none; line-height:15px;}
 #mega-dropdown a, #account-menu a{text-decoration:none}
 .top-level{font-size:0.7em; text-decoration:none; padding:5px; text-transform:uppercase}
@@ -523,7 +525,7 @@ div:first-child + div >div.check-item-image{
 /**********************************************************/
 
 /*category listing template*/
-#breadcrumb{height:31px; background-image:url(../img/ui/bread-crumb-bg-grad.gif); background-repeat:repeat-x; lineheight:31px; padding-left:15px;}
+#breadcrumb{height:31px; background-image:url(../img/ui/bread-crumb-bg-grad.gif); background-repeat:repeat-x; line-height:31px; padding-left:15px;}
 #breadcrumb a{font-size:0.7em; line-height:31px}
 #category-wysiwyg{margin:45px}
 #category-wysiwyg p{color:#9e9e9e; font-size:0.9em; line-height:1.5em}
@@ -536,5 +538,45 @@ div:first-child + div >div.check-item-image{
 .category-title{margin:5px 0}
 .category-blurb{margin:0 15px 0 0}
 
+
+/**********************************************************/
+
+/*mini basket component */
+#mini-basket-component{width:466px; text-transform:uppercase; font-size:0.7em;  background-color: #f6f6f6;background-image:url(../img/ui/header-gradient.png); background-repeat:repeat-x}
+.mini-basket-header{padding:10px;}
+#mini-product{float:left}
+#mini-total{float:right; width:80px}
+.mini-basket-row{padding:15px 0 15px 15px; overflow:auto; border-top:1px gray dotted; }
+.mini-product-image{height:80px; width:80px; position:relative; float:left}
+.mini-product-image img{ position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
+.mini-product-description, .item-update, .mini-check-amounts{float:left}
+.item-update{width:70px}
+.mini-product-description ul{margin: 0 0 0 -30px;}
+.mini-check-amounts{margin:10px 0 0 0}
+.mini-check-amounts input {border: 0;background: #dddddd;padding: 4px; text-align: center;}
+.mini-check-final-price{/*font-size: 18px;color: #9e9e9e;*/width:60px; float: left; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif; margin: 0px 10px 0 10px; padding:4px}
+#mini-basket-items{max-height:400px; overflow-y:auto}
+/* webkit users get a nicer scroll bar */
+.scroll::-webkit-scrollbar {width: 12px;}
+.scroll::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); border-radius: 10px;background-color:#1e1e1e;}
+.scroll::-webkit-scrollbar-thumb {border-radius: 10px;-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); background-color:gray;}
+
+#mini-basket-offers{padding:15px 30px 5px; background-color:/*#1e1e1e*/#e9e9e9; /*color:#a4a4a4;*/ margin-top:10px}
+.mini-basket-offer-name{width: 290px;float: left;margin-right: 42px;}
+.mini-basket-offer-discount{float:right; margin-right:10px; padding:0 0 15px}
+.mini-basket-update{float:right; margin-right:0px;padding:0 0 10px; width:406px}
+.mini-basket-offer-row{margin-top:10px}
+.promo-labelo{padding-right:10px}
+.mini-basket-offer-row input{border:0;font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif; font-weight:bold; line-height:27px; padding:0}
+.mini-basket-offer-row input[type=submit] {width: 110px;background: #FEEA00 url(../img/ui/sign-up.gif);color: #1c1800;padding: 0 25px 0 0; margin:0; line-height:27px; height: 27px;}
+.mini-basket-update-button{float:right}
+._150{width:150px}
+._110{width:110px}
+#mini-checkout-btn{float:right}
+#mini-checkout-btn a{margin-top:10px}
+.line-total{font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif; }
+.dropshadow {height:20px; margin: -1px 0 0 0;}
+.dropshadow img{width:100%; height:10px}
+#mini-basket-component hr {border-style:dotted; border-color:gray; border-width:1px}
 
 /**********************************************************/

@@ -51,9 +51,31 @@ jQuery(
 			menu(menuId);
 		});
 		
-		//bind
-		jQuery('.basket-over').mouseover(function(){
+		//bind mini basket and search components
+		//load
+		jQuery('.basket-over').on('mouseenter', function(e){
+			loadMiniBasket()
 		});
+				
+		//unload
+		jQuery(document).on( 'click', '.xclose', function(e) {
+			jQuery('#ajax-menu-container').clearQueue().slideToggle(500, function(){
+				jQuery(this).html('');
+				//rebind
+				jQuery('.basket-over').on('mouseenter', function(e){
+					loadMiniBasket()
+				});
+			});
+        });
+		
+		function loadMiniBasket(){
+			jQuery('#ajax-menu-container').load('mini-basket-component.html', function(){
+				jQuery('#ajax-menu-container').clearQueue().slideToggle(500);
+				//unbind
+				jQuery('.basket-over').off();
+			});
+		}
+		
 		
 		//clear floats so next row vertically aligns left and top properly (every fourth sub-menu cat.)
 		jQuery('.ul-1').each(function(){
