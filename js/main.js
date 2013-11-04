@@ -51,6 +51,10 @@ jQuery(
 			menu(menuId);
 		});
 		
+		//bind
+		jQuery('.basket-over').mouseover(function(){
+		});
+		
 		//clear floats so next row vertically aligns left and top properly (every fourth sub-menu cat.)
 		jQuery('.ul-1').each(function(){
 			//for each subcat
