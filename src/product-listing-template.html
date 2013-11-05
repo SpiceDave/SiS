@@ -1,3 +1,4 @@
+<style>
 @charset "UTF-8";
 
 /* @license
@@ -65,7 +66,7 @@
 ****************/
 
 /*body*/
-body{margin:0; background:#E4EBEB; font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
+body{margin:0; background:#E0E0C0; font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
 p{font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
 
 /*headings*/
@@ -580,3 +581,77 @@ div:first-child + div >div.check-item-image{
 #mini-basket-component hr {border-style:dotted; border-color:gray; border-width:1px}
 
 /**********************************************************/
+/* new styles */
+#product-listing-content{margin:25px 45px;}
+#dd-filter select {float: left; background: transparent; border: none; height: 30px; border-radius: 0; padding: 5px 5px 5px 10px; margin-left: 2px; background: #dddddd url(../img/ui/dropdown-arrow.png) no-repeat -1px 0px; -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ""; width: 119px;background-position: -151px 0;margin-left: 0px;}
+#group-title{width:300px; float:left}
+#prod-list-info{width:500px; float:right; text-align:right}
+#prod-list-wysiwyg{line-height:0.5em}
+#prod-list-pagination{text-transform:uppercase}
+</style>
+<!-- category listing content -->
+<div id="breadcrumb" class="grey">
+	<div>
+    	<a href="#" title="home"><span class="higher-level grey">Home</span></a> &raquo; 
+        <a href="#" title="home"><span class="higher-level grey">SiS Rego Range</span></a> &raquo; 
+        <a href="#" title="Sponsorshop &amp; Partners"><span class="this-level dark-gray">SiS Rego Rapid Recovery range</span></a>
+   </div>
+</div>
+
+<div id="product-listing-wrapper">
+    <div id="ad-title-space">
+        <div id="checkout-ad" class="check-advert">
+            <img src="../img/dummy/header-advert-zone.jpg" alt="SiS advertisement" width="994" height="244">
+        </div>
+        <h1 class="near-black">
+            SiS Online Store
+        </h1>
+        <p class="h1-sub-heading grey">Free Delivery on all UK orders</p>
+    </div>
+    <div id="grey-bg-wrapper">
+      <div id="product-listing-content">
+      		<p>Sort:</p>
+            <div id="dd-filter">
+            	<select id="filter-products" name="filter-products">
+                    <option value="address1">By Name</option>
+                    <option value="address2">By Price</option>
+                </select>
+            </div>
+            <div style="clear:both"></div>
+            <div id="prod-list-wysiwyg">
+            	<div id="group-title"><h3>SiS Rego Rapid Recovery</h3></div>
+                <div id="prod-list-info"><p>Satisfaction Guaranteed</p><p class="small grey">If you aren’t happy with your purchase just return it for a full refund</p></div>            </div>
+            <div style="clear:both"></div>
+            <div id="prod-list-pagination">
+            	Pagination to do, don't forget to change top image...
+            </div>
+      </div>
+    </div><!-- end of grey bg area -->
+    
+
+    
+    
+    
+    <!-- section -->
+    <div class="_410-15-569 social non-home">
+        <div class="_410 left">
+            <div class="adzone lineheight-fix"><iframe height="150px" width="410px" scrolling="no" frameborder="0"  src="http://54.247.98.191/SiS-Tweets/twitter-feed-parser.php/"></iframe></div>
+            <div class="h-divider"></div>
+            <div class="_410 adzone facebook-box">
+            	<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.scienceinsport.com%2F&amp;width=200&amp;height=40&amp;colorscheme=light&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;send=false&amp;appId=171140663088738" allowtransparency="true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:40px;" ></iframe>
+           	</div>
+        </div>
+        <div class="_15 left"></div>
+        <div class="_569 adzone text-overlaid left">
+            <a href="#" title="Advert Zone"><img src="../img/dummy/ad-568x315px.jpg" height="315" width="569" alt="Advert Zone"/></a>
+            <div class="ad-text">
+                 <h2><a href="#" title="Advert Zone"><span class="yellow">Shop SiS</span></a></h2>
+                 <h3><span class="white">Leaders in Endurance Nutrition</span></h3>
+                 <h4><span class="white">Explore our full range to find the product that best suits your individual nutritional needs.</span></h4>
+                 <a class="cta-btn _184" href="#" title="CTA" ><span>Shop Now!</span></a>
+            </div>
+        </div>
+    </div>
+	<!-- /section -->
+
+</div>
