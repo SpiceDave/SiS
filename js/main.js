@@ -99,8 +99,12 @@ jQuery(
 			jQuery('#mega-dropdown').slideUp(100, function(){});
 		})
 		
-		//bind the rollovers for the mini-basket **************TODO*****************
-		jQuery('.basket-over').hover(function(){/*show the mini basket*/}, function(){/*hide the mini basket*/});
+		//buy button overlay
+		jQuery(document).on( 'submit', '#products-form', function(event) {
+			alert('Quick buy overlay to build'); 
+			event.preventDefault();
+        });
+		
 	}		
 );
 
