@@ -54,7 +54,7 @@ jQuery(
 		//bind mini basket and search components
 		//load
 		jQuery('.basket-over').on('mouseenter', function(e){
-			loadMiniBasket()
+			loadMiniBasket();
 		});
 				
 		//unload
@@ -69,10 +69,10 @@ jQuery(
         });
 		
 		function loadMiniBasket(){
+			//unbind
+			jQuery('.basket-over').off();
 			jQuery('#ajax-menu-container').load('mini-basket-component.html', function(){
 				jQuery('#ajax-menu-container').clearQueue().slideToggle(500);
-				//unbind
-				jQuery('.basket-over').off();
 			});
 		}
 		
