@@ -582,7 +582,7 @@ div:first-child + div >div.check-item-image{
 #search-results-content .results-label { font-family: HelveticaNeueCE-Bold; float:left; }
 #search-results-content .results-code-box { display: block; float: left; }
 #search-results-content .results-input { height: 27px; line-height:27px; background-color: #dddddd; border: 1px solid #cacaca; margin:0}
-#search-results-content .yellow-button { background: transparent url(../img/ui/button.png) 0px 14px no-repeat; height: 62px; top:0px; font-family: HelveticaNeueCE-Bold; width: 157px; margin-left: -7px; text-align: left; padding-left: 15px; cursor:pointer; border:0}
+#search-results-content .yellow-btn { background: transparent url(../img/ui/button.png) 0px 14px no-repeat; height: 62px; top:1px; font-family: HelveticaNeueCE-Bold; width: 157px; margin-left: -7px; text-align: left; padding-left: 40px; cursor:pointer; border:0; position:relative}
 
 
 
@@ -637,3 +637,9 @@ div:first-child + div >div.check-item-image{
 .product-display-box-b .product-info-container-b{float:left; width: 280px;}
 .product-display-box-b .product-promo-icon-b{position:absolute; top:10px; left:10px}
 .product-display-box-b .product-buttons-b{position:absolute; bottom:25px}
+
+
+/* firefox tweeks */
+@-moz-document url-prefix() {
+	#search-results-content .yellow-btn {top:2px;}
+}
