@@ -100,10 +100,13 @@ jQuery(
 		})
 		
 		//buy button overlay
-		jQuery(document).on( 'submit', '#products-form', function(event) {
+		jQuery(document).on( 'submit', '#products-form, #products-search-form', function(event) {
 			alert('Quick buy overlay to build'); 
 			event.preventDefault();
         });
+		
+		/*tabs*/
+		jQuery('#tab-container').easytabs();
 		
 	}		
 );

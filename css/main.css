@@ -56,7 +56,9 @@
 .red {color: #ff0055;}
 
 .small{font-size: 12px;}
+.bold{font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
 .right{text-align:right}
+.centered{text-align:center}
 
 
 /****************
@@ -603,6 +605,38 @@ div:first-child + div >div.check-item-image{
 #search-results-content .article-excerpt{line-height:18px; margin:30px 0;}
 .bottom-page-spacer{height:30px}
 
+/* product page */
+#product-container{margin:0px 45px 45px 45px}
+#product-container #add-this-component{width:200px; height:32px; float:right; background-color:#999999;margin-top: -30px;}
+#product-container h3{margin:0}
+#product-container .product-top-info{width:55%; float:left;margin-top:30px}
+#product-container .product-top-wysiwyg{width:40%; float:right; text-align:right;margin-top:40px}
+#dd-product-selectors select {float: left; background: transparent; border: none; height: 30px; border-radius: 0; padding: 5px 5px 5px 0px; margin-left: 2px; background: #dddddd url(../img/ui/dropdown-arrow.png) no-repeat -1px 0px; -webkit-appearance: none; -moz-appearance: none; text-indent: 0.01px; text-overflow: ""; width: 144px;background-position: -126px 0;margin-left: 0px;margin-bottom:20px;margin-right:15px; padding-right:10px}
+#dd-product-selectors .yellow-btn { background: transparent url(../img/ui/button.png) 0px 14px no-repeat; height: 62px; top:1px; font-family: HelveticaNeueCE-Bold; width: 157px; margin-left: -5px; text-align: left; padding-left: 12px; cursor:pointer; border:0; position:relative}
+#product-container .product-shot-column, #product-container .product-info-column{width:445px; float:left; margin:45px 0;}
+#product-container .product-shot-column {background-repeat: no-repeat;background-image: url('../img/ui/prod-v-div.png');background-position: 447px 0px; padding-right:22px }
+#product-container .product-info-column{padding-left:22px}
+#product-container .product-shot {position:relative; height:420px}
+#product-container .product-shot img {position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;}
+#product-container  h1{margin:0 0 10px; font-size:22px}
+#product-container  #product-ad-zone{width:445px}
+#product-container  .now{font-size:22px;}
+#product-container .product-info-column p, #product-container .product-info-column li{font-size:13px}
+#product-container .product-info-column li{margin-left:-15px}
+#product-container #dd-product-selectors p{margin:0 auto}
+#product-container .product-input { height: 31px; line-height:31px; background-color: #dddddd; border: 1px solid #cacaca; margin:0; text-align:center}
+#cross-sell{background-image:url(../img/ui/lower-bg-grad.png); background-repeat:repeat-x; background-color:#E9E9E9; padding:45px}
+#cross-sell h2 {margin:0}
+
+/* Tabs section */
+.etabs { margin: 0; padding: 0; }
+.tab { display: inline-block; zoom:1; *display:inline; background: #eee; border: solid 1px #999; border-bottom: none; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; }
+.tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 10px; outline: none; }
+.tab a:hover { text-decoration: underline; }
+.tab.active { background: #fff; padding-top: 6px; position: relative; top: 1px; border-color: #666; }
+.tab a.active { font-weight: bold; }
+.tab-container .panel-container { background: #fff; border: solid #666 1px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
+
 /**
 * product display box A styles
 **/
@@ -619,6 +653,7 @@ div:first-child + div >div.check-item-image{
 .product-display-box-a .product-price-a{padding-bottom:4px; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
 .product-display-box-a .product-info-container-a{position:absolute; bottom:0px; width: 210px;}
 .product-display-box-a .product-promo-icon-a{position:absolute; top:13px; right:45px}
+
 
 /**
 * product display box B styles
@@ -637,6 +672,7 @@ div:first-child + div >div.check-item-image{
 .product-display-box-b .product-info-container-b{float:left; width: 280px;}
 .product-display-box-b .product-promo-icon-b{position:absolute; top:10px; left:10px}
 .product-display-box-b .product-buttons-b{position:absolute; bottom:25px}
+
 
 
 /* firefox tweeks */

@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-.ul-2, .footer-column ul{
+.ul-2, .footer-column ul, #product-container .product-info-column li{
 	margin-left:15px;
 }
 
