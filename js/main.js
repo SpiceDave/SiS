@@ -105,8 +105,7 @@ jQuery(
 			event.preventDefault();
         });
 		
-		/*tabs*/
-		jQuery('#tab-container').easytabs();
+		
 		
 	}		
 );
