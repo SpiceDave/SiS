@@ -1,0 +1,971 @@
+/** working copy of other checkout pages css**
+*********************************************/
+
+/*temporary and testing*/
+
+/*hiding overlays*/
+#edit-address-overlay, #add-address-overlay{
+	display: none;
+}
+
+/*global*/
+a.link{color: #000000; cursor: pointer;}
+a.link:hover{text-decoration:underline;}
+button{	cursor:pointer;}
+.margin-top-30{	margin-top: 30px;}
+.margin-top-none{margin-top: 0;}
+.crossed{text-decoration: line-through;}
+.bottom-border{border-bottom: 1px dotted #9e9e9e}
+.bold {font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
+.float-right{float: right;}
+
+/* fonts */
+.row-title{ border-bottom: gray dotted 1px;font-size: 16px;font-family: HelveticaNeueCE-Bold;}
+
+h2{
+	font-family: HelveticaNeueCE-Bold;
+	font-size: 24px;
+}
+.crossed {
+    position: relative;
+	text-decoration: line-through;
+}
+.crossed::after {
+    border-bottom: 2px solid #000000;
+	content: "";
+	right: 0;
+	position: absolute;
+	top: 11px;
+	width: 55px;
+}
+
+/*************
+Form Styles 
+*************/
+
+/** radio buttons **/
+input[type="radio"], #members-checkout-delivery input[type="radio"], 
+#register-newsletter input[type="radio"], #non-members-checkout-delivery input[type="radio"],
+#my-account-register-form input[type="radio"] {
+	background: #f6f6f6 url(../img/ui/radio-button-sprite.png) 53px -3px;
+	-webkit-appearance: none;
+	border: 1px none #ffffff ;
+	width: 12px;
+	height: 12px;
+}
+#members-checkout-delivery input[type="radio"], #non-members-checkout-delivery input[type="radio"]{
+	background-position: 53px -13px;
+	margin-top: 24px;
+}
+
+
+
+input[type="radio"]:checked{
+	background-position: 22px -3px;
+}
+
+#members-checkout-delivery input[type="radio"]:checked,
+#non-members-checkout-delivery input[type="radio"]:checked,
+#my-account-register-form input[type="radio"]:checked
+{
+	background-position: 22px -13px;
+}
+
+/*image styles*/
+.med-image{ width:80px; }
+
+/*button styles*/
+.yellow-button-wide{
+	background: transparent url(../img/ui/wide-button.png) 0px 14px no-repeat;
+	border: 0;
+	height: 60px;
+	font-family: HelveticaNeueCE-Bold;
+	width: 218px;
+	margin-top: -14px;
+	margin-left: -5px;
+	text-align: left;
+	padding-left: 15px;
+}
+
+/*** TODO consolidate this with the class in main.css ***/
+
+.yellow-button {
+	background: transparent url(../img/ui/button.png) 0px 14px no-repeat;
+	height: 60px;
+	font-family: HelveticaNeueCE-Bold;
+	width: 157px;
+	margin-left: -5px;
+	text-align: left;
+	padding-left: 15px;
+	border: none;
+}
+
+a.yellow-button{
+	color: #000000;
+	height: 52px;
+	float: left;
+	clear: both;
+	background-position: 0 7px;	
+}
+
+.promo-code-box .yellow-button{
+	margin-top: 7px;
+}
+
+
+
+a.text-button {
+	color: #000000;
+}
+a.text-button:hover{
+	text-decoration: underline;
+}
+
+
+p.dotted-line{
+	clear: both;
+	border-bottom: #9e9e9e 1px dotted;
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 8px;
+}
+
+
+/*error + notification message styles*/
+.error{
+	color:#ff0055;
+	font-size: 12px;
+	padding: 15px 0;
+}
+.success{
+	font-size: 14px;
+}
+
+/**checkout header and footer**/
+
+/** setting margins **/
+#grey-bg-wrapper{
+	padding: 10px 45px 10px 45px;
+}
+#checkout-breadcrumb-menu{
+	font-size:14px;
+	font-color: #9e9e9e;
+	font-family: HelveticaNeueCE-Bold;
+	margin: 30px 0;
+}
+
+#checkout-breadcrumb-menu .current{
+	font-color: #000000;
+}
+
+/* wrapper for login and signup boxes */
+#checkout-login-signup, #my-account-login-signup{
+	margin: 30px 120px;
+	font-size: 14px;
+	clear: both;
+}
+
+/** TODO  merge this and make it good - find out why it was too large in main.css **/
+#basket .check-items{
+	margin: 0 45px;
+}
+
+#checkout-login-signup input, #checkout-forgot-password input, 
+#account-forgot-password input, #add-address-overlay input,
+#my-account-login-signup input{
+	height: 25px;
+	background-color: #dddddd;
+	border: 1px solid #cacaca;
+	padding: 2px;
+	float: right;
+	margin-bottom: 15px;
+}
+#checkout-login-signup button, #my-account-login-signup button,
+ #add-address-overlay button,
+#edit-address-overlay button{
+	clear: both;
+	float: right;
+
+}
+#checkout-login-signup label, #my-account-login-signup label,
+ #checkout-forgot-password label, #account-forgot-password label,
+#add-address-overlay label{
+	line-height: 31px;
+	height: 31px;
+	display: block;
+	float: left;
+	margin-bottom: 15px;
+	clear: right;
+}
+	
+.checkout-pages .payment-cards-box{
+	margin: 135px 0 0 0;
+}
+
+/*customer login*/
+.checkout-login{
+	float: left;
+	width: 317px;
+	clear: left;
+	padding-right: 30px;
+}
+
+.new-and-guest-wrapper{
+	float: left;
+	width: 316px;
+	border-left: 1px dotted #9e9e9e;
+	padding-left: 30px;
+	height: 450px;
+}
+
+.checkout-signup{
+	padding-bottom: 30px;
+	overflow: hidden;
+}
+
+.guest-login{
+	border-top: 1px dotted #9e9e9e;
+	clear: both;
+	padding-top: 15px;
+}
+
+/*Forgotten Password*/
+#checkout-forgot-password, #account-forgot-password {
+	font-size: 14px;
+	clear: both;
+	margin: 0 30px;
+}
+
+#checkout-forgot-password p #account-forgot-password p{
+	width: 330px;	
+	padding: 10px 0;
+}
+#checkout-forgot-password p.dotted-line, #account-forgot-password p.dotted-line{
+	width: 100%;
+}
+
+#checkout-forgot-password input, #account-forgot-password input{
+	float: left;
+	margin-left: 23px;
+}
+
+#checkout-forgot-password button, #account-forgot-password button{
+	clear: both;
+	float: left;
+	margin-top: 0;
+}
+
+
+
+
+/**********************
+Checkout Register Page
+********************/
+fieldset{
+	border: none;
+}
+
+#checkout-register, #my-account-register, #checkout-non-member{
+	clear: both;
+}
+
+#checkout-register-form, #my-account-register-form #non-member-delivery-form, #members-checkout-delivery,
+#non-members-checkout-delivery{
+	float: left;
+	width: 100%;
+}
+
+#checkout-register-form p, #my-account-register-form p, #my-account-register-form h3,
+ #checkout-register-form h3, #non-member-delivery-form p, #non-member-delivery-form h3{
+	float: left;
+	clear: both;
+}
+#checkout-register-form p, #my-account-register-form p, #non-member-delivery-form p,
+#add-address-overlay p, #edit-address-overlay p{
+	font-size: 12px;
+}
+
+#checkout-register-form p.error, #my-account-register-form p.error, #non-member-delivery-form  p.error, 
+#members-checkout-delivery p.error,
+#edit-address-overlay p.error, #add-address-overlay p.error, #my-account-login-signup p.error{
+	padding: 0;
+	float: left;
+	margin-bottom: 0;
+	margin-left: 125px;
+}
+
+#checkout-register-form input, #my-account-register-form input, #non-member-delivery-form input, #members-checkout-delivery input,
+#edit-address-overlay input, #non-members-checkout-delivery input{
+	height: 25px;
+	background-color: #dddddd;
+	border: 1px solid #cacaca;
+	padding: 2px;
+	float: left;
+	margin-bottom: 15px;
+}
+#members-checkout-delivery input[type="radio"], #non-members-checkout-delivery input[type="radio"] {
+	border: none;
+}
+
+#checkout-register-form button, #non-member-delivery-form button,
+ #members-checkout-delivery button, #non-members-checkout-delivery button{
+	clear: both;
+	float: left;
+}
+
+#checkout-register-form select, #my-account-register-form select, #non-member-delivery-form select, 
+#members-checkout-delivery select, #add-address-overlay select, #returns-form select,
+#edit-address-overlay select{
+	float: left;
+	background: transparent;
+	border: none;
+	height: 30px;
+	border-radius: 0;
+	padding: 5px 5px 5px 10px;
+	width: 269px;
+	margin-left: 2px;
+	background: #dddddd url(../img/ui/dropdown-arrow.png) no-repeat -1px 0px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	text-indent: 0.01px;
+ 	text-overflow: "";
+}
+
+#checkout-register-form label, #non-member-delivery-form label, 
+#members-checkout-delivery label, #add-address-overlay label,
+#edit-address-overlay label, #non-members-checkout-delivery label,
+#my-account-register-form label{
+	line-height: 31px;
+	height: 31px;
+	display: block;
+	float: left;
+	margin-bottom: 15px;
+	clear: both;
+	width: 125px;
+	font-size: 12px;
+}
+
+.register-form-your-details{
+	float: left;
+	width: 400px;
+	padding: 0 30px;
+
+}
+
+.register-form-delivery{
+	float: left;
+	padding: 0 30px;
+	border-left: #000000 1px dotted;
+}
+
+#checkout-register-form h3, #my-account-register-form h3, #non-member-delivery-form h3 {
+	width: 379px;
+	margin-bottom: 0;
+	font-size: 18px; /* same as h3*/
+}
+
+#checkout-register-form h3 label, #non-member-delivery-form h3 label, #my-account-register-form h3 label{
+	font-size: 18px;
+	width: auto;
+	margin-bottom: 0;
+}
+
+input#register-signup-newsletter, input#account-register-signup-newsletter{
+	margin-bottom: 0;
+	margin-top: 20px;
+}
+
+
+#checkout-register-form .yellow-button-wide, #non-member-delivery-form .yellow-button-wide,
+#delivery-info-form .yellow-button-wide{
+	float: right;
+}
+
+/** temporarily hiding error messages **/
+.error{
+	display: none;
+	clear: both;
+	float: left;
+}
+
+/*** newsletter section ***/
+#register-newsletter, #account-register-newsletter{
+	float: left;
+	clear: both;
+	width: 407px;	
+	border-top: dotted 1px #000000;
+}
+
+#register-newsletter legend, #account-register-newsletter legend{
+	color: #9e9e9e;
+	font-size: 14px;
+	padding: 12px 0 5px 0;
+	height: 14px;
+}
+
+#register-newsletter input[type="radio"], #account-register-newsletter input[type="radio"] {
+	float: left;
+	clear: none;
+	margin-right: 17px;
+	margin-bottom: 0;
+	height: 18px;
+	background-position: 53px -11px;
+}
+#register-newsletter input[type="radio"]:checked, #account-register-newsletter input[type="radio"]:checked{
+	background-position: 22px -11px ;
+}
+
+#register-newsletter label, #account-register-newsletter label {
+	width: auto;
+	padding: 0 3px 0 0;
+	clear: none;
+	height: auto;
+	line-height: 24px;
+	margin-bottom: 0;
+}
+
+#register-newsletter fieldset, #account-register-newsletter fieldset{
+	width: 400px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+/******************************
+members delivery options page
+******************************/
+#members-checkout-delivery, #non-members-checkout-delivery{
+	border-top: dotted 1px #9e9e9e;
+	border-bottom: dotted 1px #9e9e9e;
+	font-size: 14px;
+}
+
+.mem-check-product-info{
+	width: 390px;
+	float: left;
+}
+
+.mem-check-choose-delivery {
+	width: 230px;
+	float: left;
+	padding: 20px 15px;
+	border-left: solid 1px #9e9e9e;
+	border-right: solid 1px #9e9e9e;
+	height: 370px;
+}
+
+.mem-check-choose-delivery p{
+	clear: both;
+	float: left;
+	padding: 20px 15px;
+	border-bottom: dotted 1px #9e9e9e;
+	width: 200px;
+}
+
+.mem-check-delivery-type{
+	width: 262px;
+	padding: 33px 0 20px 20px;
+	float: left;
+}
+
+#members-checkout-delivery .mem-check-delivery-type input, #members-checkout-delivery .mem-check-delivery-type label,
+#non-members-checkout-delivery .mem-check-delivery-type input, #non-members-checkout-delivery .mem-check-delivery-type label{
+	margin-top: 0;
+}
+
+/* overwrites rule set above*/
+#members-checkout-delivery .mem-check-delivery-type input[type="radio"], #non-members-checkout-delivery .mem-check-delivery-type input[type="radio"]{
+	margin-top: 11px;
+}
+
+
+#members-checkout-delivery label, #non-members-checkout-delivery label{
+	clear: none;
+	margin-top: 14px;
+	width: auto;
+	margin-bottom: 0;
+	margin-left: 8px;
+	font-size: 14px;
+}
+#members-checkout-delivery input, #non-members-checkout-delivery input{
+	clear: both;
+	margin-top: 14px;
+	margin-bottom: 0;
+}
+.mem-check-delivery-type textarea{
+	float: left;
+	width: 231px;
+	border-color: #cccccc;
+	margin: 0 0 0 25px;
+	resize: none;
+}
+
+#members-checkout-delivery .text-button, 
+#non-members-checkout-delivery .text-button{
+	float: left;
+	color: #000;
+	margin-left: 25px;
+	font-size: 14px;
+}
+
+#members-checkout-delivery select{
+	width: 189px;
+	background-position: -81px 0;
+	margin-left: 25px;
+}
+
+#selected-delivery{
+	margin-bottom: 15px;
+}
+
+#delivery-info-form .yellow-button-wide{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#delivery-info-form .black-button, #checkout-payment .black-button{
+	margin: 24px 0;
+}
+
+#delivery-info-form{
+	border-top: dotted 1px #9e9e9e;
+	float: left;
+	clear: both;
+}
+
+#delivery-info-form .instructions{
+	float: left;
+	line-height: 48px;
+}
+
+/* spacing for the product info on delivery page*/
+.mem-check-product-info ul{
+	list-style-type: none;
+	padding: 0;	
+}
+
+.mem-check-product-info .check-item-image{
+	width: 109px;
+}
+
+.mem-check-product-info .check-item-item{
+	width: 83px;
+	padding: 30px 10px 0 0;
+}
+
+.mem-check-product-info .item-quantity-info,
+.mem-check-product-info .item-availability{
+	width: 74px;
+	float: left;
+	padding: 30px 10px 0;
+}
+
+.mem-check-product-info .check-amounts{
+	padding: 0;
+	margin: 0;
+}
+
+#members-checkout-delivery label.text-area-title, #non-members-checkout-delivery label.text-area-title  {
+	margin:25px 0 0 25px;
+}
+
+.select-collect{
+	padding-top: 20px;
+	float: left;
+}
+
+/** add delivery overlay **/
+#add-address-overlay, #edit-address-overlay{
+	width: 1024px;
+	position: relative;
+	left: -45px;
+	top: -19px;
+	z-index: 20;
+	background: #f6f6f6;
+	overflow: auto;
+	/*display: none; hiding overlay*/
+}
+
+#add-address-overlay input{
+	float: left;
+}
+
+.add-delivery-address, .edit-delivery-address{
+	overflow: auto;
+	width: 400px;
+	margin: 0 auto;
+}
+
+.delivery-option-description{
+	margin-left: 25px;
+}
+
+
+/** checkout payment page */
+#checkout-payment, #order-confirm{
+	font-size: 12px;
+}
+
+#checkout-payment h2, #order-confirm h2{
+	border-bottom: dotted 1px #9e9e9e;
+	margin: 30px 0 0;
+}
+
+/* payment methods - left column*/
+/*also includes column widths for checkout order confirm*/
+
+#payment-methods{
+	width: 385px;
+	margin-right: 15px;
+}
+
+#payment-methods .yellow-button-wide{
+	float: right;
+}
+
+#payment-methods > div{
+	float: left;
+	clear: both;
+	width: 385px;
+}
+.previous-card{
+	width: 385px;
+	float: left;
+	clear: both;
+	padding: 10px 0;
+}
+
+.previous-card input[type="radio"]{
+	background-position: 53px -8px;
+	height:23px;
+	float: left;
+}
+
+.previous-card input[type="radio"]:checked{
+	background-position: 22px -8px;
+}
+.card-thumb{
+	width: 50px;
+	padding-left: 10px;
+	float: left;
+}
+ul.card-info {
+	list-style-type: none;
+	float: left;
+	padding-left: 10px;
+}
+
+.card-info li{
+	float: left;
+	padding-right: 10px;
+}
+/* payment basket - right column ***
+** also includes the column settings for order confirm page*/
+
+#payment-basket, #order-confirm-basket{
+	width: 519px;
+	margin-left: 15px;
+}
+
+#payment-basket .check-item-row, #order-confirm-basket .check-item-row{
+	height: 135px;
+}
+
+#payment-basket .check-items-title, #order-confirm-basket .check-items-title{
+	position: static;
+	margin-left: 0;
+	margin-top: 30px;
+}
+
+#payment-basket .item-title, #order-confirm-basket .item-title{
+	width: 302px;
+	padding-left: 0;
+}
+
+#payment-basket .quantity-title, #order-confirm-basket .quantity-title{
+	padding-left: 15px;
+	width: 85px;
+}
+
+
+#payment-basket .total-title, #payment-basket .check-final-price,
+#order-confirm-basket .total-title, #order-confirm-basket .check-final-price{
+	width: 78px;
+	padding-left: 15px;
+	text-align: right;
+}
+
+#payment-basket .check-item-image, #order-confirm-basket .check-item-image{
+	width: 107px;
+	margin-top: 10px;
+}
+
+#payment-basket .check-item-item, #order-confirm-basket .check-item-item{
+	width: 195px;
+}
+
+#payment-basket ul, #payment-basket .check-amounts, #payment-basket .check-final-price,
+#order-confirm-basket ul, #order-confirm-basket .check-amounts, #order-confirm-basket .check-final-price{
+	padding-left: 15px;
+	margin-top: 30px;
+}
+#payment-basket .check-amounts, #order-confirm-basket .check-amounts{
+	padding:0;
+	width: 85px;
+}
+
+#payment-basket .check-offer-name, #order-confirm-basket .check-offer-name{
+	margin-left: 0;
+	width: auto;
+}
+
+#payment-basket .check-final-price, #payment-basket .check-discount-amount,
+#order-confirm-basket .check-final-price, #order-confirm-basket .check-discount-amount{
+	color: #000000;
+	font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;
+}
+
+p.check-amounts{
+	text-align: center;
+}
+#payment-address{
+	width: inherit;
+	/* clear: both;  -- removing for newer layout */
+	float: left;
+	margin-bottom: 30px;
+}
+
+/** confirmation page **/
+.confirm-address{
+	width: 185px;
+	float: left;
+	padding-right: 15px;
+	line-height: 24px;
+	}
+	
+#order-confirm-info h3{
+	font-size: 16px;
+	font-family: HelveticaNeueCE-Bold;
+	border-bottom: dotted 1px #9e9e9e;
+	margin: 36px 0 0;
+}
+
+
+/** my account pages **/
+
+/* Making margins wider */
+.account-pages #grey-bg-wrapper{
+	padding: 10px 15px 40px 15px;
+}
+
+
+
+
+#my-account-login-signup p.error{
+	margin-left: 99px;
+}
+
+#my-account-login-signup label{
+	clear: both;
+}
+
+#my-account-login-signup .forgot-password{
+	float: left;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+#my-account-login-signup .new-and-guest-wrapper{
+	height: auto;
+}
+
+/** forgot password - my account page **/
+
+#account-forgot-password .instructions{
+	width: 350px;
+	line-height: 21px;
+}
+
+#account-forgot-password .black-button{
+	float: left;
+	clear: left;
+	margin-top: 14px;
+}
+
+#account-forgot-password .yellow-button-wide{
+	float: right;
+}
+
+/** My account navigation box **/
+.my-account-navigation{
+	color: #9e9e9e;
+	text-transform: uppercase;
+	list-style-type: none;
+	padding: 0;
+	line-height: 22px;
+	font-size: 12px;
+	margin: 30px 0 40px;
+	font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;
+}
+/** welcome paragraph **/
+.account-pages .welcome{
+	width: 600px;
+	line-height: 23px;
+	color: #9e9e9e;
+}
+
+.account-pages .notification{
+	margin-left: 30px;
+}
+
+#account-home{
+	margin: 0 30px;
+}
+
+/** settings for adspace at bottom of my account pages */
+
+
+.account-pages ._410-15-569.social{
+	padding-left: 15px;
+	padding-top: 15px;
+	background: #e9e9e9 url(../img/ui/ad-space-gradient.png) repeat-x 0 0;
+	width: auto;
+}
+
+/**my account order history **/
+
+#account-order-history .prod-list-pagination{
+	width: 100%;
+	float: left;
+	clear: both;
+	height: 16px;
+}
+
+#account-order-history .my-account-navigation{
+	margin: 30px 30px 40px 30px;
+}
+
+.history-list{
+	width: 994px;
+	float: left;
+	clear: both;
+}
+
+.history-list li{ 
+	float: left;
+	height: 55px;
+	line-height: 46px;
+}
+
+.history-list ul{
+	list-style-type: none;
+}
+
+.history-list a.yellow-button{
+	font-family: HelveticaNeueCE-Roman;
+}
+
+.order-history-titles{
+	background-color: #2a2a2a;
+	color: #ffffff;
+	height: 42px;
+	padding-left: 0;
+	text-align: center;
+	font-size: 14px;
+	font-family: HelveticaNeueCE-Bold;
+	line-height: 42px;
+}
+
+.order-history-items{
+	height: 55px;
+	padding-left: 0;
+	text-align: center;
+	line-height: 27px;
+	border-bottom: 1px dotted #9e9e9e;
+	font-size: 14px;
+}
+
+.order-history-titles li{background: transparent url(../img/ui/black-title-gradient.png) no-repeat;}
+.order-history-titles li:first-child{background: transparent none no-repeat;}
+.order-history-titles .history-order-number, .order-history-items .history-order-number{width: 232px;}
+
+.order-history-titles .history-date, .order-history-items .history-date{
+	width: 204px;
+}
+
+.order-history-titles .history-amount, .order-history-items .history-amount{
+	width: 192px;
+}
+
+.order-history-titles .history-status, .order-history-items .history-status{ width: 192px;} 
+
+/** account view previous order **/
+/** getting original cart view from basket-template styles **/
+#account-menu-delivery, #account-return-menu{ width: 255px; margin-left: 30px; }
+
+#history-order-basket h2{
+	font-size: 21px;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+#history-order-basket, #account-return-transaction{margin: 0 30px ; width: 619px; font-size:14px;}
+#history-order-basket .check-item-row{
+	margin: 30px 0 0;
+	height: 110px;
+}
+#history-order-basket .check-offer.row{width: 619px;
+float: left;
+clear: both;}
+/*My account view order page -settings for basket titles */
+#history-order-basket .check-items-title {margin-left: 0; font-size:16px; position: static; padding-bottom: 0; height: 23px; margin-top: 60px; }
+#history-order-basket .item-title{width: 310px;}
+#history-order-basket .price-title, #history-order-basket .quantity-title,
+#history-order-basket .total-title{width: 103px; padding-left: 0; text-align:center;}
+#history-order-basket .total-title{text-align:right;}
+/*My account view order page - settings for the basket rows -widths etc */
+#history-order-basket .check-item-product{width: 310px; float:left;}
+#history-order-basket .check-item-price, #history-order-basket .check-amounts, 
+#history-order-basket .check-final-price {float:left; width:103px; padding: 0; text-align:center;}
+#history-order-basket .check-final-price{text-align:right;}
+/*note: could be used globally if share basket code */
+.check-item-product img{
+	float:left;
+}
+.check-item-product ul{
+	float:left;
+}
+/*offer row*/
+#history-order-basket .check-offer-row{height: auto; float: left; clear: both; width: 619px;}
+#history-order-basket .check-offer-name {margin: 0;}
+
+
+#account-menu-delivery h3{font-size: 16px; font-family: HelveticaNeueCE-Bold;font-weight: normal;margin: 15px 0 5px;}
+#account-menu-delivery p{font-size: 12px; padding: 0;}
+
+#history-order-basket .check-item-row ul, #history-order-basket  .check-item-price, #history-order-basket  .check-delivery,
+#history-order-basket .check-item-price, #history-order-basket .check-amounts, #history-order-basket .check-final-price {
+margin-top: 10px;
+height: auto;
+}
+
+/*consignment delivery information*/
+#items-delivered{float:left; clear: both; width: 619px;}
+.delivery-information li, .delivery-information-title li{width: 154px; float:left; }
+.delivery-information li{padding: 4px 0;}
+.return-items{float:right; clear: both;}
+#items-delivered ul{list-style-type: none; padding: 10px 0; font-size: 12px; overflow: auto;}
+#items-delivered ul ul {padding: 0;}
+#items-delivered ul ul li:first-child{padding-top:0;}
+.delivery-information .consignment, .delivery-information-title .consignment{ width:208px;}
+.delivery-information .carrier, .delivery-information-title .carrier{width: 100px;}
+#items-delivered .black-button{ margin-top: 30px; float: left; line-height: 31px;}
+#items-delivered .check-items-title{margin-top: 0;}
+#items-delivered h2{margin-top: 80px; margin-bottom: 10px; text-transform: none;}
+
+/*returns*/
+#returns-form ul {float:left; list-style-type:none; padding:0;}
+#returns-form li {float:left; padding:0;}
+#returns-form select{width: 125px; background-position: top right}
+.return-items-title{width: 100%;}
+.return-items-title li, .return-items-row li{width: 206px;}
+

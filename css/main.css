@@ -54,7 +54,7 @@
 .grey {color: #9e9e9e;}
 .black{ color: #000000;}
 .red {color: #ff0055;}
-
+h1, h2, h3, h4, .near-black{color:#151515}
 .small{font-size: 12px;}
 .bold{font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
 .right{text-align:right}
@@ -509,7 +509,6 @@ div:first-child + div >div.check-item-image{
 #category-wysiwyg{margin:45px}
 #category-wysiwyg p{color:#9e9e9e; font-size:0.9em; line-height:1.5em}
 .category-item p{color:#9e9e9e; font-size:0.85em; line-height:1.3em; margin: 5px 0}
-.near-black{color:#151515}
 #category-wysiwyg h2{font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;font-size:24px;}
 .non-home{padding:15px;background-color:#e9e9e9;background-image:url(../img/ui/social-section-grad-top.gif);background-repeat:repeat-x;}
 #category-list{padding:0 26px 30px 41px; overflow:hidden;}
@@ -629,13 +628,30 @@ div:first-child + div >div.check-item-image{
 #cross-sell h2 {margin:0}
 
 /* Tabs section */
-.etabs { margin: 0; padding: 0; }
-.tab { display: inline-block; zoom:1; *display:inline; background: #eee; border: solid 1px #999; border-bottom: none; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; }
-.tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 10px; outline: none; }
-.tab a:hover { text-decoration: underline; }
-.tab.active { background: #fff; padding-top: 6px; position: relative; top: 1px; border-color: #666; }
-.tab a.active { font-weight: bold; }
-.tab-container .panel-container { background: #fff; border: solid #666 1px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
+.etabs { margin: 0; padding: 0; width:100%; background-color:#2A2A2A;}
+.tab {display: inline-block; zoom:1; *display:inline; background: #2A2A2A; border: 0; border-bottom: none;margin-right: -4px;}
+.tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 22px; outline: none; color:#ffffff; font-weight: bold; line-height:43px; height:43px; background-repeat: no-repeat; background-image: url('../img/ui/tab-bg.png');background-position: 0px 0px; }
+.tab a:hover { text-decoration: none; }
+.tab.active { background: #7f7f7f;  position: relative; }
+.tab a.active { color:#FFE100}
+.tab-container .panel-container { background: #123; border: solid #666 1px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
+.tab-container p{color: #9e9e9e; font-size:14px}
+.tab-container h3 {font-size:15px; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
+.tab-container h2 {font-size:17px;  font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
+.tab-container ul{font-size: 14px}
+#q-a, #q-a-form-content{width:445px; float:left;}
+#q-a{padding-right:22px;}
+#q-a-form-content{padding-left:22px}
+
+#q-a-form-content label {line-height: 31px; height: 31px; display: block; float: left; margin-bottom: 15px; clear: both; width: 125px; font-size: 12px;}
+#q-a-form-content p {font-size: 12px; float: left; clear: both;}
+#q-a-form-content input{height: 31px; line-height:31px; background-color: #dddddd; border: 1px solid #cacaca; padding: 2px;float: left; margin-bottom: 15px; display:block}
+ #q-a-form-content .yellow-btn { background: transparent url(../img/ui/button.png) 0px 14px no-repeat; height: 62px; top:1px; font-family: HelveticaNeueCE-Bold; width: 157px; margin-left: -5px; text-align: left; padding-left: 12px; cursor:pointer; border:0; position:relative}
+#q-a-form-content textarea{background-color: #dddddd; width:445px}
+
+
+
+
 
 /**
 * product display box A styles
