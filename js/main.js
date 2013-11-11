@@ -20,7 +20,7 @@ jQuery(
 		
 		
 		//hide the menu
-		jQuery('#mega-dropdown, .ul-0').hide();
+		jQuery('#mega-dropdown, .ul-0, #css-menu').hide();
 		
 		//copy top level menu items to header
 		var topLevelMenu = '';

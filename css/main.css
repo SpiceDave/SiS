@@ -647,7 +647,7 @@ div:first-child + div >div.check-item-image{
 #q-a-form-content p {font-size: 12px; float: left; clear: both;}
 #q-a-form-content input{height: 31px; line-height:31px; background-color: #dddddd; border: 1px solid #cacaca; padding: 2px;float: left; margin-bottom: 15px; display:block}
  #q-a-form-content .yellow-btn { background: transparent url(../img/ui/button.png) 0px 14px no-repeat; height: 62px; top:1px; font-family: HelveticaNeueCE-Bold; width: 157px; margin-left: -5px; text-align: left; padding-left: 12px; cursor:pointer; border:0; position:relative}
-#q-a-form-content textarea{background-color: #dddddd; width:445px}
+#q-a-form-content textarea{background-color: #dddddd; border: 1px solid #cacaca; width:445px}
 
 
 
