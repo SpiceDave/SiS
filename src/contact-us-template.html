@@ -1,23 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Parent template containing header and footer, linked files etc.</title>
-<link rel="stylesheet" type="text/css" href="../css/main.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="../css/checkout-working.css" media="screen" />
-<!--[if IE 7]>
-	<link rel="stylesheet" type="text/css" href="../css/ie-7.css" media="screen">
-<![endif]-->
-<script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="../js/main.js" type="text/javascript"></script>
-</head>
 
-<body>
-<style>
-	body{
-		width:1024px;
-	}
-</style>
 <!-- content template content -->
 <div id="breadcrumb" class="grey">
 	<div> <a href="#" title="home"><span class="higher-level grey">Home</span></a> &raquo; <a href="#" title="Contact Us"><span class="this-level dark-gray">Contact Us</span></a> </div>
@@ -35,7 +16,7 @@
 </div>
 <div class="clear"></div>
 <div id="contact-grey-bg-wrapper" style="padding-bottom:0px">
-	<div id="contact-us-container">
+	<div class="contact-us">
 		<div class="left-column">
 			<p>If you have a query you may be able to find your answer quickly in our <a href="#" title="link">Help</a> or <a href="#" title="link">FAQ</a> sections.<br />
 				If not, please feel free to contact us using one of the methods below.</p>
@@ -79,11 +60,61 @@
 				<a href="#"><img src="../img/ui/facebook-wysiwyg.png" alt="image" title="image" height="29" width="29" /></a>
 				<a href="#"><img src="../img/ui/youtube-wysiwyg.png" alt="image" title="image" height="29" width="29" /></a>
 			</div> 
+			<div class="wysiwyg-area contact-form">
+				<!-- form builder -->
+				<div id="form-builder">
+				<h3></h3>
+				<p class="grey">*Required fields are marked with an asterisk</p>
+				<form action="#" method="post" name="my-form" target="_blank">
+					<p class="error">Please complete the field below</p>
+					<label for="user-name">Name<span class="red">*</span></label>
+					<input id="user-name" type="text" name="user-name" size="60" />
+					
+					<p class="error">Please complete the field below</p>
+					<label for="user-subject">Subject<span class="red">*</span></label>
+					<input id="user-subject" type="text" name="user-subject" size="60" />
+					
+					<p class="error">Please complete the field below</p>
+					<label for="user-email">Email address<span class="red">*</span></label>				
+					<input id="user-email" type="text" name="user-email" size="60" />
+					
+					<p class="error">Please enter your question</p>
+						<label for="question-question">Your message<span class="red">*</span></label>
+						<textarea cols="60" rows="5" spellcheck="true" id="question-question"></textarea>
+						
+					<div style="clear:both"></div>
+					<button id="form-submit">Submit Form</button>
+				</form>
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="clear"></div>
 </div>
 <!-- end of grey bg area -->
+
+<div id="further-info">
+	<h2>You may find what you are looking for here:</h2>
+	<div class="further-info-column">
+		<div class="col1">
+			<h3>Endurance Nutrition</h3>
+			<p class="grey small">A wide range of articles giving advice and guidance in our specialist subject <a href="#" title="Click here">Click here</a></p>
+		</div>
+	</div>
+	<div class="further-info-column">
+		<div class="col2">
+			<h3>Endurance Nutrition</h3>
+			<p class="grey small">A wide range of articles giving advice and guidance in our specialist subject <a href="#" title="Click here">Click here</a></p>
+		</div>
+	</div>
+	<div class="further-info-column">
+		<div class="col3">
+			<h3>Endurance Nutrition</h3>
+			<p class="grey small">A wide range of articles giving advice and guidance in our specialist subject <a href="#" target="_blank">Click here</a></p>
+		</div>
+	</div>
+</div>
+
 
 </body>
 </html>
