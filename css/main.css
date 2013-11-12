@@ -204,7 +204,7 @@ a.social-icon.youtube:hover {background-position: -60px 0px;}
 	padding:15px;
 }
 
-#video-grey-bg-wrapper, #category-grey-bg-wrapper, #grey-bg-wrapper, #contact-grey-bg-wrapper{
+#faq-grey-bg-wrapper,#video-grey-bg-wrapper, #category-grey-bg-wrapper, #grey-bg-wrapper, #contact-grey-bg-wrapper{
 	background:#f6f6f6 url(../img/ui/header-gradient.png) repeat-x;
 	margin: 0;
 	overflow: auto;
@@ -723,6 +723,11 @@ div:first-child + div >div.check-item-image{
 .v-centered-icon-text{height:29px; line-height:29px; float:left; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif; width:170px;}
 .contact-us .icons img{float:left; padding-right: 5px}
 .contact-us .icons {height:29px}
+
+/*faq page*/
+#faq-content{margin:45px 67px}
+#faq-content p {color: #9e9e9e; font-size:13px; padding-bottom:10px}
+#faq-content li{font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
 
 
 
