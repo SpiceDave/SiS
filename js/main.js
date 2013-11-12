@@ -105,6 +105,10 @@ jQuery(
 			event.preventDefault();
         });
 		
+        //close button for video overlay
+         jQuery('.yt-xclose, #yt-overlay').on('click', function(){
+                jQuery('#yt-overlay').fadeOut();
+         });
 		
 		
 	}		
@@ -116,3 +120,22 @@ function menu(id){
 	//show the correct submenu categories, again by the root ul
 	jQuery('.menu-list-'+ id).parents('.ul-0').show();
 }
+
+/*Youtube video overlay*/
+function ytoverlay(id){
+	var title = jQuery('.video-item').eq(id).find('h3').text();
+    var subtitle = jQuery('.video-item').eq(id).find('h4').text();
+    var linksrc = jQuery('.video-item').eq(id).find('h5').text();
+    jQuery('#yt-overlay').fadeIn();
+    jQuery('#yt-overlay h2').text(title);
+    jQuery('#yt-overlay h3').text(subtitle);
+    jQuery('#yt-overlay iframe').attr('src',linksrc);
+    
+}
+
+
+
+
+
+
+
