@@ -71,6 +71,11 @@ h1, h2, h3, h4, .near-black{color:#151515}
 body{margin:0; background:#aaaaaa; font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
 p{font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;}
 
+/*container*/
+#container{width:100%;}
+/*outer wrapper*/
+#wrapper{margin: 0 auto; width:1024px; position:relative}
+
 /*headings*/
 /* h1 on page titles */
 h1{
@@ -816,10 +821,11 @@ html, body {height: 100%;}
 #main {overflow:auto;
 	padding-bottom: 252px; margin: 0 auto; width:1024px; position:relative; background-color:#ffffff;}  /* must be same height as the footer */
 
-#footer {position: relative;width:1024px;
+#sticky-footer {position: relative;width:1024px;
 	margin: -252px auto 0 auto;
 	height: 252px;
-	clear:both;} 
+	clear:both;
+} 
 
 /*Opera Fix*/
 body:before {/* thanks to Maleika (Kohoutec)*/
