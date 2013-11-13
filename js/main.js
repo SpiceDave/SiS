@@ -13,8 +13,10 @@ jQuery(
 		var query = (window.location.href).split('?');
 		var filename = query[1];
 		jQuery( "#content" ).load(filename);
+        
+        
 		/**************************************************/
-		
+       
 		
 		
 		
@@ -118,9 +120,11 @@ function menu(id){
 
 /*Youtube video overlay*/
 function ytoverlay(id){
+	// get the values to be shown in the  lightbox overlay 
 	var title = jQuery('.video-item').eq(id).find('h3').text();
     var subtitle = jQuery('.video-item').eq(id).find('h4').text();
     var linksrc = jQuery('.video-item').eq(id).find('h5').text();
+	//fade in the overlay and set values
     jQuery('#yt-overlay').fadeIn();
     jQuery('#yt-overlay h2').text(title);
     jQuery('#yt-overlay h3').text(subtitle);

@@ -100,10 +100,7 @@ input::-moz-focus-inner {
 button{}
 select{}
 
-/*container*/
-#container{width:100%;}
-/*outer wrapper*/
-#wrapper{margin: 0 auto; width:1024px; position:relative}
+
 
 /*header*/
 #header{height:99px;background:#171717; color:#ffffff; }
@@ -733,7 +730,24 @@ div:first-child + div >div.check-item-image{
 
 .faq-content .question-form { display: block; float: left; margin-bottom:10px}
 .faq-content .question-input { height: 27px; line-height:27px; background-color: #dddddd; border: 1px solid #cacaca; margin:0; padding-left:5px; color:grey}
-.faq-content .yellow-btn { background: transparent url(../img/ui/button.png) 0px 14px no-repeat; height: 62px; top:1px; font-family: HelveticaNeueCE-Bold; width: 157px; margin-left: -7px; text-align: left; padding-left: 40px; cursor:pointer; border:0; position:relative}
+.faq-content .yellow-btn { background: transparent url(../img/ui/button.png) 0px 14px no-repeat; height: 62px; font-family: HelveticaNeueCE-Bold; width: 157px; margin-left: -7px; text-align: left; padding-left: 40px; cursor:pointer; border:0; position:relative}
+
+/*unsub, sitemap, and 404*/
+.lo-content{background-color:#ffffff; width:1204px; padding:45px; overflow:hidden}
+.lo-content .email-remove-form { display: block; float: left; margin-bottom:10px}
+.lo-content #email-remove-input { height: 27px; line-height:27px; background-color: #dddddd; border: 1px solid #cacaca; margin:0; padding-left:5px; color:grey;float:left}
+.lo-content .yellow-btn { background: transparent url(../img/ui/button.png) 0px 14px no-repeat; height: 62px; font-family: HelveticaNeueCE-Bold; width: 157px; margin-top: -14px; text-align: left; padding-left: 40px; cursor:pointer; border:0; position:relative; float:left}
+.lo-content  label {line-height: 31px; height: 31px; display: block; float: left; margin-bottom: 15px; clear: both; width: 110px; font-size: 12px;}
+.lo-content  p {font-size: 12px; float: left; clear: both;}
+.lo-content h1 {margin-left:0}
+.lo-content h4 {font-weight:normal; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
+.success{display:none}
+
+#sitemap ul {margin:0;padding:10px 15px; font-size:13px}
+#sitemap ul ul {padding-top:0px;padding-bottom:0px;}
+#sitemap ul li {list-style:none;font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;padding-bottom:15px;}
+#sitemap ul li li{font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;padding-bottom:2px;padding-top:2px;}
+#sitemap a {color:#242021;}
 
 
 
@@ -774,8 +788,41 @@ div:first-child + div >div.check-item-image{
 .product-display-box-b .product-buttons-b{position:absolute; bottom:25px}
 
 
-
 /* firefox tweaks */
 @-moz-document url-prefix() {
 	#search-results-content .yellow-btn {top:2px;}
 }
+
+/*  
+Sticky Footer Solution
+by Steve Hatcher 
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+
+/* must declare 0 margins on everything, also for main layout components use padding, not 
+vertical margins (top and bottom) to add spacing, else those margins get added to total height 
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {height: 100%;}
+
+#wrap {min-height: 100%; width:100%}
+
+#main {overflow:auto;
+	padding-bottom: 252px; margin: 0 auto; width:1024px; position:relative; background-color:#ffffff;}  /* must be same height as the footer */
+
+#footer {position: relative;width:1024px;
+	margin: -252px auto 0 auto;
+	height: 252px;
+	clear:both;} 
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
