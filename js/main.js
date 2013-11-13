@@ -105,11 +105,6 @@ jQuery(
 			event.preventDefault();
         });
 		
-        //close button for video overlay
-         jQuery('.yt-xclose, #yt-overlay').on('click', function(){
-                jQuery('#yt-overlay').fadeOut();
-         });
-		
 		
 	}		
 );
@@ -132,7 +127,10 @@ function ytoverlay(id){
     jQuery('#yt-overlay iframe').attr('src',linksrc);
     
 }
-
+/*close video overlay*/
+function ytclose(){
+	 jQuery('#yt-overlay').fadeOut();
+}
 
 
 
