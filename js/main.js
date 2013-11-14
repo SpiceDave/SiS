@@ -16,6 +16,8 @@ jQuery(
         
         
 		/**************************************************/
+        var doc = document.documentElement;
+        doc.setAttribute('data-useragent', navigator.userAgent);
        
 		
 		
@@ -40,7 +42,7 @@ jQuery(
 		
 		//remove the existing top level items
 		jQuery('.li-0').find('.cat-title').hide();
-		
+	
 		
 		//bind newly created menu buttons
 		jQuery('.top-level').hover(function(){
@@ -52,6 +54,9 @@ jQuery(
 			var menuId = menuItemNo.charAt(count-1);
 			menu(menuId);
 		});
+		
+		
+		
 		
 		//bind mini basket and search components
 		//load
@@ -103,8 +108,17 @@ jQuery(
 		
 		//buy button overlay
 		jQuery(document).on( 'submit', '#products-form, #products-search-form', function(event) {
-			alert('Quick buy overlay to build'); 
+			jQuery('#qb-overlay').fadeIn();
+            //check for IE7
+            if(navigator.appVersion.indexOf("MSIE 7.")!=-1) {
+              var windowWidth = jQuery(window).width();
+              var windowHeight = jQuery(window).height();
+              var top =  (jQuery(window).height() - jQuery('#qb-outer-frame').height())/2;
+              var left = (jQuery(window).width() - jQuery('#qb-outer-frame').width())/2;
+              jQuery('#qb-outer-frame').css({'top':top, 'left':left});
+            } 
 			event.preventDefault();
+            
         });
 		
 		
@@ -129,6 +143,15 @@ function ytoverlay(id){
     jQuery('#yt-overlay h2').text(title);
     jQuery('#yt-overlay h3').text(subtitle);
     jQuery('#yt-overlay iframe').attr('src',linksrc);
+    
+   //check for IE7
+    if(navigator.appVersion.indexOf("MSIE 7.")!=-1) {
+      var windowWidth = jQuery(window).width();
+      var windowHeight = jQuery(window).height();
+      var top =  (jQuery(window).height() - jQuery('#yt-outer-frame').height())/2;
+      var left = (jQuery(window).width() - jQuery('#yt-outer-frame').width())/2;
+      jQuery('#yt-outer-frame').css({'top':top, 'left':left});
+    } 
     
 }
 /*close video overlay*/

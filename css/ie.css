@@ -1,0 +1,4 @@
+/*ie all versions fixes (except 10)*/
+ select {
+    background: #dddddd none no-repeat -100px 0px !important;
+}
