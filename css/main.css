@@ -670,7 +670,7 @@ div:first-child + div >div.check-item-image{
 .tab {display: inline-block; zoom:1; *display:inline; background: #2A2A2A; border: 0; border-bottom: none;margin-right: -4px;}
 .tab a { font-size: 14px; line-height: 2em; display: block; padding: 0 22px; outline: none; color:#ffffff; font-weight: bold; line-height:43px; height:43px; background-repeat: no-repeat; background-image: url('../img/ui/tab-bg.png');background-position: 0px 0px; }
 .tab a:hover { text-decoration: none; }
-.tab.active { background: #7f7f7f;  position: relative; }
+.tab.active { background: #7f7f7f;  position: relative; top:0px }
 .tab a.active { color:#FFE100}
 .tab-container .panel-container { background: #123; border: solid #666 1px; padding: 10px; -moz-border-radius: 0 4px 4px 4px; -webkit-border-radius: 0 4px 4px 4px; }
 .tab-container p{color: #9e9e9e; font-size:14px; line-height:18px}
@@ -691,7 +691,7 @@ div:first-child + div >div.check-item-image{
 /* content template */
 #content-container{overflow: hidden;}
 #content-container{margin: 0px 45px 45px 45px;}
-#content-container #add-this-component{ height:32px; float:right;margin-top: 15px; width:184px}
+#content-container #add-this-component{ height:32px; float:right;margin-top: 15px; margin-bottom: 15px; width:184px}
 #content-product-list{width:242px; float:left}
 #content-product-list .product-display-box-a{margin-bottom:30px; padding: 15px 0 35px 0}
 #content-template-wysiwyg{width:648px; float:left; padding-right:44px;}
@@ -749,7 +749,7 @@ div:first-child + div >div.check-item-image{
 
 .faq-content .question-form { display: block; float: left; margin-bottom:10px}
 .faq-content .question-input { height: 27px; line-height:27px; background-color: #dddddd; border: 1px solid #cacaca; margin:0; padding-left:5px; color:grey}
-.faq-content .yellow-btn { background: transparent url(../img/ui/button.png) 0px 14px no-repeat; height: 62px; font-family: HelveticaNeueCE-Bold; width: 157px; margin-left: -7px; text-align: left; padding-left: 40px; cursor:pointer; border:0; position:relative}
+.faq-content .yellow-btn { background: transparent url(../img/ui/button.png) 0px 14px no-repeat; height: 62px; font-family: HelveticaNeueCE-Bold; width: 157px; margin-left: -7px; text-align: left; padding-left: 40px; cursor:pointer; border:0; position:relative; top:1px}
 
 /*unsub, sitemap, and 404*/
 .lo-content{background-color:#ffffff; width:1204px; padding:45px; overflow:hidden}

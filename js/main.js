@@ -121,7 +121,6 @@ jQuery(
             
         });
 		
-		
 	}		
 );
 
@@ -157,6 +156,11 @@ function ytoverlay(id){
 /*close video overlay*/
 function ytclose(){
 	 jQuery('#yt-overlay').fadeOut();
+}
+
+/*close quick buy overlay*/
+function qbclose(){
+	 jQuery('#qb-overlay').fadeOut();
 }
 
 
