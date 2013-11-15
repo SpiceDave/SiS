@@ -19,9 +19,9 @@ jQuery(
         var doc = document.documentElement;
         doc.setAttribute('data-useragent', navigator.userAgent);
        
-		
-		
-		
+	    /*stickFooter(); uncomment this line when templates assembled*/ 
+		setTimeout(stickFooter, 1000);
+		jQuery(window).resize(function() { stickFooter()});
 		
 		//hide the menu
 		jQuery('#mega-dropdown, .ul-0, #css-menu').hide();
@@ -163,6 +163,22 @@ function qbclose(){
 	 jQuery('#qb-overlay').fadeOut();
 }
 
+/*sticky footer - expands the content area to meet the css sticky footer */
+function stickFooter(){
+	//get content height
+	var contentHeight = jQuery('#content').height();
+	//get window height
+	var windowHeight = jQuery(window).height();
+	//get combined height of header and footer
+	var remainder = jQuery('#header').height() + jQuery('#sticky-footer').height();
+	
+	//if content is short enough to need lengthening..
+	if( windowHeight >= (contentHeight + remainder))
+	{
+		jQuery('#content').css('height', windowHeight - remainder);
+	}
+}
+		
 
 
 

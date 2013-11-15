@@ -150,7 +150,7 @@ select{}
 #footer-email {float:right}
 #footer-email input{border:0;color:#656565; font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif; }
 #footer-email input[type=text]{width:145px; background:#e9e9e9; padding:7px 0 7px 5px; margin-right: -2px; }
-#footer-email input[type=submit]{width:110px; background:#FEEA00 url(../img/ui/sign-up.gif); color:#1c1800;  padding: 7px 25px 7px 0;  }
+#footer-email input[type=submit]{width:110px; background:#FEEA00 url(../img/ui/sign-up.gif); color:#1c1800;  padding: 7px 25px 7px 0; cursor:pointer }
 
 .footer-column p{color:#a4a4a4; font-size:0.8em;}
 .news-offers{margin-top: 1px; display: block;}
