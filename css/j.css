@@ -1,0 +1,5 @@
+ /*late fixes */
+.register-form-delivery {width: 470px;}
+#my-account-register-form input[type=text]{width: 269px;}
+#my-account-register-form select{margin-left: 0px;}
+#register-newsletter label, #account-register-newsletter label {width: 100px;}

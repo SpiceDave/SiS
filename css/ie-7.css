@@ -12,3 +12,28 @@
 .yellow-btn{height:45px !important; margin-left:0; padding-top:10px !important;}
 .faq-content .question-input {margin-left:-67px!important; margin-bottom:30px!important;}
 .faq-content .yellow-btn{top:-30px;}
+#my-account-register-form p{float: none!important};
+
+
+/* T styles*/
+#checkout-login-signup input{
+	width: 215px;
+}
+
+#order-confirm-basket .check-final-price {
+	width: 60px;
+	padding-left: 0;
+	clear: both;
+}
+
+.ie-no-margin{
+	margin:0;
+}
+/*checkout-basket*/
+.promo-input{margin-left: -45px; margin-right:4px;}
+
+/*my account order */
+#items-delivered ul{
+	margin: 0;
+}
+.wishlist-basket{overflow:hidden;}
