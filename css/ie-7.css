@@ -12,7 +12,8 @@
 .yellow-btn{height:45px !important; margin-left:0; padding-top:10px !important;}
 .faq-content .question-input {margin-left:-67px!important; margin-bottom:30px!important;}
 .faq-content .yellow-btn{top:-30px;}
-#my-account-register-form p{float: none!important};
+#my-account-register-form p{float: none!important}
+.history-list ul{margin-left:0px!important;}
 
 
 /* T styles*/

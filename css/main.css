@@ -199,7 +199,7 @@ a.social-icon.youtube:hover {background-position: -60px 0px;}
 .text-button{padding: 0; cursor:pointer;}
 .remove-button {border: 0; background: url(../img/ui/remove.png) no-repeat center left; padding-left: 15px;color: #ff0055;}
 
-.pound{font-family: helvetica, sans-serif; font-weight:bold;}
+.pound{font-family: HelveticaNeueLT-Bold, Helvetica, Arial, sans-serif;}
 .hide{display: none;}
 
 
@@ -411,6 +411,7 @@ div:first-child + div >div.check-item-image{
 	border: 1px solid #cacaca;
 	padding: 2px;
 	width:260px;
+	margin-right: 5px;
 	
 }
 
@@ -1180,6 +1181,7 @@ fieldset{
 	padding: 2px;
 	float: left;
 	margin-bottom: 15px;
+	width: 264px;
 }
 #members-checkout-delivery input[type="radio"], #non-members-checkout-delivery input[type="radio"] {
 	border: none;
@@ -1201,8 +1203,8 @@ fieldset{
 	height: 30px;
 	border-radius: 0;
 	padding: 5px 5px 5px 10px;
-	width: 269px;
-	margin-left: 2px;
+	width: 270px;
+	margin-left: 1px;
 	background: #dddddd url(../img/ui/dropdown-arrow.png) no-repeat -1px 0px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -1237,6 +1239,7 @@ fieldset{
 	float: left;
 	padding: 0 30px;
 	border-left: #000000 1px dotted;
+	width: 400px;
 }
 
 #checkout-register-form h3, #my-account-register-form h3, #non-member-delivery-form h3 {
