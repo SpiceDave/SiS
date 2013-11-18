@@ -9,18 +9,22 @@
 }
 
 /*global*/
+body{background-color: #D7DEDE;}
 a.link{color: #000000; cursor: pointer;}
 a.link:hover{text-decoration:underline;}
 button{	cursor:pointer;}
 .margin-top-30{	margin-top: 30px;}
 .margin-top-none{margin-top: 0;}
 .crossed{text-decoration: line-through;}
-.bottom-border{border-bottom: 1px dotted #9e9e9e}
+.bottom-border{border-bottom: 1px dotted #9e9e9e;}
 .bold {font-family: HelveticaNeueCE-Bold, Helvetica, Arial, sans-serif;}
 .float-right{float: right;}
-
+.full-width{width: 100%;}
+.margin-left-30{margin-left: 30px;}/*use when extra side margin is required*/
 /* fonts */
 .row-title{ border-bottom: gray dotted 1px;font-size: 16px;font-family: HelveticaNeueCE-Bold;}
+textarea{resize: none;}
+.next-line{clear: both;}
 
 h2{
 	font-family: HelveticaNeueCE-Bold;
@@ -46,7 +50,7 @@ Form Styles
 /** radio buttons **/
 input[type="radio"], #members-checkout-delivery input[type="radio"], 
 #register-newsletter input[type="radio"], #non-members-checkout-delivery input[type="radio"],
-#my-account-register-form input[type="radio"] {
+#my-account-register-form input[type="radio"], #update-details input[type="radio"]{
 	background: #f6f6f6 url(../img/ui/radio-button-sprite.png) 53px -3px;
 	-webkit-appearance: none;
 	border: 1px none #ffffff ;
@@ -149,13 +153,18 @@ p.dotted-line{
 }
 #checkout-breadcrumb-menu{
 	font-size:14px;
-	font-color: #9e9e9e;
+	color: #9e9e9e;
 	font-family: HelveticaNeueCE-Bold;
 	margin: 30px 0;
 }
 
 #checkout-breadcrumb-menu .current{
-	font-color: #000000;
+	color: #000000;
+}
+
+/* for basket template */
+.check-items >div:first-child + div >div.check-final-price{
+	margin-top:50px;
 }
 
 /* wrapper for login and signup boxes */
@@ -165,14 +174,20 @@ p.dotted-line{
 	clear: both;
 }
 
+/*setting width for ie*/
+#checkout-login-signup input{
+	width: 215px;
+}
+
 /** TODO  merge this and make it good - find out why it was too large in main.css **/
 #basket .check-items{
 	margin: 0 45px;
 }
 
-#checkout-login-signup input, #checkout-forgot-password input, 
-#account-forgot-password input, #add-address-overlay input,
-#my-account-login-signup input{
+#wishlist-to-friend input, #wishlist-to-friend textarea, #checkout-login-signup input, #checkout-forgot-password input, 
+#account-forgot-password input, #add-address-overlay input, #refer-friends input,
+#my-account-login-signup input, #returns-form input, #account-add-address-form input, #account-edit-address-form input, 
+#reset-password input{
 	height: 25px;
 	background-color: #dddddd;
 	border: 1px solid #cacaca;
@@ -180,16 +195,17 @@ p.dotted-line{
 	float: right;
 	margin-bottom: 15px;
 }
-#checkout-login-signup button, #my-account-login-signup button,
+#wishlist-to-friend  button, #checkout-login-signup button, #my-account-login-signup button, #refer-friends button,
  #add-address-overlay button,
-#edit-address-overlay button{
+#edit-address-overlay button,
+#account-add-address-form button, #account-edit-address-form button{
 	clear: both;
 	float: right;
 
 }
-#checkout-login-signup label, #my-account-login-signup label,
- #checkout-forgot-password label, #account-forgot-password label,
-#add-address-overlay label{
+#wishlist-to-friend label, #checkout-login-signup label, #my-account-login-signup label,
+ #checkout-forgot-password label, #refer-friends label, #account-forgot-password label, #account-add-address-form label,
+#add-address-overlay label, #reset-password label, #account-edit-address-form label{
 	line-height: 31px;
 	height: 31px;
 	display: block;
@@ -294,8 +310,9 @@ fieldset{
 	margin-left: 125px;
 }
 
-#checkout-register-form input, #my-account-register-form input, #non-member-delivery-form input, #members-checkout-delivery input,
-#edit-address-overlay input, #non-members-checkout-delivery input{
+#checkout-register-form input, #my-account-register-form input, #non-member-delivery-form input, 
+#members-checkout-delivery input, #update-details input, #update-newsletter input, #update-password input,
+#edit-address-overlay input, #non-members-checkout-delivery input, #refer-friends input{
 	height: 25px;
 	background-color: #dddddd;
 	border: 1px solid #cacaca;
@@ -315,7 +332,8 @@ fieldset{
 
 #checkout-register-form select, #my-account-register-form select, #non-member-delivery-form select, 
 #members-checkout-delivery select, #add-address-overlay select, #returns-form select,
-#edit-address-overlay select{
+#edit-address-overlay select, #update-details select, #update-newsletter select, #update-password select,
+#account-add-address-form select, #account-edit-address-form select{
 	float: left;
 	background: transparent;
 	border: none;
@@ -331,10 +349,12 @@ fieldset{
  	text-overflow: "";
 }
 
+/**form labels**/
 #checkout-register-form label, #non-member-delivery-form label, 
 #members-checkout-delivery label, #add-address-overlay label,
 #edit-address-overlay label, #non-members-checkout-delivery label,
-#my-account-register-form label{
+#my-account-register-form label, #update-details label, #update-newsletter label, #update-password label,
+#account-add-address-form label, #account-edit-address-form label{
 	line-height: 31px;
 	height: 31px;
 	display: block;
@@ -375,6 +395,7 @@ input#register-signup-newsletter, input#account-register-signup-newsletter{
 	margin-top: 20px;
 }
 
+#update-newsletter fieldset label.next-line{ padding-left: 0; clear: both;}
 
 #checkout-register-form .yellow-button-wide, #non-member-delivery-form .yellow-button-wide,
 #delivery-info-form .yellow-button-wide{
@@ -451,14 +472,13 @@ members delivery options page
 	padding: 20px 15px;
 	border-left: solid 1px #9e9e9e;
 	border-right: solid 1px #9e9e9e;
-	height: 370px;
+	height: 210px;
 }
 
 .mem-check-choose-delivery p{
 	clear: both;
 	float: left;
 	padding: 20px 15px;
-	border-bottom: dotted 1px #9e9e9e;
 	width: 200px;
 }
 
@@ -602,6 +622,12 @@ members delivery options page
 
 
 /** checkout payment page */
+/* making background white */
+#grey-bg-wrapper.white-bg{
+	background: #fff url(../img/ui/white-gradient.png) repeat-x;
+}
+
+
 #checkout-payment, #order-confirm{
 	font-size: 12px;
 }
@@ -615,7 +641,7 @@ members delivery options page
 /*also includes column widths for checkout order confirm*/
 
 #payment-methods{
-	width: 385px;
+	width: 500px;
 	margin-right: 15px;
 }
 
@@ -626,13 +652,11 @@ members delivery options page
 #payment-methods > div{
 	float: left;
 	clear: both;
-	width: 385px;
+	width: 500px;
 }
 .previous-card{
-	width: 385px;
-	float: left;
-	clear: both;
 	padding: 10px 0;
+	overflow: auto;
 }
 
 .previous-card input[type="radio"]{
@@ -652,7 +676,7 @@ members delivery options page
 ul.card-info {
 	list-style-type: none;
 	float: left;
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 .card-info li{
@@ -662,14 +686,21 @@ ul.card-info {
 /* payment basket - right column ***
 ** also includes the column settings for order confirm page*/
 
-#payment-basket, #order-confirm-basket{
+#payment-basket{
+	width: 404px;
+	margin-left: 15px;
+}
+
+#order-confirm-basket{
 	width: 519px;
 	margin-left: 15px;
 }
 
 #payment-basket .check-item-row, #order-confirm-basket .check-item-row{
 	height: 135px;
-}
+	clear: both;}
+	
+#payment-basket .check-item-row{width: auto; overflow:auto; height: auto;}
 
 #payment-basket .check-items-title, #order-confirm-basket .check-items-title{
 	position: static;
@@ -677,16 +708,20 @@ ul.card-info {
 	margin-top: 30px;
 }
 
-#payment-basket .item-title, #order-confirm-basket .item-title{
+#payment-basket .item-title{
+	width:249px;
+}
+
+#order-confirm-basket .item-title{
 	width: 302px;
 	padding-left: 0;
 }
-
-#payment-basket .quantity-title, #order-confirm-basket .quantity-title{
+#payment-basket .quantity-title{ padding-left: 0; width: 62px; text-align:center;}
+#order-confirm-basket .quantity-title{
 	padding-left: 15px;
 	width: 85px;
 }
-
+#payment-basket .check-item-image{width:auto; height: auto;}
 
 #payment-basket .total-title, #payment-basket .check-final-price,
 #order-confirm-basket .total-title, #order-confirm-basket .check-final-price{
@@ -695,21 +730,24 @@ ul.card-info {
 	text-align: right;
 }
 
-#payment-basket .check-item-image, #order-confirm-basket .check-item-image{
+#order-confirm-basket .check-item-image{
 	width: 107px;
 	margin-top: 10px;
 }
-
-#payment-basket .check-item-item, #order-confirm-basket .check-item-item{
+#order-confirm-basket .check-item-item{
 	width: 195px;
 }
+#payment-basket .check-item-item{width: 180px; padding-left: 6px;}
 
 #payment-basket ul, #payment-basket .check-amounts, #payment-basket .check-final-price,
 #order-confirm-basket ul, #order-confirm-basket .check-amounts, #order-confirm-basket .check-final-price{
 	padding-left: 15px;
 	margin-top: 30px;
 }
-#payment-basket .check-amounts, #order-confirm-basket .check-amounts{
+
+#payment-basket .discounted-price{margin-top: 0;}
+#payment-basket .check-amounts{ width:62px;}
+#order-confirm-basket .check-amounts{
 	padding:0;
 	width: 85px;
 }
@@ -725,6 +763,7 @@ ul.card-info {
 	font-family: HelveticaNeueCE-Roman, Helvetica, Arial, sans-serif;
 }
 
+#payment-basket .check-final-price{width: 73px;}
 p.check-amounts{
 	text-align: center;
 }
@@ -750,6 +789,9 @@ p.check-amounts{
 	margin: 36px 0 0;
 }
 
+#payment-method-card img{
+	padding-top: 10px;
+}
 
 /** my account pages **/
 
@@ -865,10 +907,10 @@ p.check-amounts{
 	font-family: HelveticaNeueCE-Roman;
 }
 
-.order-history-titles{
+.order-history-titles, .manage-delivery-titles{
 	background-color: #2a2a2a;
 	color: #ffffff;
-	height: 42px;
+	height: 43px;
 	padding-left: 0;
 	text-align: center;
 	font-size: 14px;
@@ -885,8 +927,8 @@ p.check-amounts{
 	font-size: 14px;
 }
 
-.order-history-titles li{background: transparent url(../img/ui/black-title-gradient.png) no-repeat;}
-.order-history-titles li:first-child{background: transparent none no-repeat;}
+.order-history-titles li, .manage-delivery-titles li, .refer-friends-title li{background: transparent url(../img/ui/black-title-gradient.png) no-repeat;}
+.order-history-titles li:first-child, .manage-delivery-titles li:first-child, .refer-friends-title li:first-child{background: transparent none no-repeat;}
 .order-history-titles .history-order-number, .order-history-items .history-order-number{width: 232px;}
 
 .order-history-titles .history-date, .order-history-items .history-date{
@@ -901,14 +943,14 @@ p.check-amounts{
 
 /** account view previous order **/
 /** getting original cart view from basket-template styles **/
-#account-menu-delivery, #account-return-menu{ width: 255px; margin-left: 30px; }
+#account-menu-delivery, #account-return-menu, #account-wishlist-menu{ width: 255px; margin-left: 30px; }
 
 #history-order-basket h2{
 	font-size: 21px;
 	text-transform: uppercase;
 	margin-top: 30px;
 }
-#history-order-basket, #account-return-transaction{margin: 0 30px ; width: 619px; font-size:14px;}
+#history-order-basket, #account-return-transaction {margin: 0 30px ; width: 619px; font-size:14px;}
 #history-order-basket .check-item-row{
 	margin: 30px 0 0;
 	height: 110px;
@@ -963,9 +1005,128 @@ height: auto;
 #items-delivered h2{margin-top: 80px; margin-bottom: 10px; text-transform: none;}
 
 /*returns*/
-#returns-form ul {float:left; list-style-type:none; padding:0;}
-#returns-form li {float:left; padding:0;}
-#returns-form select{width: 125px; background-position: top right}
+#returns-form{overflow:auto; margin-bottom: 50px;}
+#returns-form ul {float:left; list-style-type:none; padding: 10px 0; height: 30px; margin: 0; width: 619px;}
+#returns-form li {float:left; padding:0;line-height: 30px;}
+#returns-form select{background-position: top right; width: 180px; margin-left: 13px;}
+#returns-form input{width: 178px;margin-left: 13px;}
+#returns-form .phone-input input{float: left; margin-bottom: 0;margin-top: 11px;}
 .return-items-title{width: 100%;}
 .return-items-title li, .return-items-row li{width: 206px;}
+#returns-form .phone-details-row{ height:55px;}
+#returns-form .phone-text{line-height: 18px; width: 180px; padding-right: 26px;}
+#returns-form .yellow-button-wide{float:right; margin-top:10px;}
+#returns-form .right{float: right;}
+#returns-form p.error{margin: 0; padding: 0;}
+#returns-form .phone-details-row p.error{line-height: 55px;}
+
+/*aligning columns */
+#returns-form li:first-child+li+li{float:right; text-align:right;}
+#returns-form li:first-child+li+li p{float:right; text-align:right;}
+#returns-form li:first-child+li+li select{float:right;width: 100px;}
+#returns-form li:first-child+li{text-align:center;}
+
+/** wishlist page **/
+.wishlist-basket{float: left; clear: both; width:934px; margin: 30px 30px 50px 30px; border-top: 1px dotted #9e9e9e;}
+#account-wishlist-information{width:619px; font-size: 12px; margin: 0 30px;}
+#wishlist-to-friend{ overflow: auto; width: 461px;}
+#wishlist-to-friend input{width: 300px; float: left;}
+#wishlist-to-friend textarea{height: 150px; margin: 0; padding: 0 1px; float:left; width:300px;}
+#wishlist-to-friend label{width:154px; clear: both;}
+.wishlist-basket .get-info{background: transparent; border: none; color: #ffffff; font-size: 13px; line-height: 21px;}
+
+/** account -update details -3 columns  **/
+#update-password{width: 303px; float: left; padding: 0 5px; border-right: 1px solid #9e9e9e;}
+#update-password button{width: 303px; margin-left: 0; margin-top:3px;}
+#update-newsletter{width:350px; float: left;margin-right: 30px; padding-left: 5px;}
+#update-newsletter button{width: 350px;}
+#update-details{clear:both;float: left; width:259px;margin-left:30px;float:left;padding-right: 5px;
+border-right: 1px solid #9e9e9e;}
+#update-details button{width:259px; }
+#update-details input, #update-newsletter input, #update-password input{width: 150px;}	
+#update-details select, #update-newsletter select, #update-password select{width: 153px; background-position: top right;}	
+#update-details input[type="radio"], #update-newsletter input[type="radio"], #update-password input[type="radio"]
+{width: 12px; background-color:transparent;border: 0;}
+#update-details label{width: 95px}
+#account-update form{height: 340px;}
+#account-update p{font-size: 12px;}
+#update-password label{width: 110px; padding-left: 16px;}
+#update-password p{padding-right: 15px;}
+#update-newsletter label{width: auto; padding-right: 5px; clear: none;}
+#update-newsletter label.update-newsletter{width: auto;line-height: 15px; margin-bottom: 0;}
+#update-newsletter fieldset{padding: 0; margin: 0;}
+#update-newsletter fieldset label, #account-update p{padding-left: 13px;}
+#update-newsletter input[type="checkbox"]{width: 12px; margin-top: -8px;}
+#update-newsletter input[type="radio"]:checked{background-position: 22px -8px;}
+#update-newsletter input[type="radio"]{background-position: 53px -8px;}
+#account-update .row-title{font-size: 13px; margin-bottom: 18px;padding-left: 5px; }
+#update-newsletter .row-title{height: 16px;}
+#account-update legend+label{padding-left: 0;}
+#account-update legend{margin: 0; padding: 0; font-size: 12px; color: #9e9e9e;}
+#account-update .yellow-button{float: left; border-top: dotted #9e9e9e 1px;}
+#update-password .yellow-button{margin-top:49px;}
+#update-details .yellow-button{margin-top: 45px;}
+
+/* delivery address pages */
+#account-manage-address{font-size: 12px;float:left;clear:both;}
+#account-manage-address-menu ul{margin:30px 30px 0 }
+#account-manage-address .yellow-button-wide{float:right; clear:both;}
+#account-manage-address li a.link {float:left; clear:both;margin-bottom:10px;}
+#account-manage-address li a.remove-button{color:#ff0055;}
+.manage-delivery-titles{width: 994px; list-style-type: none;}
+.manage-delivery-titles li{ float: left;text-align: left;padding-left: 15px;}
+#account-manage-address ul{list-style-type: none; float:left;padding: 0;}
+.manage-delivery-this-address{clear:both; margin: 15px 30px;}
+.manage-delivery-this-address > li{float:left;}
+.delivery-name{width: 290px;}
+.delivery-address {width: 320px;}
+
+/*add and edit address pages*/
+#account-add-address, #account-edit-address{margin: 0 30px;}
+#account-add-address input, #account-edit-address input{width: 263px;}
+#account-add-address select, #account-edit-address select{margin-left: 0;}
+#account-add-address p.instructions, #account-edit-address-form p.instructions{font-size: 14px;}
+#account-add-address p.error, #account-edit-address p.error{float:right;text-align:right; padding: 0;}
+#account-add-address p.left, #account-edit-address p.left{float:left;}
+#account-add-address h3, #account-edit-address h3{margin-bottom: 5px;}
+#account-add-address h3 + p, #account-edit-address h3 + p{ margin-top:0;}
+#account-add-address p, #account-edit-address p{font-size: 12px;}
+#account-add-address-form, #account-edit-address-form {width: 934px;}
+#account-add-address-form input, #account-edit-address-form input{float: left;}
+.add-address-form-your-details{float:left; clear: both;}
+.add-address-form-your-details button{margin-top:0;}
+.add-address-form-your-details button.black-button{margin-top: 14px;}
+.address-column-right{overflow: auto;float: left;margin-top: 46px;}
+.address-column-left{overflow: auto;clear:both; float: left;margin-right: 30px;border-right: dotted 1px #9e9e9e;padding-right: 30px;height: 455px;}
+
+/*refer a friend */
+.refer-friends-container{clear:left; float:left; width:934px; font-size:12px;}
+.refer-friends-container .instructions{float: left; width:320px; padding-right:30px;
+border-right: solid 1px #9e9e9e; height:300px; padding-bottom:50px;}
+#account-refer-friend .instructions p:first-child{font-family: HelveticaNeueCE-Bold;font-size: 14px;}
+#refer-friends p{float: left; clear: both; width: 534px; }
+#refer-friends{float:left; width: 514px; margin-left: 30px; font-size:12px; margin-top:14px}
+#refer-friends input{width: 173px;margin-right: 15px;}
+#refer-friends label{padding-right: 10px;}
+#refer-friends button{margin-top:0;}
+#refer-friend-past{float:left; clear:both;}
+#refer-friend-past ul{list-style-type: none; float:left; clear:both; padding:0; width:934px; font-size:12px;}
+ul.referred-friend-row{margin: 0;}
+ul.referred-friend-row li{border-bottom: dotted 1px #9e9e9e; padding: 20px 0; margin: 0;}
+#refer-friend-past {margin-bottom: 30px;}
+#refer-friend-past li{float:left; width:130px; padding-left:10px; text-align:center;}
+#refer-friend-past li.friend-name, #refer-friend-past li.title-friend-name{ width:160px;}
+#refer-friend-past li.friend-email, #refer-friend-past li.title-friend-email{ width:160px;}
+.refer-friends-title{background-color: #2a2a2a; color: #ffffff;height: 43px;padding-left: 0;text-align: center;
+font-size: 14px;font-family: HelveticaNeueCE-Bold;line-height: 42px;}
+
+/*reset password */
+#reset-password{float: left;
+clear: both;
+width: 934px;
+margin-left: 30px;}
+#reset-password input{float: left;}
+#reset-password label{clear: both;width: 165px;}
+#reset-password button{clear: both; float: left;}
+#reset-password .bottom-border{width: 934px;float:right;clear:both;}
 
