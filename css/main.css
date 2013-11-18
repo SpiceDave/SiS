@@ -924,6 +924,7 @@ input[type="radio"], #members-checkout-delivery input[type="radio"],
 
 
 
+
 input[type="radio"]:checked{
 	background-position: 22px -3px;
 }
@@ -1228,6 +1229,7 @@ fieldset{
 	font-size: 12px;
 }
 
+
 .register-form-your-details{
 	float: left;
 	width: 400px;
@@ -1252,6 +1254,18 @@ fieldset{
 	font-size: 18px;
 	width: auto;
 	margin-bottom: 0;
+}
+#checkout-register-form label.register-newsletter{
+	font-size: 17px;
+	width: auto;
+	margin-bottom:0;
+}
+
+#checkout-register-form input[type="checkbox"]{
+	width: auto;
+	float: left;
+	margin-top: 4px;
+	margin-left: 10px;
 }
 
 input#register-signup-newsletter, input#account-register-signup-newsletter{
@@ -1315,6 +1329,8 @@ input#register-signup-newsletter, input#account-register-signup-newsletter{
 	margin: 0;
 	padding: 0;
 }
+
+
 
 /******************************
 members delivery options page
@@ -1891,7 +1907,7 @@ height: auto;
 #returns-form li:first-child+li{text-align:center;}
 
 /** wishlist page **/
-.wishlist-basket{float: left; clear: both; width:934px; margin: 30px 30px 50px 30px; border-top: 1px dotted #9e9e9e;}
+.wishlist-basket{border-top: 1px dotted #9e9e9e;margin: 25px 45px;overflow: hidden;}
 #account-wishlist-information{width:619px; font-size: 12px; margin: 0 30px;}
 #wishlist-to-friend{ overflow: auto; width: 461px;}
 #wishlist-to-friend input{width: 300px; float: left;}

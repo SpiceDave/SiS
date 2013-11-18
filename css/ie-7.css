@@ -38,3 +38,15 @@
 	margin: 0;
 }
 .wishlist-basket{overflow:hidden;}
+#checkout-register-form label.register-newsletter{width:100%;}
+
+
+/*fixing forms*/
+#checkout-register-form p, #my-account-register-form p, #non-member-delivery-form p, 
+#add-address-overlay p, #edit-address-overlay p {width: 100%; padding: 10px 0;}
+
+#checkout-register-form select, #my-account-register-form select, #non-member-delivery-form select, #members-checkout-delivery select, #add-address-overlay select, #edit-address-overlay select, #update-details select, 
+#update-newsletter select, #update-password select, #account-add-address-form select, #account-edit-address-form select{ height:46px;}
+
+/*checkboxes*/
+#checkout-register-form input.checkbox, input[type=checkbox]{background-color:#f6f6f6; width: auto; border:0;}
