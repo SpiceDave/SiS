@@ -813,14 +813,6 @@ div:first-child + div >div.check-item-image{
 .product-display-box-b .product-buttons-b{position:absolute; bottom:25px}
 
 
-/* firefox tweaks */
-@-moz-document url-prefix() {
-	#search-results-content .yellow-btn {top:2px;}
-}
-/* ie 10 */
-html[data-useragent*='MSIE 10.0'] select {
-  background: #dddddd none no-repeat -100px 0px !important;
-}
 
 /*  
 Sticky Footer Solution
@@ -1918,7 +1910,7 @@ height: auto;
 /** account -update details -3 columns  **/
 #update-password{width: 303px; float: left; padding: 0 5px; border-right: 1px solid #9e9e9e;}
 #update-password button{width: 303px; margin-left: 0; margin-top:3px;}
-#update-newsletter{width:350px; float: left;margin-right: 30px; padding-left: 5px;}
+#update-newsletter{width:350px; float: left; padding-left: 5px;}
 #update-newsletter button{width: 350px;}
 #update-details{clear:both;float: left; width:259px;margin-left:30px;float:left;padding-right: 5px;
 border-right: 1px solid #9e9e9e;}
@@ -1944,6 +1936,7 @@ border-right: 1px solid #9e9e9e;}
 #account-update legend+label{padding-left: 0;}
 #account-update legend{margin: 0; padding: 0; font-size: 12px; color: #9e9e9e;}
 #account-update .yellow-button{float: left; border-top: dotted #9e9e9e 1px;}
+#account-update .newsletter-options{margin-left:10px}
 #update-password .yellow-button{margin-top:49px;}
 #update-details .yellow-button{margin-top: 45px;}
 
@@ -2009,3 +2002,20 @@ margin-left: 30px;}
 #reset-password label{clear: both;width: 165px;}
 #reset-password button{clear: both; float: left;}
 #reset-password .bottom-border{width: 934px;float:right;clear:both;}
+
+
+
+
+/* firefox tweaks */
+@-moz-document url-prefix() {
+	#search-results-content .yellow-btn {top:2px;}
+}
+/* ie 10 */
+html[data-useragent*='MSIE 10.0'] select {
+  background: #dddddd none no-repeat -100px 0px !important;
+}
+html[data-useragent*='MSIE 10.0'] input[type="checkbox"] {
+  background-color: transparent!important; border:0!important;
+}
+
+
