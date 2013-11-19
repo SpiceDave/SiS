@@ -1,5 +1,5 @@
 /*ie all versions fixes (except 10)*/
- select {
+select {
     background: #dddddd none no-repeat -100px 0px !important;
 }
 input[type="checkbox"] {background-color: transparent!important; border:0!important}
