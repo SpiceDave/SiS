@@ -614,7 +614,7 @@ div:first-child + div >div.check-item-image{
 .prod-list-pagination a{color:#151515}
 .prod-list-pagination a:hover{text-decoration:underline}
 .prod-list-pagination .pag-disabled{color:#9e9e9e}
-#product-list{width:992px; overflow:visible; margin-bottom:20px}
+#product-list{width:992px; margin-bottom:20px}
 
 
 /* search results styles */
@@ -784,7 +784,7 @@ div:first-child + div >div.check-item-image{
 .product-display-box-a .product-img-a{height:230px; width:200px; position:relative}
 .product-display-box-a .product-img-a img {position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin: auto;}
 .product-display-box-a .product-name-a {padding-top:10px; font-size:14px;}
-.product-display-box-a .product-info-a {width:94px; height:27px; background-color:#1c1c1c; text-align:center; float:left; margin-right:5px}
+.product-display-box-a .product-info-a {width:74px; height:27px; background-color:#1c1c1c; text-align:center; float:left; margin-right:5px}
 .product-display-box-a .product-info-a span{ color:#ffffff; font-size:13px;font-family: HelveticaNeueLT-Bold, Helvetica, Arial, sans-serif;}
 .product-display-box-a .product-info-a a{ display:block; line-height:28px;}
 .product-display-box-a .product-buy-a input[type=submit]{width: 110px;background: #FEEA00 url(../img/ui/sign-up.gif);color: #1c1800;padding: 0 25px 0 0;margin: 0;line-height: 27px;height: 27px;border: 0;font-family: HelveticaNeueLT-Bold, Helvetica, Arial, sans-serif; cursor:pointer; font-size:13px}
@@ -1050,6 +1050,8 @@ p.dotted-line{
 	float: right;
 	margin-bottom: 15px;
 }
+#my-account-login-signup input{width: 170px;}
+
 #wishlist-to-friend  button, #checkout-login-signup button, #my-account-login-signup button, #refer-friends button,
  #add-address-overlay button,
 #edit-address-overlay button,
@@ -1670,6 +1672,7 @@ p.check-amounts{
 /* Making margins wider */
 .account-pages #grey-bg-wrapper{
 	padding: 10px 15px 40px 15px;
+	overflow-x: hidden;
 }
 
 
@@ -1905,7 +1908,8 @@ height: auto;
 #wishlist-to-friend input{width: 300px; float: left;}
 #wishlist-to-friend textarea{height: 150px; margin: 0; padding: 0 1px; float:left; width:300px;}
 #wishlist-to-friend label{width:154px; clear: both;}
-.wishlist-basket .get-info{background: transparent; border: none; color: #ffffff; font-size: 13px; line-height: 21px;}
+ #product-list .get-info{background: transparent; border: none; color: #ffffff; font-size: 13px; line-height: 21px;}
+#account-wishlist #product-list{margin-left:25px; overflow:hidden; width:980px; /*fix for wishlist*/}
 
 /** account -update details -3 columns  **/
 #update-password{width: 303px; float: left; padding: 0 5px; border-right: 1px solid #9e9e9e;}
