@@ -19,7 +19,10 @@
 .manage-address-wrapper UL{float:none!important; margin-left:0!important}
 #account-manage-address .bottom-border{height:120px}
 #refer-friend-past  ul{margin-left:0}
-
+#account-update .yellow-button{position:relative!important}
+#account-update .btn-left{left:0!important}
+#account-update .btn-mid{left:0!important}
+#account-update .btn-right{left:0!important}
 /* T styles*/
 #checkout-login-signup input{
 	width: 215px;

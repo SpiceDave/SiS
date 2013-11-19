@@ -1939,10 +1939,15 @@ border-right: 1px solid #9e9e9e;}
 #update-newsletter .row-title{height: 16px;}
 #account-update legend+label{padding-left: 0;}
 #account-update legend{margin: 0; padding: 0; font-size: 12px; color: #9e9e9e;}
-#account-update .yellow-button{float: left; border-top: dotted #9e9e9e 1px;}
+#account-update {position:relative; height:540px}
+#account-update .yellow-button{float: left; border-top: dotted #9e9e9e 1px; bottom: 0px; position: absolute;}
+#account-update .btn-left{left:35px}
+#account-update .btn-mid{left:300px}
+#account-update .btn-right{left:618px}
 #account-update .newsletter-options{margin-left:10px}
 #update-password .yellow-button{margin-top:49px;}
 #update-details .yellow-button{margin-top: 45px;}
+
 
 /* delivery address pages */
 #account-manage-address{font-size: 12px;float:left;clear:both;}
