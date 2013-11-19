@@ -16,8 +16,8 @@
 .history-list ul{margin-left:0px!important;}
 .manage-delivery-titles{margin-left:0}
 .manage-address-wrapper UL{float:none!important; margin-left:0!important}
-.bottom-border{height:120px}
-
+#account-manage-address .bottom-border{height:120px}
+#refer-friend-past  ul{margin-left:0}
 
 /* T styles*/
 #checkout-login-signup input{
