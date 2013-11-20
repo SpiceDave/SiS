@@ -1,111 +1,102 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/transitional.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Parent template containing header and footer, linked files etc.</title>
-<link rel="stylesheet" type="text/css" href="../css/main.css" media="screen">
-<link rel="stylesheet" type="text/css" href="../css/checkout-working.css" media="screen">
-<!--[if IE 7]>
-	<link rel="stylesheet" type="text/css" href="../css/ie-7.css" media="screen">
-<![endif]-->
-
-</head>
-
-<body>
-<div id="container">
-	<div id="wrapper">
-        <div id="header">
-            <div id="SiS-logo"><a href="http://www.scienceinsport.com"><img src="../img/ui/sis.png" alt="Science in Sport logo" title="SiS" height="78" width="163"></a></div>
-
-            <div id="account-menu">
-            	<div class="acc-menu-item"><a class="basket-over" href="#"><span>[2 Items]</span></a></div>
-            	<div class="acc-menu-item"><a class="basket-over" href="#" style="color:#656565">Cart</a></div>
-            	<div class="acc-menu-item"><a class="basket-over" href="#"><img src="../img/ui/trolley.png" alt='Cart' title='2 items' height="34" width="36"></a></div>
-            	<div class="acc-menu-item"><a href="#"><span>Home</span></a></div>               
-            </div>
-     	</div><!-- #header -->
-        
-        <div id="content" class="checkout-pages">
-			<div id="ad-title-space">
-				
-				<h1 class="check-page-title">
-					SiS Checkout
-				</h1>
-				<p class="h1-sub-heading grey">Free delivery on all UK orders.</p>
-			</div>
-			<div id="grey-bg-wrapper">
-				<div id="checkout-breadcrumb-menu" class="left grey">Sign in <span class="current black">> Delivery Address & Delivery Options</span> > Payment > Receipt</div>
-					
-				<form id="delivery-info-form" action=""><!--start of delivery options form-->
-					<p class="grey instructions">Please check the details before proceeding</p>
-					<button class="yellow-button-wide" type="submit">Continue Securely</button>
-					<div id="non-members-checkout-delivery">
-						<div class="mem-check-product-info">
-							<div class="check-item-image">
-								<img src="../img/dummy/product.png" alt="Product Image">
-							</div>
-							<ul class="check-item-item">
-								<li class="check-row-product-name">SIS Rego Rapid Recovery
-								</li>
-								<li class="clear grey">#002962</li>
-							</ul>
-							<ul class="item-quantity-info">
-								<li class="">Quantity: 1</li>
-								<li class="">
-										<button class="remove-button">Remove</button>
-								</li>
-							</ul>
-							<ul class="item-availability">
-								<li>In Stock</li>
-							</ul>
-						</div>
-						<div class="mem-check-choose-delivery">
-							<div class="select-deliver">
-								<input type="radio" id="deliver-to" name="deliver-collect"><label for="deliver-to">Deliver to address:</label>
-								<p class="address-box">Mr George Adroulis<br>
-									RED Technology.com<br>
-									Oakfield Industrial Estate <br>
-									Eynsham<br>
-									Oxfordshire<br>
-									OX29 4TH<br>
-									United Kingdom
-									</p>
-								
-								
-								
-							</div>
-							
-						</div>
-						<div class="mem-check-delivery-type">
-							<input type="radio" id="standard-delivery" name="delivery-type" ><label for="standard-delivery">Standard 3-5 Days (<span class="pound">£</span>3.95)</label>
-							<input type="radio" id="next-day-delivery" name="delivery-type"><label for="next-day-delivery">Nominated &amp; Next Day (from <span class="pound">£</span>4.95)</label>
-							<p class="delivery-option-description margin-top-30 left">Information about the selected delivery
-								method will go here. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
-							
-							
-						</div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Parent template containing header and footer, linked files etc.</title>
+		<link rel="stylesheet" type="text/css" href="../css/main.css" media="screen" />
+		<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="../css/ie-7.css" media="screen" />
+		<![endif]-->
+		<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="../css/ie.css" media="screen" />
+		<![endif]-->
+	</head>
+	</head>
+	<body>
+		<div id="container">
+			<div id="wrapper">
+				<div id="header">
+					<div id="SiS-logo"><a href="http://www.scienceinsport.com"><img src="../img/ui/sis.png" alt="Science in Sport logo" title="SiS" height="78" width="163" /></a></div>
+					<div id="account-menu">
+						<div class="acc-menu-item"><a class="basket-over" href="#"><span>[2 Items]</span></a></div>
+						<div class="acc-menu-item"><a class="basket-over" href="#" style="color:#656565">Cart</a></div>
+						<div class="acc-menu-item"><a class="basket-over" href="#"><img src="../img/ui/trolley.png" alt='Cart' title='2 items' height="34" width="36" /></a></div>
+						<div class="acc-menu-item"><a href="#"><span>Home</span></a></div>
 					</div>
+				</div>
+				<!-- #header -->
+				<div id="content" class="checkout-pages">
+					<div id="ad-title-space">
+						<h1 class="check-page-title">
+							SiS Checkout
+						</h1>
+						<p class="h1-sub-heading grey">Free delivery on all UK orders.</p>
+					</div>
+					<div id="grey-bg-wrapper">
+						<div id="checkout-breadcrumb-menu" class="left grey">Sign in <span class="current black"> &raquo; Delivery Address & Delivery Options</span> &raquo; Payment &raquo; Receipt</div>
+						<form id="delivery-info-form" action="">
+							<!--start of delivery options form-->
+							<p class="grey instructions">Please check the details before proceeding</p>
+							<button class="yellow-button-wide" type="submit">Continue Securely</button>
+							<div id="non-members-checkout-delivery">
+								<div class="mem-check-product-info">
+									<div class="check-item-image">
+										<img src="../img/dummy/product.png" alt="Product Image" />
+									</div>
+									<ul class="check-item-item">
+										<li class="check-row-product-name">SIS Rego Rapid Recovery
+										</li>
+										<li class="clear grey">#002962</li>
+									</ul>
+									<ul class="item-quantity-info">
+										<li class="">Quantity: 1</li>
+										<li class="">
+											<button class="remove-button">Remove</button>
+										</li>
+									</ul>
+									<ul class="item-availability">
+										<li>In Stock</li>
+									</ul>
+								</div>
+								<div class="mem-check-choose-delivery">
+									<div class="select-deliver">
+										<input type="radio" id="deliver-to" name="deliver-collect" /><label for="deliver-to">Deliver to address:</label>
+										<p class="address-box">Mr George Adroulis<br />
+											RED Technology.com<br />
+											Oakfield Industrial Estate <br />
+											Eynsham<br />
+											Oxfordshire<br />
+											OX29 4TH<br />
+											United Kingdom
+										</p>
+									</div>
+								</div>
+								<div class="mem-check-delivery-type">
+									<input type="radio" id="standard-delivery" name="delivery-type" /><label for="standard-delivery">Standard 3-5 Days (<span class="pound">£</span><span class="pound">3.95</span>)</label>
+									<input type="radio" id="next-day-delivery" name="delivery-type" /><label for="next-day-delivery">Nominated &amp; Next Day (from <span class="pound">£</span><span class="pound">4.95</span>)</label>
+									<p class="delivery-option-description margin-top-30 left">Information about the selected delivery
+										method will go here. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+									</p>
+								</div>
+							</div>
 							<button class="black-button left">Back</button>
 							<button class="yellow-button-wide" type="submit">Continue Securely</button>
-							
-				</form><!-- end of delivery info form-->
-				
-				
-				
-			<div class="payment-cards-box"><img src="../img/dummy/payment-logos.png" alt="payment logos"></div>
-			</div><!-- end of grey bg wrapper-->
-            
-        </div><!-- #content -->
-        
-        <div id="footer">
-            <div id="footer-legal"><span>&copy; SiS (Science in Sport) Limited, The Innovation Centre, 35 Churchill Way, Lancashire, BB9 6RT. Company reg number: 2742833, VAT reg number: GB 604598037</span></div>
-            <div id="footer-follow">
-                
-            </div>
-        </div><!-- #footer -->
-   	</div><!--  #wrapper -->
-</div><!-- #container -->
-</body>
-<script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
-<script src="../js/main.js" type="text/javascript"></script>
+						</form>
+						<!-- end of delivery info form-->
+						<div class="payment-cards-box"><img src="../img/dummy/payment-logos.png" alt="payment logos" /></div>
+					</div>
+					<!-- end of grey bg wrapper-->
+				</div>
+				<!-- #content -->
+				<div id="footer">
+					<div id="footer-legal"><span>&copy; SiS (Science in Sport) Limited, The Innovation Centre, 35 Churchill Way, Lancashire, BB9 6RT. Company reg number: 2742833, VAT reg number: GB 604598037</span></div>
+					<div id="footer-follow">
+					</div>
+				</div>
+				<!-- #footer -->
+			</div>
+			<!--  #wrapper -->
+		</div>
+		<!-- #container -->
+	</body>
 </html>
