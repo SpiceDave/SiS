@@ -51,11 +51,13 @@
 /*fixing forms*/
 #checkout-register-form p, #my-account-register-form p, #non-member-delivery-form p, 
 #add-address-overlay p, #edit-address-overlay p {width: 100%; padding: 10px 0;}
- #members-checkout-delivery select, #add-address-overlay select, #edit-address-overlay select, #update-newsletter select, #update-password select{ height:46px;}
+ #add-address-overlay select, #edit-address-overlay select, #update-newsletter select, #update-password select{ height:46px;}
 
-#non-member-delivery-form select, #checkout-register-form select, #my-account-register-form select, #update-details select,#account-add-address-form select, #account-edit-address-form select{margin-bottom:25px}
+#members-checkout-delivery select,  #non-member-delivery-form select, #checkout-register-form select, #my-account-register-form select, #update-details select,#account-add-address-form select, #account-edit-address-form select{margin-bottom:25px}
 
 #non-member-delivery-form .yellow-button-wide {float:left!important; margin-top:20px}
+
+#delivery-info-form {width:934px}
 
 /*checkboxes*/
 #checkout-register-form checkbox, input[type=checkbox]{background-color:transparent; width: auto; border:0;}
