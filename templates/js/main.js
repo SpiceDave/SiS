@@ -13,9 +13,11 @@ jQuery(
         var doc = document.documentElement;
         doc.setAttribute('data-useragent', navigator.userAgent);
        
+	   /* sticky footer doesn't really work visually with this design
 	    stickFooter(); 
 		setTimeout(stickFooter, 1000);
 		jQuery(window).resize(function() { stickFooter()});
+		*/ 
 		
 		//hide the menu
 		jQuery('#mega-dropdown, .ul-0, #css-menu').hide();
@@ -158,6 +160,7 @@ function qbclose(){
 }
 
 /*sticky footer - expands the content area to meet the css sticky footer */
+/*
 function stickFooter(){
 	//get content height
 	var contentHeight = jQuery('#content').height();
@@ -171,7 +174,7 @@ function stickFooter(){
 	{
 		jQuery('#content').css('height', windowHeight - remainder);
 	}
-}
+}*/
 		
 
 

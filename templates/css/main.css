@@ -369,7 +369,7 @@ div:first-child+div>div.check-item-image{margin-top:10px}
 .faq-content .question-form{display:block;float:left;margin-bottom:10px}
 .faq-content .question-input{height:27px;line-height:27px;background-color:#ddd;border:1px solid #cacaca;margin:0;padding-left:5px;color:grey}
 .faq-content .yellow-btn{background:transparent url(../img/ui/button.png) 0 14px no-repeat;height:62px;font-family:HelveticaNeueLT-Bold;width:157px;margin-left:-7px;text-align:left;padding-left:40px;cursor:pointer;border:0;position:relative;top:1px}
-.lo-content{background-color:#fff;width:1204px;padding:45px;overflow:hidden}
+.lo-content{background-color:#fff;height:500px;padding:45px;overflow:hidden}
 .lo-content .email-remove-form{display:block;float:left;margin-bottom:10px}
 .lo-content #email-remove-input{height:27px;line-height:27px;background-color:#ddd;border:1px solid #cacaca;margin:0;padding-left:5px;color:grey;float:left}
 .lo-content .yellow-btn{background:transparent url(../img/ui/button.png) 0 14px no-repeat;height:62px;font-family:HelveticaNeueLT-Bold;width:157px;margin-top:-14px;text-align:left;padding-left:40px;cursor:pointer;border:0;position:relative;float:left}
@@ -391,7 +391,7 @@ div:first-child+div>div.check-item-image{margin-top:10px}
 .product-display-box-a .product-img-a img{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto}
 .product-display-box-a .product-name-a{padding-top:10px;font-size:14px}
 .product-display-box-a .product-info-a{width:74px;height:27px;background-color:#1c1c1c;text-align:center;float:left;margin-right:5px}
-.product-display-box-a .product-info-a span{color:#fff;font-size:13px;font-family:HelveticaNeueLT-Bold,Helvetica,Arial,sans-serif}
+.product-display-box-a .product-info-a span{color:#fff;font-size:13px;font-family:HelveticaNeueLT-Bold,Helvetica,Arial,sans-serif; line-height:25px}
 .product-display-box-a .product-info-a a{display:block;line-height:28px}
 .product-display-box-a .product-buy-a input[type=submit]{width:110px;background:#feea00 url(../img/ui/sign-up.gif);color:#1c1800;padding:0 25px 0 0;margin:0;line-height:27px;height:27px;border:0;font-family:HelveticaNeueLT-Bold,Helvetica,Arial,sans-serif;cursor:pointer;font-size:13px}
 .product-buy-a{width:110px;float:left}
@@ -412,10 +412,14 @@ div:first-child+div>div.check-item-image{margin-top:10px}
 .product-display-box-b .product-promo-icon-b{position:absolute;top:10px;left:10px}
 .product-display-box-b .product-buttons-b{position:absolute;bottom:25px}
 html,body{height:100%}
-#wrap{min-height:100%;width:100%}
+/*#wrap{min-height:100%;width:100%}
 #main{overflow:auto;padding-bottom:252px;margin:0 auto;width:1024px;position:relative;background-color:#fff}
 #sticky-footer{position:relative;width:1024px;margin:-252px auto 0 auto;height:252px;clear:both}
-body:before{content:"";height:100%;float:left;width:0;margin-top:-32767px}
+body:before{content:"";height:100%;float:left;width:0;margin-top:-32767px}*/
+#wrap{width:100%}
+#main{overflow:auto;margin:0 auto;width:1024px;position:relative;background-color:#fff}
+#sticky-footer{position:relative;width:1024px;margin:0 auto 0 auto;height:252px;clear:both}
+
 #edit-address-overlay,#add-address-overlay{display:none}
 body{background-color:#d7dede}
 a.link{color:#000;cursor:pointer}
