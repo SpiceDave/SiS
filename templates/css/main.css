@@ -491,8 +491,9 @@ fieldset{border:0}
 #checkout-register-form,#my-account-register-form #non-member-delivery-form,#members-checkout-delivery,#non-members-checkout-delivery{float:left;width:100%}
 #checkout-register-form p,#my-account-register-form p,#my-account-register-form h3,#checkout-register-form h3,#non-member-delivery-form p,#non-member-delivery-form h3{float:left;clear:both}
 #checkout-register-form p,#my-account-register-form p,#non-member-delivery-form p,#add-address-overlay p,#edit-address-overlay p{font-size:12px}
-#checkout-login-signup p.error, #checkout-register-form p.error,#my-account-register-form p.error,#non-member-delivery-form p.error,#members-checkout-delivery p.error,#edit-address-overlay p.error,#add-address-overlay p.error,#my-account-login-signup p.error{padding:0;float:left;margin-bottom:0;margin-left:125px}
+#checkout-forgot-password p.error, #checkout-login-signup p.error, #checkout-register-form p.error,#my-account-register-form p.error,#non-member-delivery-form p.error,#members-checkout-delivery p.error,#edit-address-overlay p.error,#add-address-overlay p.error,#my-account-login-signup p.error{padding:0;float:left;margin-bottom:0;margin-left:125px}
 #checkout-login-signup p.error{margin-left:100px!important; width:215px}
+#checkout-forgot-password p.error{margin-left:120px!important; width:215px}
 #checkout-register-form input,#my-account-register-form input,#non-member-delivery-form input,#members-checkout-delivery input,#update-details input,#update-newsletter input,#update-password input,#edit-address-overlay input,#add-address-overlay input,#non-members-checkout-delivery input,#refer-friends input{height:25px;background-color:#ddd;border:1px solid #cacaca;padding:2px;float:left;margin-bottom:15px;width:264px}
 #members-checkout-delivery input[type="radio"],#non-members-checkout-delivery input[type="radio"]{border:0}
 #checkout-register-form button,#non-member-delivery-form button,#members-checkout-delivery button,#non-members-checkout-delivery button{clear:both;float:left}

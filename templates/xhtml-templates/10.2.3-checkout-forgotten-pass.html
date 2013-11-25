@@ -25,10 +25,9 @@
 				<!-- #header -->
 				<div id="content" class="checkout-pages">
 					<div id="ad-title-space">
-						<h1 class="check-page-title">
-							SiS Checkout
+						<h1 class="check-page-title">&nbsp;
+							
 						</h1>
-						<p class="h1-sub-heading grey">Free delivery on all UK orders.</p>
 					</div>
 					<div id="grey-bg-wrapper">
 						<div id="checkout-breadcrumb-menu" class="left grey"><span class="current black">Welcome</span> &raquo; Delivery Address &amp; Delivery Options &raquo; Payment &raquo; Receipt</div>
@@ -36,7 +35,11 @@
 							<h2>Forgotten Password</h2>
 							<form action="">
 								<p class="grey">Please enter your email address and we'll send you instructions on how to reset your password.</p>
-								<label for="check-forgot-password-email">Email address</label> <input  id="check-forgot-password-email" type="text" name="checkout-new-customer-email" size="40" />
+								<p class="error">A new password has been sent to the email address entered below</p>
+								<p class="error">Please enter a valid email address</p>
+								<div class="clear"></div>
+								<label for="check-forgot-password-email">Email address*</label>
+								<input name="checkout-new-customer-email" type="text"  id="check-forgot-password-email" size="40" maxlength="128" />
 								<p class="dotted-line"></p>
 								<button class="yellow-button-wide" name="forgot-password" type="submit">Submit</button>
 							</form>
