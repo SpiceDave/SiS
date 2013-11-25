@@ -79,6 +79,45 @@ jQuery(
 			});
 		}
 		
+		//bind mini search functions
+		var active = false; 
+		/*clear text field on focus*/
+		jQuery('#search-box input').focus(function(){
+			jQuery(this).val('');
+		});
+
+		/*show search*/
+		jQuery('#search-box input').keyup(function(){
+			var tfVal = jQuery(this).val();
+			if(!active)
+			{
+				loadMiniSearch();
+				active = true;
+			}
+			if(tfVal.length > 0)
+			{
+				//do the dynamic loading stuff
+			}
+			else
+			{
+				hideMiniSearch();
+			}
+		});
+		
+
+		function loadMiniSearch(){
+			jQuery('#ajax-search-container').load('9.2-mini-search-component.html', function(){
+				jQuery('#ajax-search-container').clearQueue().slideDown(500);
+			});
+		}
+		
+		function hideMiniSearch(){
+			active = false;
+			jQuery('#ajax-search-container').clearQueue().slideUp(500, function(){
+				jQuery(this).html('');
+			});
+		}
+		
 		
 		//clear floats so next row vertically aligns left and top properly (every fourth sub-menu cat.)
 		jQuery('.ul-1').each(function(){
