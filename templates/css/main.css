@@ -284,10 +284,15 @@ div:first-child+div>div.check-item-image{margin-top:10px}
 #search-results-content .article-excerpt{line-height:18px;margin:30px 0}
 .bottom-page-spacer{height:30px}
 #product-container{margin:0 45px 45px 45px}
-#product-container #add-this-component{height:32px;float:right;margin-top:15px;width:184px}
+#product-container #add-this-component{
+	height: 32px;
+	float: right;
+	margin-top: 40px;
+	width: 184px
+}
 #product-container h3{margin:0}
 #product-container .product-top-info{width:55%;float:left;margin-top:30px}
-#product-container .product-top-wysiwyg{width:40%;float:right;text-align:right;margin-top:40px}
+#product-container .product-top-wysiwyg{width:40%;float:left;text-align:left;margin-top:40px}
 #dd-product-selectors select{float:left;background:transparent;border:0;height:30px;border-radius:0;padding:5px 5px 5px 0;margin-left:2px;background:#ddd url(../img/ui/dropdown-arrow.png) no-repeat -1px 0;-webkit-appearance:none;-moz-appearance:none;text-indent:.01px;text-overflow:"";width:144px;background-position:-126px 0;margin-left:0;margin-bottom:20px;margin-right:15px;padding-right:10px}
 #dd-product-selectors .yellow-btn{background:transparent url(../img/ui/button.png) 0 14px no-repeat;height:62px;top:1px;font-family:HelveticaNeueLT-Bold;width:157px;margin-left:-5px;text-align:left;padding-left:12px;cursor:pointer;border:0;position:relative}
 #product-container .product-shot-column,#product-container .product-info-column{width:445px;float:left;margin:45px 0}
