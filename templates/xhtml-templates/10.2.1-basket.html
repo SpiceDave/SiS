@@ -396,20 +396,21 @@
 			<div id="ad-title-space">
 				<div id="checkout-ad" class="check-advert"> <img src="../img/dummy/header-advert-zone.jpg" alt="SiS advertisement" width="994" height="244" /> </div>
 				<h1 class="check-page-title"> SiS Shopping Basket </h1>
-				<p class="h1-sub-heading grey">Free delivery on all UK orders.</p>
+				<p id="left-wysiwyg" class="h1-sub-heading grey">Free delivery on all UK orders.</p>
 			</div>
 			<div id="grey-bg-wrapper">
 				<div class="check-wysiwyg float-right rh-wysiwyg"> Satisfaction Guaranteed<br />
 					<span class="grey small">If you aren't happy with your purchase just return it for a full refund</span> </div>
+				<h2 class="empty-basket">Your basket is empty</h2>
 				<div id="basket" class="check-product-list">
 					<div class="check-empty-basket red hide"> Your basket is empty </div>
 					<div class="check-items">
 						<div class="check-items-title"> <span class="item-title">Product</span> <span class="delivery-title"></span> <span class="price-title">Price</span> <span class="quantity-title">Quantity</span> <span class="total-title">Line Total</span> </div>
 						<!-- end .check-items-title -->
 						<div class="check-item-row">
-							<div class="check-item-image"> <img src="../img/dummy/product.png" alt="Product Image" /> </div>
+							<div class="check-item-image"> <a href="#" title="SIS Rego Rapid Recovery"><img src="../img/dummy/product.png" alt="Product Image" /></a> </div>
 							<ul class="check-item-item">
-								<li class="check-row-product-name">SIS Rego Rapid Recovery </li>
+								<li class="check-row-product-name"><a href="#" title="SIS Rego Rapid Recovery" class="near-black">SIS Rego Rapid Recovery</a></li>
 								<li class="clear grey">#002962 </li>
 								<li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span> </li>
 								<li class="">Flavour: <span class="grey">Strawberry</span> </li>
@@ -417,7 +418,7 @@
 							<div class="check-delivery red"> Can be delivered immediately </div>
 							<div class="check-item-price"> <span class="pound">&pound;</span><span class="bold">24.00</span> </div>
 							<form class="check-amounts" method="post" action="#">
-								<input type="text" name="product-amount" size="9" />
+								<input type="text" name="product-amount" size="9" value="12345" />
 								<button class="remove-button">Remove</button>
 								<button class="text-button">Update</button>
 							</form>
@@ -425,23 +426,45 @@
 						</div>
 						<!-- end of check-item-row -->
 						<div class="check-item-row">
-							<div class="check-item-image"> <img src="../img/dummy/product.png" alt="Product Image" /> </div>
+							<div class="check-item-image"> <a  href="#" title="SIS Rego Rapid Recovery"><img src="../img/dummy/product.png" alt="Product Image" /></a> </div>
 							<ul class="check-item-item">
-								<li class="check-row-product-name">SIS Rego Rapid Recovery </li>
+								<li class="check-row-product-name"><a class="near-black" href="#" title="SIS Rego Rapid Recovery">SIS Rego Rapid Recovery</a></li>
 								<li class="clear grey">#002962 </li>
 								<li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span> </li>
 								<li class="">Flavour: <span class="grey">Strawberry</span> </li>
 							</ul>
 							<div class="check-delivery red"> Can be delivered immediately </div>
-							<div class="check-item-price"> <span class="pound">&pound;</span><span class="bold">24.00</span> </div>
+							<div class="check-item-price"><del><span class="pound">&pound;</span><span class="bold">24.00</span></del><br />
+							<span class="pound">&pound;</span><span class="bold">18.00</span></div>
 							<form class="check-amounts" method="post" action="#">
-								<input type="text" name="product-amount" size="9" />
+								<input type="text" name="product-amount" size="9" value="2" />
 								<button class="remove-button">Remove</button>
 								<button class="text-button">Update</button>
 							</form>
 							<div class="check-final-price"> <span class="pound">&pound;</span> <span class="bold">55.80</span> </div>
 						</div>
 						<!-- end of check item row -->
+						
+						<div class="check-item-row">
+							<div class="check-item-image"> <a  href="#" title="SIS Rego Rapid Recovery"><img src="../img/dummy/product.png" alt="Product Image" /></a> </div>
+							<ul class="check-item-item">
+								<li class="check-row-product-name"><a class="near-black" href="#" title="SIS Rego Rapid Recovery">SIS Rego Rapid Recovery</a></li>
+								<li class="clear grey">#002962 </li>
+								<li class="">Selection: <span class="grey clear">1.6kg (6 servings)</span> </li>
+								<li class="">Flavour: <span class="grey">Strawberry</span> </li>
+							</ul>
+							<div class="check-delivery red"> Can be delivered immediately </div>
+							<div class="check-item-price"><del><span class="pound">&pound;</span><span class="bold">24.00</span></del><br />
+							<span class="pound">&pound;</span><span class="bold">0.00</span></div>
+							<form class="check-amounts" method="post" action="#">
+								<input type="text" name="product-amount" size="9" value="3" readonly="readonly" />
+							</form>
+							<div class="check-final-price"> <span class="pound">&pound;</span> <span class="bold">55.80</span> </div>
+						</div>
+						<!-- end of check item row -->
+						
+						
+						
 						<div class="check-offer-row">
 							<div class="check-offer-name"> Offer Name </div>
 							<div class="check-discount-amount"> <span class="pound">-&pound;</span><span class="bold">20.00</span> </div>
