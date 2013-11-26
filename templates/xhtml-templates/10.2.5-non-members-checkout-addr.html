@@ -25,10 +25,9 @@
 				<!-- #header -->
 				<div id="content" class="checkout-pages">
 					<div id="ad-title-space">
-						<h1 class="check-page-title">
-							SiS Checkout
+						<h1 class="check-page-title">&nbsp;
+							
 						</h1>
-						<p class="h1-sub-heading grey">Free delivery on all UK orders.</p>
 					</div>
 					<div id="grey-bg-wrapper">
 						<div id="checkout-breadcrumb-menu" class="left grey"><span class="current black">Welcome</span> &raquo; Delivery Address &amp; Delivery Options &raquo; Payment &raquo; Receipt</div>
@@ -40,12 +39,15 @@
 									<p class="grey">* Required fields are marked with an asterisk</p>
 									<p>Please enter your details</p>
 									<p class="error">Please enter a valid email address</p>
-									<p class="error">The email address is already registered, please sign in with the email address or enter a different email address</p>
+									<p class="error">The email address is already registered,<br />
+										please sign in with the email address or<br />
+									enter a different email address</p>
 									<label for="non-member-email-address">Email Address*</label>
 									<input id="non-member-email-address" type="text" name="email-address"  maxlength="128" />
 									<p class="error">Please select a title</p>
-									<label for="non-member-title"> Title</label>
+									<label for="non-member-title"> Title*</label>
 									<select id="non-member-title">
+										<option>Please Select</option>
 										<option>Mr</option>
 										<option>Mrs</option>
 										<option>Miss</option>
@@ -53,13 +55,11 @@
 									</select>
 									<p class="error"> Please enter a first name</p>
 									<label for="non-member-first-name">First Name*</label>
-									<input id="non-member-first-name" type="text" name="register-first-name" />
+									<input name="register-first-name" type="text" id="non-member-first-name" maxlength="60" />
 									<p class="error"> Please enter a last name</p>
 									<label for="non-member-last-name">Last Name*</label>
-									<input id="non-member-last-name" type="text" name="register-last-name" />
-									<p class="error"> Please enter a contact number</p>
-									<label for="non-member-contact-number">Contact Number*</label>
-									<input id="non-member-contact-number" type="text" name="register-first-name" />
+									<input name="register-last-name" type="text" id="non-member-last-name" maxlength="60" />
+									
 									<p class="error">Please select a country</p>
 									<label for="non-member-choose-country">Country*</label>
 									<select id="non-member-choose-country" name="register-choose-country">
@@ -313,23 +313,23 @@
 										<option value="Zimbabwe">Zimbabwe</option>
 									</select>
 									<label for="non-member-company-name">Company Name</label>
-									<input id="non-member-company-name" type="text" name="register-company-name" />
+									<input name="register-company-name" type="text" id="non-member-company-name" maxlength="40" />
 									<p class="error">Please enter the first line of your address</p>
 									<label for="non-member-address-line1">Address Line 1*</label>
-									<input id="non-member-address-line1" type="text" name="register-address-line1" />
+									<input name="register-address-line1" type="text" id="non-member-address-line1" maxlength="60" />
 									<label for="non-member-address-line2">Address Line 2</label>
-									<input id="non-member-address-line2" type="text" name="register-address-line2" />
+									<input name="register-address-line2" type="text" id="non-member-address-line2" maxlength="60" />
 									<label for="non-member-address-line3">Address Line 3</label>
-									<input id="non-member-address-line3" type="text" name="register-address-line3" />
+									<input name="register-address-line3" type="text" id="non-member-address-line3" maxlength="60" />
 									<p class="error">Please enter a town or city </p>
 									<label for="non-member-town">Town/City*</label>
-									<input id="non-member-town" type="text" name="register-town" />
+									<input name="register-town" type="text" id="non-member-town" maxlength="50" />
 									<p class="error">Please enter a county/state</p>
 									<label for="non-member-address-county">County</label>
-									<input id="non-member-address-county" type="text" name="register-address-county" />
+									<input name="register-address-county" type="text" id="non-member-address-county" maxlength="50" />
 									<p class="error">Please type in a postcode/zip code</p>
 									<label for="non-member-address-postcode">Postcode*</label>
-									<input id="non-member-address-postcode" type="text" name="register-address-postcode" />
+									<input name="register-address-postcode" type="text" id="non-member-address-postcode" maxlength="10" />
 								</div>
 								<div>
 									<p class="dotted-line"></p>
