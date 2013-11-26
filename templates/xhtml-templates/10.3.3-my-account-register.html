@@ -3,6 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title></title>
+
 <link rel="stylesheet" type="text/css" href="../css/main.css" media="screen" />
 <!--[if IE 7]>
 	<link rel="stylesheet" type="text/css" href="../css/ie-7.css" media="screen">
@@ -388,7 +389,8 @@
 				<!-- uses html5 search field - might need to add js alternative too -->
 				<input name="search" type="text" value="ENTER KEYWORD OR PRODUCT CODE"  maxlength="50" />
 			</div>
-			<div id="ajax-menu-container"></div><div id="ajax-search-container"></div>
+			<div id="ajax-menu-container"></div>
+			<div id="ajax-search-container"></div>
 		</div>
 		<!-- #header -->
 		
@@ -406,14 +408,17 @@
 								<p class="grey">* Required fields are marked with an asterisk</p>
 								<p>Please enter your details</p>
 								<p class="error">Please enter a valid email address</p>
-								<p class="error">The email address is already registered, please sign in with the email address or enter a different email address</p>
+								<p class="error">The email address is already registered,<br />
+									please sign in with the email address or<br />
+									enter a different email address</p>
 								<label for="account-register-email-address">Email Address*</label>
 								<input id="account-register-email-address" type="text" name="register-email-address" size="51" maxlength="128" />
 								<div class="clear"></div>
 								<div class="clear"></div>
 								<p class="error">Please select a title</p>
-								<label for="account-register-title"> Title</label>
+								<label for="account-register-title"> Title*</label>
 								<select id="account-register-title">
+									<option>Please Select</option>
 									<option>Mr</option>
 									<option>Mrs</option>
 									<option>Miss</option>
@@ -422,22 +427,22 @@
 								<div class="clear"></div>
 								<p class="error"> Please enter a first name</p>
 								<label for="account-register-first-name" >First Name*</label>
-								<input id="account-register-first-name" type="text" name="register-first-name" size="51" />
+								 
 								<div class="clear"></div>
 								<p class="error"> Please enter a last name</p>
 								<label for="account-register-last-name">Last Name*</label>
-								<input id="account-register-last-name" type="text" name="register-last-name" size="51" />
+								<input name="register-last-name" type="text" id="account-register-last-name" size="51" maxlength="60" />
 								<div class="clear"></div>
 								<p class="error"> Please enter a contact number</p>
 								<label for="account-register-contact-number">Contact Number*</label>
-								<input id="account-register-contact-number" type="text" name="register-first-name" size="51" />
+								<input name="register-first-name" type="text" id="account-register-contact-number" size="51" maxlength="30" />
 								<div class="clear"></div>
 								<p>Please enter a secure password consisting of a minimum of 6 characters.</p>
 								<p class="error">Password must consist of a minimum of 6 characters</p>
 								<label for="account-register-password">Password*</label>
 								<input id="account-register-password" type="text" name="register-first-name" size="51" />
 								<div class="clear"></div>
-								<p class="error">Please ensure your password and confirm password match</p>
+								<p class="error">Please ensure your password and confirm<br />password match</p>
 								<label for="account-register-confirm-password">Confirm Password*</label>
 								<input id="account-register-confirm-password" type="text" name="register-confirm-password" size="51" />
 								<div class="clear"></div>
@@ -447,8 +452,9 @@
 								<p class="grey">*Required fields are marked with an asterisk</p>
 								<p>Please enter your delivery address</p>
 								<p class="error">Please select a title</p>
-								<label for="account-register-delivery-title"> Title</label>
+								<label for="account-register-delivery-title"> Title*</label>
 								<select id="account-register-delivery-title">
+									<option>Please Select</option>
 									<option>Mr</option>
 									<option>Mrs</option>
 									<option>Miss</option>
@@ -457,11 +463,11 @@
 								<div class="clear"></div>
 								<p class="error"> Please enter a first name</p>
 								<label for="account-register-delivery-first-name">First Name*</label>
-								<input id="account-register-delivery-first-name" type="text" name="register-first-name" size="51" />
+								<input name="register-first-name" type="text" id="account-register-delivery-first-name" size="51" maxlength="60" />
 								<div class="clear"></div>
 								<p class="error"> Please enter a last name</p>
 								<label for="account-register-delivery-last-name">Last Name*</label>
-								<input id="account-register-delivery-last-name" type="text" name="register-last-name" size="51" />
+								<input name="register-last-name" type="text" id="account-register-delivery-last-name" size="51" maxlength="60" />
 								<div class="clear"></div>
 								<p class="error">Please select a country</p>
 								<label for="account-register-choose-country">Country*</label>
@@ -717,29 +723,29 @@
 								</select>
 								<div class="clear"></div>
 								<label for="account-register-company-name">Company Name</label>
-								<input id="account-register-company-name" type="text" name="register-company-name" size="51" />
+								<input name="register-company-name" type="text" id="account-register-company-name" size="51" maxlength="40" />
 								<div class="clear"></div>
 								<p class="error">Please enter the first line of your address</p>
 								<label for="account-register-address-line1">Address Line 1*</label>
-								<input id="account-register-address-line1" type="text" name="register-address-line1" size="51" />
+								<input name="register-address-line1" type="text" id="account-register-address-line1" size="51" maxlength="60" />
 								<div class="clear"></div>
 								<label for="account-register-address-line2">Address Line 2</label>
-								<input id="account-register-address-line2" type="text" name="register-address-line2" size="51" />
+								<input name="register-address-line2" type="text" id="account-register-address-line2" size="51" maxlength="60" />
 								<div class="clear"></div>
 								<label for="account-register-address-line3">Address Line 3</label>
-								<input id="account-register-address-line3" type="text" name="register-address-line3" size="51" />
+								<input name="register-address-line3" type="text" id="account-register-address-line3" size="51" maxlength="60" />
 								<div class="clear"></div>
 								<p class="error">Please enter a town or city </p>
 								<label for="account-register-town">Town/City*</label>
-								<input id="account-register-town" type="text" name="register-town" size="51" />
+								<input name="register-town" type="text" id="account-register-town" size="51" maxlength="50" />
 								<div class="clear"></div>
 								<p class="error">Please enter a county/state</p>
 								<label for="account-register-address-county">County*</label>
-								<input id="account-register-address-county" type="text" name="register-address-county" size="51" />
+								<input name="register-address-county" type="text" id="account-register-address-county" size="51" maxlength="50" />
 								<div class="clear"></div>
 								<p class="error">Please type in a postcode/zip code</p>
 								<label for="account-register-address-postcode">Postcode*</label>
-								<input id="account-register-address-postcode" type="text" name="register-address-postcode" size="51" />
+								<input name="register-address-postcode" type="text" id="account-register-address-postcode" size="51" maxlength="10" />
 								<div class="clear"></div>
 								<h3>
 									<label for="account-register-signup-newsletter" class="register-newsletter">Would you like to receive our newsletter?</label>
@@ -772,13 +778,13 @@
 									</fieldset>
 									<fieldset>
 										<legend>Sport</legend>
-										<label for="account-sport-running">Runing</label>
-										<input type="radio" name="sport-" id="account-sport-running" value="running" />
+										<label for="account-sport-running">Running</label>
+										<input type="radio" name="sport" id="account-sport-running" value="running" />
 										<div class="clear"></div>
 										<label for="account-sport-cycling">Cycling</label>
 										<input type="radio" value="cycling" id="account-sport-cycling" name="sport" />
 										<div class="clear"></div>
-										<label for="account-sport-triathalon">Triathalon</label>
+										<label for="account-sport-triathalon">Triathlon</label>
 										<input type="radio" name="sport" id="account-sport-triathalon" value="triathalon" />
 										<div class="clear"></div>
 										<label for="account-sport-rowing">Rowing</label>

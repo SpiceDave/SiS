@@ -406,11 +406,11 @@
 								<p>Please enter your existing email and password.</p>
 								<p class="error">Please enter a password</p>
 								<label for="login-email">Email address: </label>
-								<input id="login-email" type="text" name="checkout-login-email" />
+								<input name="checkout-login-email" type="text" id="login-email" maxlength="128" />
 								<div class="clear"></div>
 								<p class="error">Please enter a password</p>
 								<label for="login-password">Password:</label>
-								<input id="login-password" type="password" name="pwd" />
+								<input name="pwd" type="password" id="login-password" maxlength="64" />
 								<div class="clear"></div>
 								<button name="login-submit" type="submit"class="yellow-button">Sign In</button>
 								<p class="forgot-password"><a href="#" class="link text-button">Forgotten Password?</a></p>
@@ -424,11 +424,8 @@
 								<p>Please enter your email address.</p>
 								<p class="error">Please enter a valid email address</p>
 								<label for="new-customer-email">Email address:</label>
-								<input  id="new-customer-email" type="text" name="checkout-new-customer-email" />
-								<div class="clear"></div>
-								<p class="error">Please enter a password</p>
-								<label for="new-customer-password">Password: </label>
-								<input id="new-customer-password" type="password" name="pwd"  />
+								<input name="checkout-new-customer-email" type="text"  id="new-customer-email" maxlength="128" />
+								<label style="width:100%">&nbsp;</label>
 								<button class="yellow-button"> Continue </button>
 							</form>
 						</div>

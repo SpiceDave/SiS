@@ -3,3 +3,4 @@ select {
     background: #dddddd none no-repeat -100px 0px !important;
 }
 input[type="checkbox"] {background-color: transparent!important; border:0!important}
+input[type="radio"]{background-position-x: 56px!important; background-position-y: -6px!important; background-position: 56px -6px!important}

@@ -12,6 +12,7 @@ jQuery(
         
         var doc = document.documentElement;
         doc.setAttribute('data-useragent', navigator.userAgent);
+	
        
 	   /* sticky footer doesn't really work visually with this design
 	    stickFooter(); 
