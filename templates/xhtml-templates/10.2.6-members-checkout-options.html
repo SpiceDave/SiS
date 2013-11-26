@@ -25,13 +25,13 @@
 				<!-- #header -->
 				<div id="content" class="checkout-pages">
 					<div id="ad-title-space">
-						<h1 class="check-page-title">
-							SiS Checkout
+						<h1 class="check-page-title">&nbsp;
+							
 						</h1>
-						<p class="h1-sub-heading grey">Free delivery on all UK orders.</p>
 					</div>
 					<div id="grey-bg-wrapper">
 						<div id="checkout-breadcrumb-menu" class="left grey">Sign in <span class="current black">&raquo; Delivery Address &amp; Delivery Options</span> &raquo; Payment &raquo; Receipt</div>
+						<div class="clear"></div>
 						<!--overlay for adding an address -->
 						<div id="add-address-overlay">
 							<div class="add-delivery-address">
@@ -40,8 +40,9 @@
 								<p>Please enter your delivery address</p>
 								<form class="add-delivery-address" action="">
 									<p class="error">Please select a title</p>
-									<label for="add-delivery-title"> Title</label>
+									<label for="add-delivery-title"> Title*</label>
 									<select id="add-delivery-title">
+										<option>Please Select</option>
 										<option>Mr</option>
 										<option>Mrs</option>
 										<option>Miss</option>
@@ -345,8 +346,9 @@
 								<p>Please enter your delivery address</p>
 								<form class="edit-delivery-address" action="">
 									<p class="error">Please select a title</p>
-									<label for="edit-delivery-title"> Title</label>
+									<label for="edit-delivery-title"> Title*</label>
 									<select id="edit-delivery-title">
+										<option>Please Select</option>
 										<option>Mr</option>
 										<option>Mrs</option>
 										<option>Miss</option>
@@ -639,7 +641,7 @@
 									<label for="edit-delivery-postcode">Postcode*</label>
 									<input id="edit-delivery-postcode" type="text" name="register-address-postcode" maxlength="10" />
 									<div class="clear"></div>
-									<button class="yellow-button-wide">Add address</button>
+									<button class="yellow-button-wide">Save Changes</button>
 								</form>
 							</div>
 						</div>
@@ -648,46 +650,49 @@
 							<p class="grey instructions">Please check the details before proceeding</p>
 							<button class="yellow-button-wide" type="submit">Continue Securely</button>
 							<div id="members-checkout-delivery">
-								<div class="mem-check-product-info">
-									<div class="check-item-image">
-										<img src="../img/dummy/product.png" alt="Product Image" />
-									</div>
-									<ul class="check-item-item">
-										<li class="check-row-product-name">SIS Rego Rapid Recovery
-										</li>
-										<li class="clear grey">#002962</li>
-									</ul>
-									<ul class="item-quantity-info">
-										<li class="">Quantity: 1</li>
-										<li class="">
-											<button class="remove-button">Remove</button>
-										</li>
-									</ul>
-									<ul class="item-availability">
-										<li>In Stock</li>
-									</ul>
-								</div>
+								
 								<div class="mem-check-choose-delivery">
 									<div class="select-deliver">
-										<input type="radio" id="deliver-to" name="deliver-collect" /><label for="deliver-to">Deliver to address:</label>
+										<p class="grey instructions">Please confirm your addresses</p>
 										<select id="selected-delivery" name="selected-delivery">
 											<option value="address1">Zia Namooya, Bath Road</option>
 											<option value="address2">Spicerack, Paintworks</option>
 										</select>
+										<div class="clear"></div>
+										<p class="address-box">Mr George Adroulis<br />
+											RED Technology.com<br />
+											Oakfield Industrial Estate <br />
+											Eynsham<br />
+											Oxfordshire<br />
+											OX29 4TH<br />
+											United Kingdom
+										</p>
+										<div class="clear"></div>
 										<a href="#" class="text-button">Edit address</a>
 										<button class="text-button">Add new address</button>
 									</div>
 								</div>
 								<div class="mem-check-delivery-type">
-									<input type="radio" id="standard-delivery" name="delivery-type" /><label for="standard-delivery" >Standard 3-5 Days (£3.95)</label>
-									<div class="clear"></div>
-									<input type="radio" id="next-day-delivery" name="delivery-type" /><label for="next-day-delivery" >Nominated &amp; Next Day (from £4.95)</label>
+									<p class="grey instructions">Please choose one of the following delivery options</p>
+									
+									<select id="selected-delivery" name="selected-delivery">
+										<option value="address1">Please Select</option>
+										<option value="address1">Standard 3-5 Days (£3.95)</option>
+										<option value="address2">Nominated &amp; Next Day (from £4.95)</option>
+									</select>
+									
+									
 									<div class="clear"></div>
 									<p class="delivery-option-description margin-top-30 left">Information about the selected delivery
 										method will go here. ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
 									</p>
+									<div id="delivery-ins">
+										<p class="grey instructions">Delivery Instructions</p>
+										<textarea name="del-ins" cols="20"></textarea>
+									</div>
 								</div>
 							</div>
+							<button class="black-button left">Back</button>
 							<button class="yellow-button-wide" type="submit">Continue Securely</button>
 						</form>
 						<!-- end of delivery info form-->
