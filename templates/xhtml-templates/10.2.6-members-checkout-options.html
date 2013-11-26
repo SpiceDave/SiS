@@ -35,7 +35,7 @@
 						<!--overlay for adding an address -->
 						<div id="add-address-overlay">
 							<div class="add-delivery-address">
-								<h3>Add a New Address</h3>
+								<h3>Add A New Delivery Address</h3>
 								<p class="grey">*Required fields are marked with an asterisk</p>
 								<p>Please enter your delivery address</p>
 								<form class="add-delivery-address" action="">
@@ -341,9 +341,10 @@
 						</div>
 						<div id="edit-address-overlay">
 							<div class="edit-delivery-address">
-								<h3>Edit an Address</h3>
+								<h3>Edit Delivery Address</h3>
 								<p class="grey">*Required fields are marked with an asterisk</p>
-								<p>Please enter your delivery address</p>
+								<p class="error">Please supply more details where indicated below.</p>
+								<div class="clear"></div>
 								<form class="edit-delivery-address" action="">
 									<p class="error">Please select a title</p>
 									<label for="edit-delivery-title"> Title*</label>
@@ -675,8 +676,8 @@
 								<div class="mem-check-delivery-type">
 									<p class="grey instructions">Please choose one of the following delivery options</p>
 									
-									<select id="selected-delivery" name="selected-delivery">
-										<option value="address1">Please Select</option>
+									<select id="selected-address" name="selected-address">
+										<option>Please Select</option>
 										<option value="address1">Standard 3-5 Days (£3.95)</option>
 										<option value="address2">Nominated &amp; Next Day (from £4.95)</option>
 									</select>
@@ -688,7 +689,7 @@
 									</p>
 									<div id="delivery-ins">
 										<p class="grey instructions">Delivery Instructions</p>
-										<textarea name="del-ins" cols="20"></textarea>
+										<textarea name="del-ins" cols="20" rows="2"></textarea>
 									</div>
 								</div>
 							</div>
