@@ -408,11 +408,19 @@
 						</ul>
 					</div>
 					<div class="clear"></div>
-					<form id="update-details" action="#">
+					<div id="pref-header">
+						<div class="update-details"><h4>&nbsp;Update Your Details</h4></div>
+						<div class="update-password"><h4>&nbsp;Update Your Password</h4></div>
+						<div class="update-newsletter"><h4>&nbsp;Update Your Newsletter Preferences</h4></div>
+					</div>
+					<div class="clear"></div>
+					
+					<form id="update-details" class="update-details" action="#">
 						<p class="bottom-border row-title grey">Required fields marked with asterisk*</p>
 						<p class="error">Please select a title</p>
-						<label for="update-title">Title</label>
+						<label for="update-title">Title*</label>
 						<select id="update-title">
+							<option>Please Select</option>
 							<option>Mr</option>
 							<option>Mrs</option>
 							<option>Miss</option>
@@ -420,30 +428,31 @@
 						</select>
 						<p class="error"> Please enter a first name</p>
 						<label for="update-first-name" >First Name*</label>
-						<input id="update-first-name" type="text" name="update-first-name" />
+						<input name="update-first-name" type="text" id="update-first-name" maxlength="50" />
 						<p class="error"> Please enter a last name</p>
 						<label for="update-last-name">Last Name*</label>
-						<input id="update-last-name" type="text" name="update-last-name" />
+						<input name="update-last-name" type="text" id="update-last-name" maxlength="50" />
 						<p class="error"> Please enter an email address</p>
 						<label for="update-email">Email Address*</label>
-						<input id="update-email" type="text" name="update-email" />
+						<input name="update-email" type="text" id="update-email" maxlength="128" />
+						<p class="error"> Please enter a contact number</p>
+						<label for="update-cont-num">Contact Number*</label>
+						<input name="update-cont-num" type="text" id="update-cont-num" maxlength="30" />
 						<button type="submit" class="yellow-button btn-left">Save Changes </button>
 					</form>
-					<form id="update-password" action="#">
+					<form id="update-password" class="update-password" action="#">
 						<p class="bottom-border row-title grey">Please enter current and new password:</p>
-						<p class="error"> Please enter your current password</p>
-						<label for="update-current-password" >Current Password*</label>
-						<input id="update-current-password" type="text" name="update-first-name" />
 						<p class="error"> The new passwords you entered did not match</p>
 						<p class="error"> Please enter a new password</p>
-						<p class="grey">Password must consist of minimum of 8 characters of which one character must be numeric (0-9)</p>
 						<label for="update-new-password">New Password*</label>
-						<input id="update-new-password" type="password" name="update-new-password" />
+						<input name="update-new-password" type="password" id="update-new-password" maxlength="64" />
 						<label for="update-password-confirm">Confirm Password*</label>
-						<input id="update-password-confirm" type="password" name="update-password-confirm" />
+						<input name="update-password-confirm" type="password" id="update-password-confirm" maxlength="64" />
+						<div class="clear"></div>
+						<p class="grey">Password must consist of minimum of 8 characters of which one character must be numeric (0-9)</p>
 						<button type="submit" class="yellow-button btn-mid">Save Changes </button>
 					</form>
-					<form id="update-newsletter" action="#">
+					<form id="update-newsletter" class="update-newsletter" action="#">
 						<p class="row-title">
 							<label for="update-signup-newsletter" class="update-newsletter bold">Would you like to receive our newsletter?</label>
 							<input type="checkbox" id="update-signup-newsletter" name="update-signup-newsletter" checked="checked" />
