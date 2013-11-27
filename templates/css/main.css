@@ -730,8 +730,8 @@ p.check-amounts{text-align:center}
 .add-address-form-your-details{float:left;clear:both}
 .add-address-form-your-details button{margin-top:0}
 .add-address-form-your-details button.black-button{margin-top:14px}
-.address-column-right{overflow:auto;float:left;margin-top:46px}
-.address-column-left{overflow:auto;clear:both;float:left;margin-right:30px;border-right:dotted 1px #9e9e9e;padding-right:30px;height:455px}
+.address-column-right{overflow:auto;float:left;margin-top:46px; width:396px}
+.address-column-left{overflow:auto;clear:both;float:left;margin-right:30px;border-right:dotted 1px #9e9e9e;padding-right:30px;height:455px; width:396px}
 .delivery-links{width:264px}
 .refer-friends-container{clear:left;float:left;width:934px;font-size:12px}
 .refer-friends-container .instructions{float:left;width:320px;padding-right:30px;border-right:solid 1px #9e9e9e;height:300px;padding-bottom:50px}
