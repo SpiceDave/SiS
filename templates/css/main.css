@@ -733,6 +733,8 @@ p.check-amounts{text-align:center}
 .address-column-right{overflow:auto;float:left;margin-top:46px; width:396px}
 .address-column-left{overflow:auto;clear:both;float:left;margin-right:30px;border-right:dotted 1px #9e9e9e;padding-right:30px;height:455px; width:396px}
 .delivery-links{width:264px}
+.refer-friends-container p.grey {line-height:20px}
+.refer-friends-container p.error{margin:0 0 0 190px; padding:3px 0}
 .refer-friends-container{clear:left;float:left;width:934px;font-size:12px}
 .refer-friends-container .instructions{float:left;width:320px;padding-right:30px;border-right:solid 1px #9e9e9e;height:300px;padding-bottom:50px}
 #account-refer-friend .instructions p:first-child{font-family:HelveticaNeueLT-Bold,Helvetica,Arial,sans-serif;font-size:14px}
@@ -756,6 +758,7 @@ ul.referred-friend-row li{border-bottom:dotted 1px #9e9e9e;padding:20px 0;margin
 #reset-password label{clear:both;width:165px}
 #reset-password button{clear:both;float:left}
 #reset-password .bottom-border{width:934px;float:right;clear:both}
+#reset-password p.error{padding:3px 0; margin:0 0 0 165px}
 #my-account-register-form input[type=text]{width:269px}
 #my-account-register-form select{margin-left:0}
 #register-newsletter label,#account-register-newsletter label{width:48px}

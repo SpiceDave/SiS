@@ -397,28 +397,26 @@
 				<h1 class="check-page-title"> My Account </h1>
 			</div>
 			<div id="grey-bg-wrapper">
+				<p>&nbsp;</p>
 				<div class="account-return">
-					<div id="account-add-address-menu"class="left margin-left-30">
-						<ul class="my-account-navigation ">
-							<li><a href="#" title="View your order history">View your order history</a></li>
-							<li><a href="#" title="View your wish list">View your wish list</a></li>
-							<li><a href="#" title="Update your details">Update your details</a></li>
-							<li><a href="#" title="Manage your delivery Addresses">Manage your delivery Addresses</a></li>
-							<li><a href="#" title="Refer a friend">Refer a friend</a></li>
-						</ul>
-					</div>
+					<p id="my-description" class="grey notification">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla eros, vulputate eget tincidunt ac, sodales quis sapien. Cras pulvinar felis nec ligula sollicitudin quis imperdiet urna pretium. Maecenas ut mi ac nunc adipiscing ornare ut id purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis egestas tortor, nec sollicitudin turpis varius in. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin congue tortor ac justo congue eget lacinia elit adipiscing. Mauris pharetra, lorem sed pharetra dictum, velit libero varius ipsum, vel ornare neque orci sagittis nunc. Nunc nec tellus aliquet diam mattis rutrum tristique vel magna. Proin eget ligula nec purus mollis porta. Aenean accumsan tempus porta. Nam porta pharetra feugiat. Aliquam mauris felis, congue nec consequat nec, fermentum ut velit. Suspendisse dolor massa, ornare vel facilisis ut, pulvinar non dui. Fusce sodales dictum suscipit. Morbi aliquam urna ac arcu ornare mollis fringilla massa interdum. Nam euismod purus vitae nunc pulvinar et eleifend lectus pharetra. Aliquam faucibus quam ac sem rhoncus dictum.
+					</p>
+					
+
 					<!-- end of menu -->
 					<form id="reset-password" action="#">
-						<p class="error">Please supply more details where indicated below.</p>
 						<h2 class="bottom-border">Reset Password</h2>
+						<p class="grey">Please enter your new password</p>
+						<p class="grey small">* Required fields are marked with an asterisk</p>
+						<p class="error">Please supply more details where indicated below.</p>
 						<p class="error">Please ensure your password and confirm password match</p>
 						<p class="error"> Please enter a secure password consisting of a minimum of 6 characters</p>
-						<p class="grey">Please enter your new password</p>
+						<div class="clear"></div>
 						<label for="reset-new-password">New Password*</label>
-						<input id="reset-new-password" type="password" name="update-new-password"  />
+						<input name="update-new-password" type="password" id="reset-new-password" maxlength="64"  />
 						<div class="clear"></div>
 						<label for="reset-password-confirm">Confirm Password*</label>
-						<input id="reset-password-confirm" type="password" name="update-password-confirm"  />
+						<input name="update-password-confirm" type="password" id="reset-password-confirm" maxlength="64"  />
 						<div class="clear"></div>
 						<div class="bottom-border"></div>
 						<button type="submit" class="yellow-button">Save Changes </button>

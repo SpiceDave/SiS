@@ -29,7 +29,9 @@
 #account-update .btn-left,#account-update .btn-mid,#account-update .btn-right{left:0!important}
 .ie-no-margin,#items-delivered ul{margin:0}
 #account-update p.error{width:160px!important}
-#account-add-address-form p.error{width:150px}
+#account-add-address-form p.error, #account-edit-address-form p.error{width:250px}
 #account-update {height: 700px!important}
-#account-add-address-form input{float:none!important}
+#account-add-address-form input, #account-edit-address-form input{float:none!important}
 .address-column-right{float:right!important}
+#refer-friends label{clear:none!important}
+#refer-friends input{float:none!important}
