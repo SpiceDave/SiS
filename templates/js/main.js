@@ -52,8 +52,31 @@ jQuery(
 			menu(menuId);
 		});
 		
+		/* add to basket component*/
+		/*jQuery('add-button').click(function(){
+			jQuery.get("9.7-add-to-basket-component.html", function (data) {
+				jQuery("#main").append(data);
+			});
+		});*/
 		
-		
+		jQuery(document).on( 'submit', '#add-2-basket, #add-to-basket', function(event) {
+			jQuery.get("9.7-add-to-basket-component.html", function (data) {
+				jQuery("#main").append(data);
+			});
+			
+			
+            //check for IE7
+            if(navigator.appVersion.indexOf("MSIE 7.")!=-1) {
+              var windowWidth = jQuery(window).width();
+              var windowHeight = jQuery(window).height();
+              var top =  (jQuery(window).height() - jQuery('#ab-outer-frame').height())/2;
+              var left = (jQuery(window).width() - jQuery('#ab-outer-frame').width())/2;
+              jQuery('#ab-outer-frame').css({'top':top, 'left':left});
+            } 
+			event.preventDefault();
+            
+        });
+		/*****************/
 		
 		//bind mini basket and search components
 		//load

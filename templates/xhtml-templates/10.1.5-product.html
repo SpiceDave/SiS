@@ -440,7 +440,7 @@
 							</ul>
 							<p class="small near-black">Availability:<span class="grey"> In Stock</span></p>
 						</div>
-						<form action="#" method="post" name="add-to-basket" target="_self">
+						<form id="add-2-basket" action="#" method="post" name="add-to-basket" target="_self">
 							<div id="dd-product-selectors">
 								<select id="prod-selection-1" name="prod-selection-1">
 									<option>Size</option>
@@ -460,7 +460,7 @@
 								<input type="text" id="product-qty" size="5" class="product-input" />
 								<div class="clear"></div>
 								<p class="small"><a href="#"><span class="small near-black">Recommend to Friend</span></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#"><span class="small grey">Add to wishlist</span></a></p>
-								<button class="yellow-btn">Add To Basket</button>
+								<button class="yellow-btn add-button">Add To Basket</button>
 							</div>
 						</form>
 						<div id="product-ad-zone"> <a href="#" title="Ad zone"><img src="../img/dummy/header-advert-zone.jpg" alt="ad zone" width="445" height="109" /></a> </div>
@@ -514,17 +514,22 @@
 								<div id="q-a-form-content">
 									<h3>Submit a question</h3>
 									<p class="grey">*Required fields are marked with an asterisk</p>
+									<div class="clear"></div>
 									<form id="question-submission-form" action="#" method="post" name="submit-a-question" target="_self">
 										<p class="error"> Please enter a first name</p>
+										<div class="clear"></div>
 										<label for="question-firstname">First Name*</label>
 										<input id="question-firstname" type="text" name="q-a-first-name" size="50" />
 										<p class="error"> Please enter a last name</p>
+										<div class="clear"></div>
 										<label for="question-lastname">Last Name*</label>
 										<input id="question-lastname" type="text" name="q-a-last-name" size="50" />
 										<p class="error">Please enter a valid email address</p>
+										<div class="clear"></div>
 										<label for="question-email-address">Email Address*</label>
 										<input id="question-email-address" type="text"  name="q-a-email-address" size="50" maxlength="128" />
 										<p class="error">Please enter your question</p>
+										<div class="clear"></div>
 										<label for="question-question">Your question*</label>
 										<textarea cols="50" rows="5" id="question-question"></textarea>
 										<label for="submit-question"></label>
@@ -666,7 +671,7 @@
 				<p class="grey">Performance Recovery</p>
 			</div>
 			<div class="qb-form">
-				<form action="#" method="post" name="add-to-basket" target="_self">
+				<form id="add-to-basket" action="#" method="post" name="add-to-basket" target="_self">
 					<div id="qb-dd-product-selectors">
 						<select id="qb-prod-selection-2" name="prod-selection-2" >
 							<option >Flavour</option>
@@ -682,7 +687,7 @@
 							<option value="sel1-3">50g (1 serving)</option>
 							<option value="sel1-4">1.6kg (20 servings)</option>
 						</select>
-						<button class="yellow-btn">Add To Basket</button>
+						<button class="yellow-btn add-button">Add To Basket</button>
 					</div>
 				</form>
 			</div>
