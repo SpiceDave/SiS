@@ -143,14 +143,12 @@ div:first-child+div>div.check-item-image{margin-top:10px}
 #qb-overlay h3, #ab-overlay h3{font-family:HelveticaNeueLT-Roman,Helvetica,Arial,sans-serif;color:#9e9e9e;margin:0;font-weight:normal}
 #ab-overlay h3{font-size:14px; margin-top:10px}
 #qb-overlay iframe{bottom:15px;position:absolute}
-#qb-header, #ab-header{margin:15px}
+#qb-header{margin:15px}
+#ab-header{margin:30px}
 #qb-dd-product-selectors select{float:left;background:transparent;border:0;height:30px;border-radius:0;padding:5px;margin-left:2px;background:#ddd url(../img/ui/dropdown-arrow.png) no-repeat -1px 0;-webkit-appearance:none;-moz-appearance:none;text-indent:.01px;text-overflow:"";width:144px;background-position:-126px 0;margin-left:0;margin-bottom:20px;margin-right:15px;padding-right:10px}
 #qb-dd-product-selectors .yellow-btn{background:transparent url(../img/ui/button.png) 0 14px no-repeat;height:62px;top:-14px;font-family:HelveticaNeueLT-Bold,Helvetica,Arial,sans-serif;width:157px;margin-left:-5px;text-align:left;padding-left:12px;cursor:pointer;border:0;position:relative}
 .qb-form{padding:45px 15px;}
 .ab-form{padding:45px; background-image:url(../img/ui/ad-space-gradient.png); background-repeat:repeat-x; background-color:#E9E9E9; border-bottom:1px #ccc solid; }
-.ab-form .check-amounts{font-size:14px}
-.ab-header{font-size:14px}
-#ab-overlay{display:block}
 .ab-table th{font-size:14px; padding:0 0 10px 20px; }
 .ab-table td{font-size:14px; padding:0 0 0 20px;}
 .border-top{border-top:1px #ccc solid}
