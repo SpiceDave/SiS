@@ -400,8 +400,11 @@
 				<div id="grey-bg-wrapper">
 					<div id="account-forgot-password" class="forgot-password">
 						<h2>Forgotten Password</h2>
-						<form action="">
+						<form action="" id="forgot-pass-form">
 							<p class="grey instructions">Please enter your email address and we'll send you instructions on how to reset your password.</p>
+							<p class="error">A new password has been sent to the email address entered below</p>
+							<p class="error">Please enter a valid email address</p>
+							<div class="clear"></div>
 							<label for="check-forgot-password-email">Email address:</label>
 							<input name="checkout-new-customer-email" type="text"  id="check-forgot-password-email" size="40" maxlength="128" />
 							<p class="dotted-line"></p>

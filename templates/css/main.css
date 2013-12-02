@@ -632,6 +632,7 @@ p.check-amounts{text-align:center}
 #account-menu-delivery,#account-return-menu,#account-wishlist-menu{width:255px;margin-left:30px}
 #history-order-basket h2{font-size:21px;text-transform:uppercase;margin-top:30px}
 #history-order-basket,#account-return-transaction{margin:0 30px;width:619px;font-size:14px}
+#account-return-transaction{height:800px}
 #history-order-basket .check-item-row{margin:30px 0 0;height:110px}
 #history-order-basket .check-offer.row{width:619px;float:left;clear:both}
 #history-order-basket .check-items-title{margin-left:0;font-size:16px;position:static;padding-bottom:0;height:23px;margin-top:60px}
@@ -790,6 +791,7 @@ ul.referred-friend-row li{border-bottom:dotted 1px #9e9e9e;padding:20px 0;margin
 .faq-content-footer span.error{padding:3px 0; margin:20px 0 0 0; line-height:0}
 #q-a-form-content p.error{padding:3px 0; margin:0 0 0 125px; color:#f05;}
 #promocode-form p.error{margin:0}
+#forgot-pass-form p.error{margin:0}
 
 @-moz-document url-prefix(){#search-results-content .yellow-btn{top:2px}}
 html[data-useragent*='MSIE 10.0'] * select{background:#ddd none no-repeat -100px 0 !important}
