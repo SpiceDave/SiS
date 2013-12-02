@@ -29,7 +29,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 #search-box input{border:0;padding:5px;background:0;width:225px;color:#656565}
 #top-search-glass{position:absolute;top:4px;right:4px;padding:5px;cursor:pointer}
 #ajax-menu-container, #ajax-search-container{top:99px;right:15px;position:absolute;z-index:9999;color:#171717;display:none}
-.qb-xclose,.yt-xclose,.xclose{float:right;padding:10px 10px 0 0;cursor:pointer}
+.edit-addr-close, .add-addr-close, .qb-xclose,.yt-xclose,.xclose{float:right;padding:10px 10px 0 0;cursor:pointer}
 #main-menu{top:66px;left:170px;position:absolute}
 .ul-1,.ul-2{margin-left:-25px}
 .ul-0{padding:10px}
@@ -155,8 +155,8 @@ div:first-child+div>div.check-item-image{margin-top:10px}
 .ab-table ul{margin-left:-40px}
 .ab-table{border-bottom:1px #ccc solid}
 .ab-buttons{overflow:hidden}
-.continue-shopping{float:right}
-.view_basket{float:left}
+.continue-shopping{float:left}
+.view-basket{float:right}
 
 
 #rotating-image-container,.advert-zone-full-width,._640-15-340,._410-15-569,._569-15-410,._411-15-568{width:994px;overflow-y:hidden;position:relative}
@@ -560,7 +560,7 @@ input#register-signup-newsletter,input#account-register-signup-newsletter{margin
 .mem-check-product-info .check-amounts{padding:0;margin:0}
 #members-checkout-delivery label.text-area-title,#non-members-checkout-delivery label.text-area-title{margin:25px 0 0 25px}
 .select-collect{padding-top:20px;float:left}
-#add-address-overlay,#edit-address-overlay{width:1024px;position:relative;left:-45px;top:-19px;z-index:20;background:#f6f6f6;overflow:auto}
+#add-address-overlay,#edit-address-overlay{width:1024px;position:relative;left:-45px;top:-19px;z-index:20;background:#f6f6f6;overflow:auto; display:none;}
 #add-address-overlay input{float:left}
 .add-delivery-address,.edit-delivery-address{width:450px;margin:0 auto}
 .delivery-option-description{margin-left:25px}
@@ -789,6 +789,7 @@ ul.referred-friend-row li{border-bottom:dotted 1px #9e9e9e;padding:20px 0;margin
 #form-builder-narrow p.error{padding:3px 0; margin:0 0 0 0; color:#f05;}
 .faq-content-footer span.error{padding:3px 0; margin:20px 0 0 0; line-height:0}
 #q-a-form-content p.error{padding:3px 0; margin:0 0 0 125px; color:#f05;}
+#promocode-form p.error{margin:0}
 
 @-moz-document url-prefix(){#search-results-content .yellow-btn{top:2px}}
 html[data-useragent*='MSIE 10.0'] * select{background:#ddd none no-repeat -100px 0 !important}

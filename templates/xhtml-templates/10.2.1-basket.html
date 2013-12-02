@@ -434,14 +434,17 @@
 								<li class="">Flavour: <span class="grey">Strawberry</span> </li>
 							</ul>
 							<div class="check-delivery red"> Can be delivered immediately </div>
-							<div class="check-item-price"><del><span class="pound">&pound;</span><span class="bold">24.00</span></del><br />
-							<span class="pound">&pound;</span><span class="bold">18.00</span></div>
+							<div class="check-item-price"><span class="pound">&pound;</span><span class="bold">24.00</span></div>
 							<form class="check-amounts" method="post" action="#">
 								<input type="text" name="product-amount" size="9" value="2" />
 								<button class="remove-button">Remove</button>
 								<button class="text-button">Update</button>
 							</form>
-							<div class="check-final-price"> <span class="pound">&pound;</span> <span class="bold">55.80</span> </div>
+							<div class="check-final-price"> 
+								<del><span class="pound">&pound;</span><span class="bold">55.80</span></del><br />
+								<span class="pound">&pound;</span><span class="bold">18.00</span>
+							</div>
+							
 						</div>
 						<!-- end of check item row -->
 						
@@ -454,16 +457,15 @@
 								<li class="">Flavour: <span class="grey">Strawberry</span> </li>
 							</ul>
 							<div class="check-delivery red"> Can be delivered immediately </div>
-							<div class="check-item-price"><del><span class="pound">&pound;</span><span class="bold">24.00</span></del><br />
-							<span class="pound">&pound;</span><span class="bold">0.00</span></div>
+							<div class="check-item-price"><span class="pound">&pound;</span><span class="bold">8.00</span></div>
 							<form class="check-amounts" method="post" action="#">
 								<input type="text" name="product-amount" size="9" value="3" readonly="readonly" />
 							</form>
-							<div class="check-final-price"> <span class="pound">&pound;</span> <span class="bold">55.80</span> </div>
+							<div class="check-final-price"><del><span class="pound">&pound;</span><span class="bold">24.00</span></del><br />
+							<span class="pound">&pound;</span><span class="bold">0.00</span></div>
+		
 						</div>
 						<!-- end of check item row -->
-						
-						
 						
 						<div class="check-offer-row">
 							<div class="check-offer-name"> Offer Name </div>
@@ -477,8 +479,10 @@
 							<div class="checkout-total-price-label left-col"> Total </div>
 							<div class="checkout-total-price"> <span class="pound">&pound;</span><span class="bold">65.80</span> </div>
 						</div>
-						<form method="post" class="promo-code-box" action="#">
+						<form id="promocode-form" method="post" class="promo-code-box" action="#">
+							
 							<label for="promo-code" class="promo-label clear">Promo Code</label>
+							<p class="error">Please enter a promotion code</p>
 							<div class="clear"></div>
 							<input type="text" id="promo-code" size="50" class="promo-input left" />
 							<button class="yellow-button">Update</button>
