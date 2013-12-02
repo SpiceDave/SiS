@@ -105,6 +105,17 @@ jQuery(
 				hideMiniSearch();
 			}
 		});
+		jQuery(document).click(function(e){
+			if(active){
+			    var menu = jQuery('#ajax-search-container');
+				var searchBox = jQuery('#search-box');
+				var searchBoxBg = jQuery('#search-box-bg');
+				if ((!menu.is(e.target) && menu.has(e.target).length === 0) && (!searchBox.is(e.target) && searchBox.has(e.target).length === 0) && (!searchBoxBg.is(e.target) &searchBoxBg.has(e.target).length === 0))
+				{
+					hideMiniSearch();
+				}
+			}
+		});
 		
 
 		function loadMiniSearch(){
