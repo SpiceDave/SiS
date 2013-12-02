@@ -36,3 +36,5 @@
 .address-column-right{float:right!important}
 #refer-friends label{clear:none!important}
 #refer-friends input{float:none!important}
+
+input[type="radio"], #my-account-register-form input[type="radio"], #update-details input[type="radio"] {background: none!important};

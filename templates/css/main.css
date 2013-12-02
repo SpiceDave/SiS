@@ -798,5 +798,6 @@ ul.referred-friend-row li{border-bottom:dotted 1px #9e9e9e;padding:20px 0;margin
 @-moz-document url-prefix(){#search-results-content .yellow-btn{top:2px}}
 html[data-useragent*='MSIE 10.0'] * select{background:#ddd none no-repeat -100px 0 !important}
 html[data-useragent*='MSIE 10.0'] * input[type="checkbox"]{background-color:transparent !important;border:0 !important}
-html[data-useragent*='MSIE 10.0'] * input[type="radio"]{background-position: 55px 0px!important}
+/*html[data-useragent*='MSIE 10.0'] * input[type="radio"]{background-position: 55px 0px!important}*/
+html[data-useragent*='MSIE 10.0'] * input[type="radio"], #my-account-register-form input[type="radio"], #update-details input[type="radio"] {background: none!important};
 /*js this...*/
