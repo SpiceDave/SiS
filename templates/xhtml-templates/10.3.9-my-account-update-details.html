@@ -433,6 +433,8 @@
 						<label for="update-last-name">Last Name*</label>
 						<input name="update-last-name" type="text" id="update-last-name" maxlength="50" />
 						<p class="error"> Please enter an email address</p>
+						<div class="clear"></div>
+						<p class="error"> The email address is already registered, please enter a different email address</p>
 						<label for="update-email">Email Address*</label>
 						<input name="update-email" type="text" id="update-email" maxlength="128" />
 						<p class="error"> Please enter a contact number</p>
@@ -442,14 +444,14 @@
 					</form>
 					<form id="update-password" class="update-password" action="#">
 						<p class="bottom-border row-title grey">Please enter current and new password:</p>
-						<p class="error"> The new passwords you entered did not match</p>
+						<p class="error"> Please ensure that your password and confirm password match</p>
 						<p class="error"> Please enter a new password</p>
 						<label for="update-new-password">New Password*</label>
 						<input name="update-new-password" type="password" id="update-new-password" maxlength="64" />
 						<label for="update-password-confirm">Confirm Password*</label>
 						<input name="update-password-confirm" type="password" id="update-password-confirm" maxlength="64" />
 						<div class="clear"></div>
-						<p class="grey">Password must consist of minimum of 8 characters of which one character must be numeric (0-9)</p>
+						<p class="grey">Please enter a secure password consisting of a minimum of 6 characters</p>
 						<button type="submit" class="yellow-button btn-mid">Save Changes </button>
 					</form>
 					<form id="update-newsletter" class="update-newsletter" action="#">
