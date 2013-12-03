@@ -33,10 +33,8 @@
 <title>SiS tweets app.</title>
 <style type="text/css">
 
-@font-face {font-family: 'HelveticaNeueCE-Roman';src: url('../webfonts/289F7D_0_0.eot');src: url('../webfonts/289F7D_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/289F7D_0_0.woff') format('woff'),url('../webfonts/289F7D_0_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'HelveticaNeueCE-Bold';src: url('../webfonts/289F7D_1_0.eot');src: url('../webfonts/289F7D_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/289F7D_1_0.woff') format('woff'),url('../webfonts/289F7D_1_0.ttf') format('truetype');}
+@charset "UTF-8";@font-face{font-family:'HelveticaNeueLT-Bold';src:url('../webfonts/290E30_0_0.eot');src:url('../webfonts/290E30_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/290E30_0_0.woff') format('woff'),url('../webfonts/290E30_0_0.ttf') format('truetype')}
+@font-face{font-family:'HelveticaNeueLT-Roman';src:url('../webfonts/290E30_1_0.eot');src:url('../webfonts/290E30_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/290E30_1_0.woff') format('woff'),url('../webfonts/290E30_1_0.ttf') format('truetype')}
 
 body{
 	margin:0;
@@ -46,7 +44,7 @@ body{
 	background-color: #48C4D9;
 	height:150px;
 	width:410px;
-	font-family: HelveticaNeueCE-Roman;
+	font-family: HelveticaNeueLT-Roman;
 }
 #inner{
 	left:29px;
@@ -64,7 +62,7 @@ body{
 	font-size:20px;
 	padding-top:10px;
 	line-height:20px;
-	font-family: HelveticaNeueCE-Bold;
+	font-family: HelveticaNeueLT-Bold;
 }
 .tweeter a, .follow-us a{
 	color:#A9E9F3;
@@ -191,7 +189,7 @@ if (!$twitter_debug) {
 				
 			foreach ($twitter_stream as $tweet){
 				
-				$tweet_text = htmlspecialchars($tweet->text);
+				$tweet_text = htmlspecialchars($tweet->text, null, null, false);
 				$tweet_start_char = substr($tweet_text, 0, 1);
 				
 				if ($tweet_start_char != '@' || $ignore_replies == false) {
