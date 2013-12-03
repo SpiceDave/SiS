@@ -444,14 +444,15 @@
 					</form>
 					<form id="update-password" class="update-password" action="#">
 						<p class="bottom-border row-title grey">Please enter current and new password:</p>
-						<p class="error"> Please ensure that your password and confirm password match</p>
-						<p class="error"> Please enter a new password</p>
+						<p class="grey pass-info">Please enter a secure password consisting of a minimum of 6 characters</p>
+						<p class="error"> Please enter a secure password consisting of a minimum of 6 characters</p>
 						<label for="update-new-password">New Password*</label>
 						<input name="update-new-password" type="password" id="update-new-password" maxlength="64" />
+						<p class="error"> Please ensure that your password and confirm password match</p>
+						<div class="clear"></div>
 						<label for="update-password-confirm">Confirm Password*</label>
 						<input name="update-password-confirm" type="password" id="update-password-confirm" maxlength="64" />
 						<div class="clear"></div>
-						<p class="grey">Please enter a secure password consisting of a minimum of 6 characters</p>
 						<button type="submit" class="yellow-button btn-mid">Save Changes </button>
 					</form>
 					<form id="update-newsletter" class="update-newsletter" action="#">

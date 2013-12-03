@@ -794,6 +794,7 @@ ul.referred-friend-row li{border-bottom:dotted 1px #9e9e9e;padding:20px 0;margin
 #forgot-pass-form p.error{margin:0}
 #wishlist-to-friend p.error{margin:0 0 0 154px}
 .louder{text-transform:uppercase}
+.pass-info{padding-top:0; padding-bottom:6px}
 
 @-moz-document url-prefix(){#search-results-content .yellow-btn{top:2px}}
 html[data-useragent*='MSIE 10.0'] * select{background:#ddd none no-repeat -100px 0 !important}
