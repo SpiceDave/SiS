@@ -184,7 +184,7 @@ if (!$twitter_debug) {
 	
 			ob_start(); // Start buffer
 			
-			$tweets = '<div id="container"><div id="inner"><div class="follow-us"><a href="http://twitter.com/'.$tweet->user->screen_name.'" target="_blank"><span>Follow us on </span><img src="../bird.gif" alt="twitter" width="30" height="30" /></a></div>'; // Start display element
+			$tweets = '<div id="container"><div id="inner"><div class="follow-us"><a href="http://twitter.com/'.$twitter_username.'" target="_blank"><span>Follow us on </span><img src="../bird.gif" alt="twitter" width="30" height="30" /></a></div>'; // Start display element
 			$tweet_count = 0; // Initialize tweet start count
 				
 			foreach ($twitter_stream as $tweet){
