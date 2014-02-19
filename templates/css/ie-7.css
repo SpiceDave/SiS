@@ -37,4 +37,9 @@
 #refer-friends label{clear:none!important}
 #refer-friends input{float:none!important}
 
+.radio-row input{
+	margin-bottom: -6px!important;
+}
+
+
 input[type="radio"], #my-account-register-form input[type="radio"], #update-details input[type="radio"] {background: none!important};
