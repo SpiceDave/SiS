@@ -64,7 +64,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 .footer-column a{color:#656565;font-size:.7em;text-decoration:none;line-height:20px}
 .footer-column a:hover{color:#ffe100}
 #last-footer-column{padding-top:10px}
-#footer-nav{height:186px;background:#1e1e1e}
+#footer-nav{height:210px;background:#1e1e1e}
 #sign-up-copy{width:152px;float:left;text-align:right;margin-right:3px;margin-top:3px}
 #footer-legal,#footer-follow{height:66px;background:#171717;color:#656565;float:left}
 #footer-legal{width:760px;text-align:right;font-size:.55em}
@@ -95,7 +95,7 @@ a.social-icon.youtube:hover{background-position:-60px 0}
 .check-product-list{clear:both;padding-top:50px}
 .check-product-list ul{margin:0;padding:0}
 .check-items>div:first-child+div>ul,.check-items>div:first-child+div>div.check-item-price,.check-items>div:first-child+div>div.check-delivery,.check-items>div:first-child+div>form.check-amounts{margin-top:50px}
-.check-items>div:first-child+div{height:150px}
+.check-items>div:first-child+div{height:200px}
 div:first-child+div>div.check-item-image{margin-top:10px}
 .check-item-row ul,.check-item-price,.check-delivery,.check-item-price,.check-amounts,.check-final-price{margin-top:60px}
 .check-item-image{margin:25px 0}
@@ -107,7 +107,7 @@ div:first-child+div>div.check-item-image{margin-top:10px}
 .check-items{margin:0 135px}
 .check-items-title{position:relative;border-bottom:gray dotted 1px;top:20px;margin-left:125px;font-size:16px;font-family:HelveticaNeueLT-Bold,Helvetica,Arial,sans-serif;padding-bottom:20px}
 .check-item-product-name{font-size:14px}
-.check-item-row{border-bottom:gray dotted 1px;height:160px;font-size:12px}
+.check-item-row{border-bottom:gray dotted 1px;height:200px;font-size:12px}
 .check-row-product-name{font-size:14px}
 .check-item-image{width:124px;height:100px;float:left}
 .check-item-item,.item-title{width:186px;float:left}
