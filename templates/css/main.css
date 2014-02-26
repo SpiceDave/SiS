@@ -799,7 +799,7 @@ ul.referred-friend-row li{border-bottom:dotted 1px #9e9e9e;padding:20px 0;margin
 
 .radio-row p{
 	white-space: pre;
-	display:block;
+	display:block;ss
 	margin-top: -20px;
 }
 .radio-row input{
@@ -807,6 +807,21 @@ ul.referred-friend-row li{border-bottom:dotted 1px #9e9e9e;padding:20px 0;margin
 	display:inline-block!important;
 	margin-bottom: -12px!important;
 }
+#call-center{margin-left:10px; min-height: 400px; }
+#call-center td, #call-center th{font-size:12px; width:120px; text-align:left}
+.call-center-options fieldset{padding-left:0}
+.call-center-options legend+label{padding-left:0}
+.call-center-options label {width: auto;padding-right: 5px;clear: none;line-height: 31px;height: 31px;display: block;float: left;margin-bottom: 15px;clear: none;font-size: 12px; margin-left:2px}
+.call-center-options input[type="radio"]:checked {background-position: 22px -8px;}
+.call-center-options input[type="radio"] {background-position: 53px -8px;}
+.call-center-options input[type="radio"] {width: 12px;background-color: transparent;border: 0; padding-right:24px}
+.call-center-options input {height: 25px;background-color: #ddd;border: 1px solid #cacaca;padding: 2px;float: left;margin-bottom: 15px;width: 150px;}
+#call-center form{width:960px; margin-left:15px; margin-top:30px}
+#cc-submit{margin-left:2px}
+#cc-submit input[type=submit] {width: 110px;background: #feea00 url(../img/ui/sign-up.gif);color: #1c1800;padding: 7px 25px 7px 0;cursor: pointer;}
+#cc-submit input[type=text] {width: 145px;background: #e9e9e9;padding: 7px 0 7px 5px;margin-right: -2px;}
+#cc-submit input {border: 0;color: #656565;font-family: HelveticaNeueLT-Bold,Helvetica,Arial,sans-serif;}
+
 
 @-moz-document url-prefix(){#search-results-content .yellow-btn{top:2px}.radio-row input[type="radio"]{margin-bottom: 15px !important; height: 0 !important;}}
 html[data-useragent*='MSIE 10.0'] * select{background:#ddd none no-repeat -100px 0 !important}
@@ -814,4 +829,3 @@ html[data-useragent*='MSIE 10.0'] * input[type="checkbox"]{background-color:tran
 /*html[data-useragent*='MSIE 10.0'] * input[type="radio"]{background-position: 55px 0px!important}*/
 html[data-useragent*='MSIE 10.0'] * input[type="radio"], #my-account-register-form input[type="radio"], #update-details input[type="radio"] {background: none!important};
 /*js this...*/
-
