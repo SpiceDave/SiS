@@ -807,7 +807,7 @@ ul.referred-friend-row li{border-bottom:dotted 1px #9e9e9e;padding:20px 0;margin
 	display:inline-block!important;
 	margin-bottom: -12px!important;
 }
-#call-center{margin-left:10px; min-height: 400px; }
+#call-center{margin-left:10px; min-height: 600px; }
 #call-center td, #call-center th{font-size:12px; width:120px; text-align:left}
 .call-center-options fieldset{padding-left:0}
 .call-center-options legend+label{padding-left:0}
