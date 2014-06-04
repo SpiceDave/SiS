@@ -4,4 +4,22 @@ select {
 }
 input[type="checkbox"] {background-color: transparent!important; border:0!important}
 /*input[type="radio"]{background-position-x: 56px!important; background-position-y: -6px!important; background-position: 56px -6px!important}*/
-input[type="radio"], #my-account-register-form input[type="radio"], #update-details input[type="radio"] {background: none!important};
+input[type="radio"], #my-account-register-form input[type="radio"], #update-details input[type="radio"] {background: none!important}
+
+.RegisterForm input[type="checkbox"] {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    float: left;
+    margin-left: 1px;
+    margin-top: 8px!important;
+    width: auto;
+}
+
+
+#form-builder .radio-row input{
+	
+position:relative;
+top :12px;
+margin-top:0px!important
+	
+}
