@@ -45,10 +45,12 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 .li-0 a:hover,.li-1 a:hover,.top-level:hover,#account-menu a:hover{color:#ffe100}
 .li-1{width:205px;float:left;padding:0 10px 30px}
 .li-2{list-style-type:disc;color:#656565;font-size: 1.0em;}
-#account-menu{position:absolute;top:15px;right:15px;width:600px;/*350px;*/text-transform:uppercase;height:34px}
+#account-menu{position:absolute;top:11px;right:15px;width:600px;/*350px;*/text-transform:uppercase;height:34px}
 .acc-menu-item{float:right}
-.acc-menu-item img,.acc-menu-item a{height:34px;vertical-align:middle;display:table-cell}
+.acc-menu-item a{height:17px;vertical-align:middle;display:table-cell}
+.acc-menu-item img {width:24px; height:auto; margin-top: -3px}
 .acc-menu-item span{padding:0 0 0 5px}
+.mnu-acc-row-two {margin-top: -3px;width: 400px;float: right;}
 #content{background:#fff;overflow:hidden}
 #footer-columns{top:15px;left:45px;position:relative;width:934px}
 .footer-column{width:170px;float:left}

@@ -294,8 +294,8 @@ function stickFooter(){
 
 /* additional code */ 
 
-var items = [[1,2],[3,4],[5,6]];
-alert(items[0][0]); // 1
+/*var items = [[1,2],[3,4],[5,6]];
+alert(items[0][0]); // 1*/
 
 var countries = [  
 					['UK', 'United Kingdom', 	'UK.png', '#'], 
