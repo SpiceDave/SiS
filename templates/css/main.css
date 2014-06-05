@@ -1248,10 +1248,18 @@ span[id*="flag-label"]{
 	top: 14px;
 	right: 275px;
 	font-size: 11px;
-	width:60px;
+	width:55px;
 	cursor:pointer
 }
-#country-code{
+#currency-selector{
+	position: absolute;
+	top: 30px;
+	right: 275px;
+	font-size: 11px;
+	width:55px;
+	cursor:pointer
+}
+#country-code, #currency-code{
 	width:20px;
 	float:left;
 	line-height:11px;	
@@ -1270,4 +1278,10 @@ span[id*="flag-label"]{
 }
 #currency-opt{
 	width: 63px;
+}
+#country-code{
+	float:left;
+}
+#country-changer{
+	float:right;
 }
