@@ -220,8 +220,55 @@ jQuery(
 		});
 		
 		function changeCountry(id){
-			alert(id);
+			
+			var countries = [  
+					['UK', 'United Kingdom', 	'UK.png', '#'], 
+					['IN', 'India', 			'IN.png', '#'], 
+					['RU', 'Russia', 			'RU.png', '#'], 
+					['NZ', 'New Zealand', 		'NZ.png', '#'], 
+					['ID', 'Indonesia', 		'ID.png', '#'], 
+					['WS', 'Samoa', 			'WS.png', '#'],
+					['AU', 'Australia', 		'AU.png', '#'],  
+					['JP', 'Japan', 			'JP.png', '#'], 
+					['SG', 'Singapore', 		'SG.png', '#'], 
+					['BD', 'Bangladesh', 		'BD.png', '#'], 
+					['KR', 'Korea', 			'KR.png', '#'], 
+					['TH', 'Thailand', 			'TH.png', '#'],
+					['MY', 'Borneo', 			'MY.png', '#'],
+					['MY', 'Malaysia', 			'MY.png', '#'], 
+					['TO', 'Tonga', 			'TO.png', '#'], 
+					['CN', 'China', 			'CN.png', '#'],
+					['KP', 'North Korea', 		'KP.png', '#'],
+					['AF', 'Africa', 			'AF.png', '#'],
+					['CK', 'Cook Islands', 		'CK.png', '#'],
+					['PK', 'Pakistan', 			'PK.png', '#'],
+					['EU', 'Europe', 			'EU.png', '#'],
+					['FJ', 'Fiji', 				'FJ.png', '#'],
+					['PG', 'Papua New Guinea', 	'PG.png', '#'],
+					['NA', 'North America', 	'NA.png', '#'],
+					['HK', 'Hong Kong', 		'HK.png', '#'],
+					['PH', 'Philippines', 		'PH.png', '#'],
+					['SA', 'South America', 	'SA.png', '#'],
+					  
+			];
+			//set the value of the form using jquery to that selected by the user	
+			jQuery("select option").filter(function() {
+				return $(this).text() == countries[id][1];
+			}).prop('selected', true);
+			
+			jQuery('#uk-currency-sel').submit();
+			
 		}
+		
+		//#countries-selector
+		jQuery('#countries-selector').click(function () {
+	        //show the countries table
+	        jQuery('#js-countries').slideToggle(100, function () { });
+	    })
+	    jQuery('#js-countries').mouseleave(function () {
+	        //hide
+	        jQuery('#js-countries').slideUp(100, function () { });
+	    })
 
 		
 		
@@ -324,36 +371,7 @@ function stickFooter(){
 /*var items = [[1,2],[3,4],[5,6]];
 alert(items[0][0]); // 1*/
 
-var countries = [  
-					['UK', 'United Kingdom', 	'UK.png', '#'], 
-					['IN', 'India', 			'IN.png', '#'], 
-					['RU', 'Russia', 			'RU.png', '#'], 
-					['NZ', 'New Zealand', 		'NZ.png', '#'], 
-					['ID', 'Indonesia', 		'ID.png', '#'], 
-					['WS', 'Samoa', 			'WS.png', '#'],
-					['AU', 'Australia', 		'AU.png', '#'],  
-					['JP', 'Japan', 			'JP.png', '#'], 
-					['SG', 'Singapore', 		'SG.png', '#'], 
-					['BD', 'Bangladesh', 		'BD.png', '#'], 
-					['KR', 'Korea', 			'KR.png', '#'], 
-					['TH', 'Thailand', 			'TH.png', '#'],
-					['MY', 'Borneo', 			'MY.png', '#'],
-					['MY', 'Malaysia', 			'MY.png', '#'], 
-					['TO', 'Tongo', 			'TO.png', '#'], 
-					['CN', 'China', 			'CN.png', '#'],
-					['KP', 'North Korea', 		'KP.png', '#'],
-					['AF', 'Africa', 			'AF.png', '#'],
-					['CK', 'Cook Islands', 		'CK.png', '#'],
-					['PK', 'Pakistan', 			'PK.png', '#'],
-					['EU', 'Europe', 			'EU.png', '#'],
-					['FJ', 'Fiji', 				'FJ.png', '#'],
-					['PG', 'Papa New Guinea', 	'PG.png', '#'],
-					['NA', 'North America', 	'NA.png', '#'],
-					['HK', 'Hong Kong', 		'HK.png', '#'],
-					['PH', 'Philippines', 		'PH.png', '#'],
-					['SA', 'South America', 	'SA.png', '#'],
-					  
-];
+
 
 
 

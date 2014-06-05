@@ -1216,6 +1216,7 @@ p.main a.powered span{ padding:0px!important; display:inline!important;}
 	z-index:1000;
 	right: 15px;
 	top: 30px;
+	display:none;
 }
 #js-countries-inner{
 	position:relative;
@@ -1240,4 +1241,30 @@ span[id*="flag-label"]{
 .flags td{
 	vertical-align:middle;
 	padding-bottom:6px;
+}
+/* selector table */
+#countries-selector{
+	position: absolute;
+	top: 14px;
+	right: 275px;
+	font-size: 11px;
+	width:60px;
+	cursor:pointer
+}
+#country-code{
+	width:20px;
+	float:left;
+	line-height:11px;	
+}
+#country-flag{
+	float:left;
+}
+#country-flag img{
+	height:11px;
+	width:auto;
+	
+}
+#country-changer{
+	float:left;
+	margin-left:1px;
 }

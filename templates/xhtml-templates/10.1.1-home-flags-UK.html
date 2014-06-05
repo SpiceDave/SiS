@@ -40,7 +40,7 @@
 					<div class="acc-menu-item"><a href="/login/register?redirectto=%2f"><span>Register</span></a></div>
 					<div class="acc-menu-item"><a href="/login?redirectto=%2f"><span>Sign In</span></a></div>
 						<div class="acc-menu-item no-js countries-form">
-						<form id="uk-currency-sel" class="no-js" action="#" method="post" style="display:none">
+						<form id="uk-currency-sel" class="no-js" action="#" method="get" style="display:none">
 						<select name="countries-opt">
 							<optgroup label="Countries">
 								<option value="UK" selected="selected">United Kingdom</option>
@@ -55,7 +55,7 @@
 								<option value="IN">India</option>
 								<option value="ID">Indonesia</option>
 								<option value="JP">Japan</option>
-								<option value="BD">Korea</option>
+								<option value="KR">Korea</option>
 								<option value="MY">Malaysia</option>
 								<option value="KP">North Korea</option>
 								<option value="PK">Pakistan</option>
@@ -79,6 +79,11 @@
 					</div>
 				</div>
 				<div class="clear"></div>
+			</div>
+			<div id="countries-selector">
+				<div id="country-code">UK</div>
+				<div id="country-flag"><img id="dyn-flag" src="../img/flags/UK.png" alt="UK" /></div>
+				<div id="country-changer"><img src="../img/flags/button.png" width="11" height="11" alt="Change" title="Change" /></div>
 			</div>
 			<div id="js-countries">
 				<div id="js-countries-inner">
@@ -110,7 +115,7 @@
 						<tr>
 							<td><img id="flag-image-9" src="../img/flags/BD.png" alt="BD" /></td>
 							<td><span id="flag-label-9">Bangladesh</span></td>
-							<td><img id="flag-image-10" src="../img/flags/KP.png" alt="KP" /></td>
+							<td><img id="flag-image-10" src="../img/flags/KR.png" alt="KR" /></td>
 							<td><span id="flag-label-10">Korea</span></td>
 							<td><img id="flag-image-11" src="../img/flags/TH.png" alt="TH" /></td>
 							<td><span id="flag-label-11">Thailand</span></td>
@@ -148,12 +153,12 @@
 							<td><span id="flag-label-23">North America</span></td>
 						</tr>
 						<tr>
-							<td><img id="flag-image-21" src="../img/flags/HK.png" alt="HK" /></td>
-							<td><span id="flag-label-21">Hong Kong</span></td>
-							<td><img id="flag-image-22" src="../img/flags/PH.png" alt="PH" /></td>
-							<td><span id="flag-label-22">Philippines</span></td>
-							<td><img id="flag-image-23" src="../img/flags/SA.png" alt="SA" /></td>
-							<td><span id="flag-label-23">South America</span></td>
+							<td><img id="flag-image-24" src="../img/flags/HK.png" alt="HK" /></td>
+							<td><span id="flag-label-24">Hong Kong</span></td>
+							<td><img id="flag-image-25" src="../img/flags/PH.png" alt="PH" /></td>
+							<td><span id="flag-label-25">Philippines</span></td>
+							<td><img id="flag-image-26" src="../img/flags/SA.png" alt="SA" /></td>
+							<td><span id="flag-label-26">South America</span></td>
 						</tr>
 	
 					</table>
