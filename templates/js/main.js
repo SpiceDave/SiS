@@ -198,6 +198,31 @@ jQuery(
 	    //	    jQuery('.ab-buttons').click(function () { jQuery('#ab-overlay').fadeOut(); });
 
 	    jQuery('.continue-shopping').click(function () { jQuery('#ab-overlay').fadeOut(); });
+		
+		
+		/**************
+		*
+		* additional code for countries/currencies
+		*
+		***************/
+		
+		/*bind the flag and labels*/
+		jQuery('span[id*="flag-label"]').click(function(e){
+			id = parseInt(e.target.id);
+			changeCountry(id);
+		});
+		
+		jQuery('img[id*="flag-image"]').click(function(e){
+			id = parseInt(e.target.id);
+			changeCountry(id);
+		});
+		
+		function changeCountry(id){
+			alert(id);
+		}
+
+		
+		
         
 	}
 );
@@ -308,7 +333,7 @@ var countries = [
 					['JP', 'Japan', 			'JP.png', '#'], 
 					['SG', 'Singapore', 		'SG.png', '#'], 
 					['BD', 'Bangladesh', 		'BD.png', '#'], 
-					['KR', 'Korea', 			'BD.png', '#'],  
+					['KR', 'Korea', 			'KR.png', '#'], 
 					['TH', 'Thailand', 			'TH.png', '#'],
 					['MY', 'Borneo', 			'MY.png', '#'],
 					['MY', 'Malaysia', 			'MY.png', '#'], 
@@ -323,7 +348,7 @@ var countries = [
 					['PG', 'Papa New Guinea', 	'PG.png', '#'],
 					['NA', 'North America', 	'NA.png', '#'],
 					['HK', 'Hong Kong', 		'HK.png', '#'],
-					['PH', 'Hong Kong', 		'PH.png', '#'],
+					['PH', 'Philippines', 		'PH.png', '#'],
 					['SA', 'South America', 	'SA.png', '#'],
 					  
 ];

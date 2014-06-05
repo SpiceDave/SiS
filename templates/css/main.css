@@ -1207,4 +1207,34 @@ p.main a.powered span{ padding:0px!important; display:inline!important;}
 
 #form-builder-narrow #recaptcha_widget_div .recaptchatable #recaptcha_response_field {margin: 10px 0 0 !important; height:20px;} 
 
+/*css for country selector table*/
+#js-countries{
+	width:363px;
+	height:277px;
+	background-color:#000;background-color:rgba(23,23,23,0.95);*background-color:#000;
+	position:absolute;
+	z-index:1000;
+	right: 15px;
+	top: 45px;
+}
+#js-countries-inner{
+	position:relative;
+	margin:22px 0 0 16px;	
+}
+.flag-container{
+	height:29px;
+	padding-right:11px;
+}
 
+img[id*="flag-image"]{
+	cursor:pointer;
+	
+}
+span[id*="flag-label"]{
+	vertical-align:middle;
+	font-size:12px;
+	cursor:pointer;
+}
+.flags td{
+	vertical-align:middle;
+}

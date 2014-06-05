@@ -40,7 +40,7 @@
 					<div class="acc-menu-item"><a href="/login/register?redirectto=%2f"><span>Register</span></a></div>
 					<div class="acc-menu-item"><a href="/login?redirectto=%2f"><span>Sign In</span></a></div>
 						<div class="acc-menu-item no-js countries-form">
-						<form id="no-js-uk-currency-sel" action="#" method="post">
+						<form id="uk-currency-sel" class="no-js" action="#" method="post" style="display:none">
 						<select name="countries-opt">
 							<optgroup label="Countries">
 								<option value="UK" selected="selected">United Kingdom</option>
@@ -79,6 +79,34 @@
 					</div>
 				</div>
 				<div class="clear"></div>
+			</div>
+			<div id="js-countries">
+				<div id="js-countries-inner">
+					<table class="flags">
+					<tr>
+						<td id="flag-label-4"><div id="js-countries-inner2">
+							<table class="flags">
+								<tr>
+									<td><img id="0-flag-image" src="../img/flags/UK.png" width="24" height="12" alt="UK" /></td>
+									<td><span id="0-flag-label">United Kingdom</span></td>
+									<td><img id="1-flag-image" src="../img/flags/IN.png" width="24" height="12" alt="UK" /></td>
+									<td><span id="1-flag-label">India</span></td>
+									<td><img id="2-flag-image" src="../img/flags/RU.png" width="24" height="12" alt="UK" /></td>
+									<td><span id="2-flag-label">Russia</span></td>
+								</tr>
+								<tr>
+									<td><img id="3-flag-image" src="../img/flags/NZ.png" width="24" height="12" alt="UK" /></td>
+									<td><span id="3-flag-label">New Zealand</span></td>
+									<td><img id="4-flag-image" src="../img/flags/ID.png" width="24" height="12" alt="UK" /></td>
+									<td><span id="4-flag-label">Indonesia</span></td>
+									<td><img id="5-flag-image" src="../img/flags/WS.png" width="24" height="12" alt="UK" /></td>
+									<td><span id="5-flag-label">Samoa</span></td>
+								</tr>
+							</table>
+						</div></td>
+					</tr>
+					</table>
+				</div>
 			</div>
 			<!-- end of edit -->
 			
