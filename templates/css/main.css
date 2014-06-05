@@ -1268,3 +1268,6 @@ span[id*="flag-label"]{
 	float:left;
 	margin-left:1px;
 }
+#currency-opt{
+	width: 63px;
+}

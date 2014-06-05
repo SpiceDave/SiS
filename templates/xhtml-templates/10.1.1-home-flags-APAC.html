@@ -41,7 +41,8 @@
 					<div class="acc-menu-item"><a href="/login/register?redirectto=%2f"><span>Register</span></a></div>
 					<div class="acc-menu-item"><a href="/login?redirectto=%2f"><span>Sign In</span></a></div>
 						<div id="no-js-mnu" class="acc-menu-item no-js countries-form">
-						<form id="uk-currency-sel" class="no-js" action="10.1.1-home-flags-APAC.html" method="get" style="display:block">
+
+						<form id="uk-currency-sel" class="no-js" action="#" method="get" style="display:none">
 						<select name="countries-opt">
 							<optgroup label="Countries">
 								<option value="UK" selected="selected">United Kingdom</option>
@@ -75,13 +76,20 @@
 								<option value="SA">South America</option>
 							</optgroup>
 						</select>
+						<select id="currency-opt" name="currency-opt">
+							<optgroup label="Change your currency">
+								<option value="USD" selected="selected">$USD  - United States Dollars</option>
+								<option value="AUS">$AUS  - Australian Dollars</option>
+								<option value="NZD">$NZD  - New Zealand Dollars</option>
+							</optgroup>
+						</select>
 						<button type="submit">Submit</button>
 					</form>
 					</div>
 				</div>
 				<div class="clear"></div>
 			</div>
-			<div id="countries-selector" style="display:none">
+			<div id="countries-selector" style="display:block">
 				<div id="country-code">UK</div>
 				<div id="country-flag"><img id="dyn-flag" src="../img/flags/UK.png" alt="UK" /></div>
 				<div id="country-changer"><img src="../img/flags/button.png" width="11" height="11" alt="Change" title="Change" /></div>
