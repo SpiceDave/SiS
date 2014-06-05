@@ -208,12 +208,14 @@ jQuery(
 		
 		/*bind the flag and labels*/
 		jQuery('span[id*="flag-label"]').click(function(e){
-			id = parseInt(e.target.id);
+			id = e.target.id;
+			id = id.replace('flag-label-', '');
 			changeCountry(id);
 		});
 		
 		jQuery('img[id*="flag-image"]').click(function(e){
-			id = parseInt(e.target.id);
+			id = e.target.id;
+			id = id.replace('flag-image-', '');
 			changeCountry(id);
 		});
 		

@@ -1215,11 +1215,11 @@ p.main a.powered span{ padding:0px!important; display:inline!important;}
 	position:absolute;
 	z-index:1000;
 	right: 15px;
-	top: 45px;
+	top: 30px;
 }
 #js-countries-inner{
 	position:relative;
-	margin:22px 0 0 16px;	
+	margin:10px 0 0 10px;	
 }
 .flag-container{
 	height:29px;
@@ -1228,13 +1228,16 @@ p.main a.powered span{ padding:0px!important; display:inline!important;}
 
 img[id*="flag-image"]{
 	cursor:pointer;
+	width:24px;
+	height:auto;
 	
 }
 span[id*="flag-label"]{
 	vertical-align:middle;
-	font-size:12px;
+	font-size:10px;
 	cursor:pointer;
 }
 .flags td{
 	vertical-align:middle;
+	padding-bottom:6px;
 }
