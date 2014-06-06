@@ -1285,6 +1285,8 @@ span[id*="flag-label"], span[id*="currency"]{
 }
 #country-flag{
 	float:left;
+	width:22px;
+	text-align:right
 }
 #country-flag img{
 	height:11px;

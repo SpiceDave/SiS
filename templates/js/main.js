@@ -5,6 +5,42 @@
 * Created by Spicerack Media Ltd
 *
 ************************************************/ 
+//path to uk page
+var ukUrl = "10.1.1-home-flags-UK.html";
+//path to flag images
+var flagImagePath = '../img/flags/';
+//countries data
+var countries = [  
+		['UK', 'United Kingdom', 	'UK.png', '#'], 
+		['IN', 'India', 			'IN.png', '#'], 
+		['RU', 'Russia', 			'RU.png', '#'], 
+		['NZ', 'New Zealand', 		'NZ.png', '#'], 
+		['ID', 'Indonesia', 		'ID.png', '#'], 
+		['WS', 'Samoa', 			'WS.png', '#'],
+		['AU', 'Australia', 		'AU.png', '#'],  
+		['JP', 'Japan', 			'JP.png', '#'], 
+		['SG', 'Singapore', 		'SG.png', '#'], 
+		['BD', 'Bangladesh', 		'BD.png', '#'], 
+		['KR', 'Korea', 			'KR.png', '#'], 
+		['TH', 'Thailand', 			'TH.png', '#'],
+		['MY', 'Borneo', 			'MY.png', '#'],
+		['MY', 'Malaysia', 			'MY.png', '#'], 
+		['TO', 'Tonga', 			'TO.png', '#'], 
+		['CN', 'China', 			'CN.png', '#'],
+		['KP', 'North Korea', 		'KP.png', '#'],
+		['AF', 'Africa', 			'AF.png', '#'],
+		['CK', 'Cook Islands', 		'CK.png', '#'],
+		['PK', 'Pakistan', 			'PK.png', '#'],
+		['EU', 'Europe', 			'EU.png', '#'],
+		['FJ', 'Fiji', 				'FJ.png', '#'],
+		['PG', 'Papua New Guinea', 	'PG.png', '#'],
+		['NA', 'North America', 	'NA.png', '#'],
+		['HK', 'Hong Kong', 		'HK.png', '#'],
+		['PH', 'Philippines', 		'PH.png', '#'],
+		['SA', 'South America', 	'SA.png', '#'],
+		  
+];
+var defaultCurrency = '$USD';
 
 //to execute when the DOM is ready...
 jQuery(
@@ -233,47 +269,34 @@ jQuery(
 				return $(this).val() == id;
 			}).prop('selected', true);
 			
+			//change the displayed value of the currency and slide up the menu ******** this may be extraneous code depending on implimentation method (if form submits) **********
+			jQuery('#currency-code').text('$'+id);
+			jQuery('#js-currencies').slideUp(100, function () { });
+			
+			//submit the form
 			jQuery('#uk-currency-sel').submit();
 		}
 		
 		function changeCountry(id){
 			
-			var countries = [  
-					['UK', 'United Kingdom', 	'UK.png', '#'], 
-					['IN', 'India', 			'IN.png', '#'], 
-					['RU', 'Russia', 			'RU.png', '#'], 
-					['NZ', 'New Zealand', 		'NZ.png', '#'], 
-					['ID', 'Indonesia', 		'ID.png', '#'], 
-					['WS', 'Samoa', 			'WS.png', '#'],
-					['AU', 'Australia', 		'AU.png', '#'],  
-					['JP', 'Japan', 			'JP.png', '#'], 
-					['SG', 'Singapore', 		'SG.png', '#'], 
-					['BD', 'Bangladesh', 		'BD.png', '#'], 
-					['KR', 'Korea', 			'KR.png', '#'], 
-					['TH', 'Thailand', 			'TH.png', '#'],
-					['MY', 'Borneo', 			'MY.png', '#'],
-					['MY', 'Malaysia', 			'MY.png', '#'], 
-					['TO', 'Tonga', 			'TO.png', '#'], 
-					['CN', 'China', 			'CN.png', '#'],
-					['KP', 'North Korea', 		'KP.png', '#'],
-					['AF', 'Africa', 			'AF.png', '#'],
-					['CK', 'Cook Islands', 		'CK.png', '#'],
-					['PK', 'Pakistan', 			'PK.png', '#'],
-					['EU', 'Europe', 			'EU.png', '#'],
-					['FJ', 'Fiji', 				'FJ.png', '#'],
-					['PG', 'Papua New Guinea', 	'PG.png', '#'],
-					['NA', 'North America', 	'NA.png', '#'],
-					['HK', 'Hong Kong', 		'HK.png', '#'],
-					['PH', 'Philippines', 		'PH.png', '#'],
-					['SA', 'South America', 	'SA.png', '#'],
-					  
-			];
 			//set the value of the existing html form using jquery to that selected by the user	
 			jQuery("select option").filter(function() {
 				return $(this).val() == countries[id][0];
 			}).prop('selected', true);
 			
+			//change the displayed value of the country code and flag and slide up the menu ******** this may be extraneous code depending on implimentation method (if form submits) **********
+			jQuery('#country-code').text(countries[id][0]);
+			//change flag
+			jQuery('#dyn-flag').attr('src', flagImagePath + countries[id][2]);
+			jQuery('#js-currencies').slideUp(100, function () { });
+			
+			//IF UK is selected return to UK form
+			if(countries[id][0] == 'UK')
+			{
+				jQuery('#uk-currency-sel').attr('action', ukUrl);
+			}
 			jQuery('#uk-currency-sel').submit();
+			
 			
 		}
 		
@@ -296,12 +319,68 @@ jQuery(
 	        //hide
 	        jQuery('#js-currencies').slideUp(100, function () { });
 	    })
-
+		
+		//get url vars on page load and set up form and javascripted alternative
+		var selectedCountry = getUrlVars()["countries-opt"];
+		var selectedCurrency = getUrlVars()["currency-opt"];//user value
+		if(!(selectedCurrency))
+		{
+			//set a default currency
+			selectedCurrency = defaultCurrency;
+		}
 		
 		
+		/**
+		* set up countries to reflect url vars
+		**/
+		
+		//change the *displayed* selected country text
+		jQuery('#country-code').text(selectedCountry);
+		
+		//change flag - look for the entry that matches the given county code in the array
+		for(i = 0; i < countries.length; i++)
+		{
+			if(selectedCountry == countries[i][0])
+			{
+				jQuery('#dyn-flag').attr('src', flagImagePath + countries[i][2]);
+				//reset title text on images and text
+				jQuery('#dyn-flag').attr('title', countries[i][1]);
+				jQuery('#country-code').attr('title', countries[i][1]);
+				//set the *form value* for selected country code (from the default)
+				jQuery("select option").filter(function() {
+					return $(this).val() == countries[i][0];
+				}).prop('selected', true);
+			}
+		}
+		
+		/**
+		* set up currencies to reflect url vars
+		**/
+		
+		//change the *displayed* selected country text
+		jQuery('#currency-code').text('$'+selectedCurrency);
+		
+		//set the value of the existing html form using jquery to that selected by the user	
+		jQuery("select option").filter(function() {
+			return $(this).val() == selectedCurrency;
+		}).prop('selected', true);		
         
 	}
 );
+
+// Read a page's GET URL variables and return them as an associative array.
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
     
 function menu(id){
 	//hide the other categories - grab the root ul
