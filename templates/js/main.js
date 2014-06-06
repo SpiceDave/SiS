@@ -269,7 +269,7 @@ jQuery(
 				return $(this).val() == id;
 			}).prop('selected', true);
 			
-			//change the displayed value of the currency and slide up the menu ******** this may be extraneous code depending on implimentation method (if form submits) **********
+			//change the displayed value of the currency and slide up the menu ******** this may be extraneous code depending on implementation method (if form submits) **********
 			jQuery('#currency-code').text('$'+id);
 			jQuery('#js-currencies').slideUp(100, function () { });
 			
@@ -284,7 +284,7 @@ jQuery(
 				return $(this).val() == countries[id][0];
 			}).prop('selected', true);
 			
-			//change the displayed value of the country code and flag and slide up the menu ******** this may be extraneous code depending on implimentation method (if form submits) **********
+			//change the displayed value of the country code and flag and slide up the menu ******** this may be extraneous code depending on implementation method (if form submits) **********
 			jQuery('#country-code').text(countries[id][0]);
 			//change flag
 			jQuery('#dyn-flag').attr('src', flagImagePath + countries[id][2]);
@@ -302,8 +302,9 @@ jQuery(
 		
 		//#countries-selector
 		jQuery('#countries-selector').click(function () {
+			jQuery('#country-button').attr('src', flagImagePath + 'button-gray.png');
 	        //show the countries table
-	        jQuery('#js-countries').slideToggle(100, function () { jQuery('#country-button').attr('src', flagImagePath + 'button.png') });
+	        jQuery('#js-countries').slideDown(100, function () { jQuery('#country-button').attr('src', flagImagePath + 'button.png') });
 	    })
 	    jQuery('#js-countries').mouseleave(function () {
 	        //hide
@@ -312,8 +313,9 @@ jQuery(
 		
 		//#currencies-selector
 		jQuery('#currency-selector').click(function () {
+			jQuery('#currency-button').attr('src', flagImagePath + 'button-gray.png');
 	        //show the currencies table
-	        jQuery('#js-currencies').slideToggle(100, function () { jQuery('#currency-button').attr('src', flagImagePath + 'button.png')});
+	        jQuery('#js-currencies').slideDown(100, function () { jQuery('#currency-button').attr('src', flagImagePath + 'button.png')});
 	    })
 	    jQuery('#js-currencies').mouseleave(function () {
 	        //hide
@@ -331,7 +333,7 @@ jQuery(
 		
 		
 		/**
-		* set up countries to reflect url vars **** non js form values will need selected atribute adding serverside ****
+		* set up countries to reflect url vars **** non js form selected values will need selected atribute adding serverside ****
 		**/
 		
 		//change the *displayed* selected country text
@@ -354,7 +356,7 @@ jQuery(
 		}
 		
 		/**
-		* set up currencies to reflect url vars - **** non js form values will need selected atribute adding serverside ****
+		* set up currencies to reflect url vars - **** non js form selected values will need selected atribute adding serverside ****
 		**/
 		
 		//change the *displayed* selected country text

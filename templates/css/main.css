@@ -1210,7 +1210,7 @@ p.main a.powered span{ padding:0px!important; display:inline!important;}
 /*css for country selector table*/
 #js-countries{
 	width:363px;
-	height:277px;
+	padding-bottom:12px;
 	background-color:#000;background-color:rgba(23,23,23,0.95);*background-color:#000;
 	position:absolute;
 	z-index:1001;
