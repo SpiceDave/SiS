@@ -331,7 +331,7 @@ jQuery(
 		
 		
 		/**
-		* set up countries to reflect url vars
+		* set up countries to reflect url vars **** non js form values will need selected atribute adding serverside ****
 		**/
 		
 		//change the *displayed* selected country text
@@ -354,7 +354,7 @@ jQuery(
 		}
 		
 		/**
-		* set up currencies to reflect url vars
+		* set up currencies to reflect url vars - **** non js form values will need selected atribute adding serverside ****
 		**/
 		
 		//change the *displayed* selected country text
