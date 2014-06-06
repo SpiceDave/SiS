@@ -219,6 +219,23 @@ jQuery(
 			changeCountry(id);
 		});
 		
+		/*bind the currency labels*/
+		jQuery('span[id*="currency"]').click(function(e){
+			id = e.target.id;
+			id = id.replace('currency-', '');
+			id = id.toUpperCase();
+			changeCurrency(id);
+		});
+		
+		function changeCurrency(id){
+			//set the value of the existing html form using jquery to that selected by the user	
+			jQuery("select option").filter(function() {
+				return $(this).val() == id;
+			}).prop('selected', true);
+			
+			jQuery('#uk-currency-sel').submit();
+		}
+		
 		function changeCountry(id){
 			
 			var countries = [  
@@ -251,9 +268,9 @@ jQuery(
 					['SA', 'South America', 	'SA.png', '#'],
 					  
 			];
-			//set the value of the form using jquery to that selected by the user	
+			//set the value of the existing html form using jquery to that selected by the user	
 			jQuery("select option").filter(function() {
-				return $(this).text() == countries[id][1];
+				return $(this).val() == countries[id][0];
 			}).prop('selected', true);
 			
 			jQuery('#uk-currency-sel').submit();
