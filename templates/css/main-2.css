@@ -33,25 +33,22 @@ button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 #main-menu{top:66px;left:170px;position:absolute}
 .ul-1,.ul-2{margin-left:-25px}
 .ul-0{padding:10px}
-#mega-dropdown{/*text-transform:uppercase;*/font-size:.7em;background-color:#000;background-color:rgba(23,23,23,0.95);*background-color:#000;position:absolute;left:15px;top:99px;width:994px;display:none;z-index:999}
+#mega-dropdown{text-transform:uppercase;font-size:.7em;background-color:#000;background-color:rgba(23,23,23,0.95);*background-color:#000;position:absolute;left:15px;top:99px;width:994px;display:none;z-index:999}
 #mega-dropdown ul{list-style-type:none;line-height:15px}
 #mega-dropdown a,#account-menu a{text-decoration:none}
-.top-level{/*font-size:.7em;*/font-size:13px;text-decoration:none;padding:5px;/*text-transform:uppercase*/}
+.top-level{font-size:.7em;text-decoration:none;padding:5px;text-transform:uppercase}
 .li-0 a,.top-level,#account-menu a{color:#fff}
 .li-1 a{color:#bbbbbb}
-.li-2 a,.li-2 span{color:#888888;font-size:10px;}
+.li-2 a,.li-2 span{color:#888888;font-size:10px}
 .menu-more a{font-size:10px; line-height: 16px}
 #account-menu a{font-size:.7em}
 .li-0 a:hover,.li-1 a:hover,.top-level:hover,#account-menu a:hover{color:#ffe100}
 .li-1{width:205px;float:left;padding:0 10px 30px}
 .li-2{list-style-type:disc;color:#656565;font-size: 1.0em;}
-#account-menu{position:absolute;top:11px;right:15px;width:600px;/*350px;*/text-transform:uppercase;height:34px}
+#account-menu{position:absolute;top:15px;right:15px;width:600px;/*350px;*/text-transform:uppercase;height:34px}
 .acc-menu-item{float:right}
-.acc-menu-item a{height:17px;vertical-align:middle;display:table-cell}
-.acc-menu-item img {width:24px; height:auto; margin-top: -3px}
+.acc-menu-item img,.acc-menu-item a{height:34px;vertical-align:middle;display:table-cell}
 .acc-menu-item span{padding:0 0 0 5px}
-.countries-form{right: 73px;position: relative;margin-top: -12px;}
-.mnu-acc-row-two {margin-top: -3px;width: 400px;float: right;}
 #content{background:#fff;overflow:hidden}
 #footer-columns{top:15px;left:45px;position:relative;width:934px}
 .footer-column{width:170px;float:left}
@@ -558,7 +555,6 @@ input#register-signup-newsletter,input#account-register-signup-newsletter{margin
 #members-checkout-delivery select {width: 238px;background-position: -33px 0;margin-left: 20px}
 #selected-delivery{margin-bottom:15px}
 #delivery-info-form .yellow-button-wide{margin-bottom:10px;margin-top:10px}
-#delivery-info-form .phone-error { margin: 5px 0;padding: 0; }
 #delivery-info-form .black-button,#checkout-payment .black-button{margin:24px 0}
 #delivery-info-form{border-top:dotted 1px #9e9e9e;float:left;clear:both}
 #delivery-info-form .instructions{float:left;line-height:48px}
@@ -795,7 +791,7 @@ ul.referred-friend-row li{border-bottom:dotted 1px #9e9e9e;padding:20px 0;margin
 #members-checkout-delivery label{width:232px;clear:none}
 #dup-menu{margin-top:80px}
 #my-description{line-height:23px; margin-bottom:80px; margin-right:30px}
-#form-builder p.error{padding:3px 0; margin:0 0 0 220px;}
+#form-builder p.error{padding:3px 0; /*margin:0 0 0 220px;*/}
 #form-builder-narrow p.error{padding:3px 0; margin:0 0 0 0; color:#f05;}
 .faq-content-footer span.error{padding:3px 0; margin:20px 0 0 0; line-height:0}
 #q-a-form-content p.error{padding:3px 0; margin:0 0 0 125px; color:#f05;}
@@ -804,38 +800,19 @@ ul.referred-friend-row li{border-bottom:dotted 1px #9e9e9e;padding:20px 0;margin
 #wishlist-to-friend p.error{margin:0 0 0 154px}
 .louder{text-transform:uppercase}
 .pass-info{padding-top:0; padding-bottom:6px}
-radio-row p{
+
+.radio-row p{
 	white-space: pre;
 	display:block;
-	margin-top: -20px;
+	margin-top: -15px;
 }
 .radio-row input{
 	float:none!important;
 	display:inline-block!important;
 	margin-bottom: -12px!important;
+	
 }
-/* call centre */
-#call-center{margin-left:10px; min-height: 600px; }
-#call-center td, #call-center th{font-size:12px; width:120px; text-align:left}
-.call-center-options fieldset{padding-left:0}
-.call-center-options legend+label{padding-left:0}
-.call-center-options label {width: auto;padding-right: 5px;clear: none;line-height: 31px;height: 31px;display: block;float: left;margin-bottom: 15px;clear: none;font-size: 12px; margin-left:2px}
-.call-center-options input[type="radio"]:checked {background-position: 22px -8px;}
-.call-center-options input[type="radio"] {background-position: 53px -8px;}
-.call-center-options input[type="radio"] {width: 12px;background-color: transparent;border: 0; padding-right:24px}
-.call-center-options input {height: 25px;background-color: #ddd;border: 1px solid #cacaca;padding: 2px;float: left;margin-bottom: 15px;width: 150px;}
-#call-center forms{width:960px; margin-left:15px; margin-top:30px}
-#call-center .search-result {
-    margin-left: 15px;
-    margin-top: 30px;
-    width: 960px;
-}
-#cc-submit{margin-left:2px}
-#cc-submit input[type=submit] {width: 110px;background: #feea00 url(/SiteImages/sign-up.gif);color: #1c1800;padding: 7px 25px 7px 0;cursor: pointer;}
-#cc-submit input[type=text] {width: 145px;background: #e9e9e9;padding: 7px 0 7px 5px;margin-right: -2px;}
-#cc-submit input {border: 0;color: #656565;font-family: HelveticaNeueLT-Bold,Helvetica,Arial,sans-serif;}
 
-/* call centre end */
 @-moz-document url-prefix(){#search-results-content .yellow-btn{top:2px}.radio-row input[type="radio"]{margin-bottom: 15px !important; height: 0 !important;}}
 html[data-useragent*='MSIE 10.0'] * select{background:#ddd none no-repeat -100px 0 !important}
 html[data-useragent*='MSIE 10.0'] * input[type="checkbox"]{background-color:transparent !important;border:0 !important}
@@ -844,7 +821,9 @@ html[data-useragent*='MSIE 10.0'] * input[type="radio"], #my-account-register-fo
 /*js this...*/
 
 
-/* RED shared */
+/* shared */
+
+
 
 .product-display-box-a .product-buy-a a-buy-button {
     background: url("../SiteImages/sign-up.gif") repeat scroll 0 0 #FEEA00;
@@ -980,7 +959,7 @@ div.grey p {
     color: #9E9E9E;
 }
 
-#form-builder input {
+#form-builder input[type="text"] {
     background-color: #DDDDDD;
     border: 1px solid #CACACA;
     display: block;
@@ -998,7 +977,7 @@ div.grey p {
 }
 #form-builder div p.submit , #form-builder-narrow div p.submit{ clear:both;}
 #form-builder div p.submit input, #form-builder-narrow div p.submit input {
-    background: url("/SiteImages/button.png") no-repeat scroll 0 14px rgba(0, 0, 0, 0);
+    background: url(../SiteImages/button.png) no-repeat scroll 0 14px rgba(0, 0, 0, 0);
     border: 0 none;
     cursor: pointer;
     font-family: HelveticaNeueLT-Bold,Helvetica,Arial,sans-serif;
@@ -1014,8 +993,8 @@ div.grey p {
 #form-builder p.error 
 {
     clear:both;
-    margin: 0 0 0 220px;
-    padding: 3px 0;
+   /* margin: 0 0 0 220px;
+    padding: 3px 0;*/
 }
 #form-builder div { clear:both;}
 
@@ -1131,7 +1110,7 @@ div.contact-form div.grey h4
 }
   
  .radio-row  p input[type="radio"] {
-    background-position: 53px -11px;
+   /* background-position: 53px -3px;*/
     clear: none;
     float: left;
     height: 18px;
@@ -1139,13 +1118,14 @@ div.contact-form div.grey h4
     margin-right: 17px;
 }
 
+
+
 #basketgroup_0_deliveryoption
 {
     background-position: 72px 0!important;
     margin-left: 20px;
     width: 342px!important;    
 }
-
 
 .RegisterForm input[type="checkbox"] {
     background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -1160,6 +1140,7 @@ div.contact-form div.grey h4
 .RegisterForm .contentBox h3 {
        width: 400px;
 }
+
 
 .variation-title{ padding-bottom:10px;} 
 
@@ -1177,134 +1158,3 @@ p.main a.powered  { color:#656565; }
 p.main a.powered span{ color:#B41E03;}
 p.main a.powered span{ padding:0px!important; display:inline!important;}
 #content-template-wysiwyg h1{margin-left:0px;}
-
-
-#messagepopup { display:none; top:150px; top:300px; }
-#messagepopup h2 { margin:0; color:#a8a9ad; font-size:1.2em; }
-#messagepopup { color:#231F20; font-size:0.8em; position:absolute; left:50%; z-index:10001; }
-#messagepopup .container { width:300px; }
-#messagepopup .container h2 { margin-bottom:10px; color:#f05; margin-top:10px; text-align:center;}
-#messagepopup .container p { margin:0; }
-.DisplayLayer #messagepopup { display:block; }
-#messagepopup .container { position:relative; right:50%; background-color:#FFF; padding:20px; }
-#messagepopup .container .close {
-    background: url("../Scripts/fancybox/fancybox.png") repeat scroll -40px 0 transparent;
-    cursor: pointer;
-    height: 30px;
-    position: absolute;
-    right: -15px;
-    top: -15px;
-    width: 30px;
-    z-index: 91103;
-}
-#messagepopup .container { box-shadow: 0 0 10px #000; }
-
-#form-builder #recaptcha_widget_div{ clear:none; width: 335px; float:left;}
-
-#form-builder #recaptcha_widget_div .recaptchatable #recaptcha_response_field {margin: 10px 0 0 !important; height:20px;} 
-
-#form-builder-narrow #recaptcha_widget_div{ clear:none; width: 335px; float:left;}
-
-#form-builder-narrow #recaptcha_widget_div .recaptchatable #recaptcha_response_field {margin: 10px 0 0 !important; height:20px;} 
-
-/*css for country selector table*/
-#js-countries{
-	width:363px;
-	height:277px;
-	background-color:#000;background-color:rgba(23,23,23,0.95);*background-color:#000;
-	position:absolute;
-	z-index:1001;
-	right: 15px;
-	top: 30px;
-	display:none;
-}
-#js-countries-inner{
-	position:relative;
-	margin:10px 0 0 10px;	
-}
-.flag-container{
-	height:29px;
-	padding-right:11px;
-}
-
-img[id*="flag-image"]{
-	cursor:pointer;
-	width:24px;
-	height:auto;
-	
-}
-span[id*="flag-label"], span[id*="currency"]{
-	vertical-align:middle;
-	font-size:11px;
-	cursor:pointer;
-}
-.flags td{
-	vertical-align:middle;
-	padding-bottom:6px;
-}
-/*css for country selector table*/
-#js-currencies{
-	width:291px;
-	height:141px;
-	background-color:#000;background-color:rgba(23,23,23,0.95);*background-color:#000;
-	position:absolute;
-	z-index:1000;
-	right:15px;
-	top: 45px;
-	display:none;
-}
-#js-currencies-inner{
-	position:relative;
-	margin:10px 0 0 10px;	
-}
-/*selector tables */
-#countries-selector{
-	position: absolute;
-	top: 14px;
-	right: 275px;
-	font-size: 11px;
-	width:55px;
-	cursor:pointer
-}
-#currency-selector{
-	position: absolute;
-	top: 30px;
-	right: 275px;
-	font-size: 10px;
-	width:55px;
-	cursor:pointer
-}
-#country-code, #currency-code{
-	width:20px;
-	float:left;
-	line-height:11px;	
-}
-#country-flag{
-	float:left;
-}
-#country-flag img{
-	height:11px;
-	width:auto;
-	
-}
-#country-changer{
-	float:left;
-	margin-left:1px;
-}
-#currency-opt{
-	width: 63px;
-}
-#country-code{
-	float:left;
-}
-#country-changer{
-	float:right;
-}
-.currencies td,  .currencies th{
-	text-align:left;
-	vertical-align:middle;
-	padding-bottom:6px;
-}
-.currencies span{
-	cursor:pointer;
-}

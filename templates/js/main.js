@@ -269,6 +269,16 @@ jQuery(
 	        //hide
 	        jQuery('#js-countries').slideUp(100, function () { });
 	    })
+		
+		//#currencies-selector
+		jQuery('#currency-selector').click(function () {
+	        //show the currencies table
+	        jQuery('#js-currencies').slideToggle(100, function () { });
+	    })
+	    jQuery('#js-currencies').mouseleave(function () {
+	        //hide
+	        jQuery('#js-currencies').slideUp(100, function () { });
+	    })
 
 		
 		
