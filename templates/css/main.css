@@ -1265,7 +1265,7 @@ span[id*="flag-label"], span[id*="currency"]{
 #countries-selector{
 	position: absolute;
 	top: 14px;
-	right: 275px;
+	right: 236px;
 	font-size: 11px;
 	width:55px;
 	cursor:pointer
@@ -1273,7 +1273,7 @@ span[id*="flag-label"], span[id*="currency"]{
 #currency-selector{
 	position: absolute;
 	top: 30px;
-	right: 275px;
+	right: 236px;
 	font-size: 10px;
 	width:55px;
 	cursor:pointer
@@ -1303,7 +1303,7 @@ span[id*="flag-label"], span[id*="currency"]{
 #country-code{
 	float:left;
 }
-#country-changer{
+#country-changer, #currency-changer{
 	float:right;
 }
 .currencies td,  .currencies th{

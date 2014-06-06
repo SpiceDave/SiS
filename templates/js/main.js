@@ -40,7 +40,7 @@ var countries = [
 		['SA', 'South America', 	'SA.png', '#'],
 		  
 ];
-var defaultCurrency = '$USD';
+var defaultCurrency = 'USD';
 
 //to execute when the DOM is ready...
 jQuery(
@@ -303,21 +303,21 @@ jQuery(
 		//#countries-selector
 		jQuery('#countries-selector').click(function () {
 	        //show the countries table
-	        jQuery('#js-countries').slideToggle(100, function () { });
+	        jQuery('#js-countries').slideToggle(100, function () { jQuery('#country-button').attr('src', flagImagePath + 'button.png') });
 	    })
 	    jQuery('#js-countries').mouseleave(function () {
 	        //hide
-	        jQuery('#js-countries').slideUp(100, function () { });
+	        jQuery('#js-countries').slideUp(100, function () { jQuery('#country-button').attr('src', flagImagePath + 'button-gray.png')});
 	    })
 		
 		//#currencies-selector
 		jQuery('#currency-selector').click(function () {
 	        //show the currencies table
-	        jQuery('#js-currencies').slideToggle(100, function () { });
+	        jQuery('#js-currencies').slideToggle(100, function () { jQuery('#currency-button').attr('src', flagImagePath + 'button.png')});
 	    })
 	    jQuery('#js-currencies').mouseleave(function () {
 	        //hide
-	        jQuery('#js-currencies').slideUp(100, function () { });
+	        jQuery('#js-currencies').slideUp(100, function () { jQuery('#currency-button').attr('src', flagImagePath + 'button-gray.png') });
 	    })
 		
 		//get url vars on page load and set up form and javascripted alternative
