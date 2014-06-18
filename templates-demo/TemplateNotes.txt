@@ -1,0 +1,21 @@
+Template notes v2
+------------------
+- Template number refers to PRD
+
+- Obviously some elements of the site templates won't work when run locally
+
+- AddThis component found on two of the templates is using a personal test account created to test for placement etc. SiS need to supply correct info.
+
+- Twitter iFrame url will change as this is only for developement purposes 
+
+- All xhtml templates have been validated with w3c validator. There are some errors that relate to code sourced from YouTube and Facebook for certain functionality.
+
+- There are three img directories, ui - images generally used for static content, dummy - for dynamic content. Product display boxes should accomodate slighly different size images if required. There is a seperate directory for email images containing those required for static and dynamic content - there are only 5 or 6 in total.
+
+- Mini Basket component is contained in a separate file and pulled in using AJAX on rollover of the appropriate area for demonstrative purposes.
+
+- Quick buy layer and Add to Basket component are contained in the footer section in the appropriate files.
+
+- Video layer pulls content from main page using in numeric identifier, so should be quite easy to implement from RED's perspective using a loop - Template as supplied links to the same YT video for each video item.
+
+- Javascipt page tabbed content falls back to a linked list when JavaScript isn't available.

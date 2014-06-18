@@ -1,0 +1,804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="../css/main.css" media="screen" />
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="../css/ie-7.css" media="screen">
+<![endif]-->
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="../css/ie.css" media="screen">
+<![endif]-->
+
+<script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="../js/main.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="main">
+		<div id="header">
+			<div id="SiS-logo"><a href="http://www.scienceinsport.com"><img src="../img/ui/sis.png" alt="Science in Sport logo" title="SiS" height="78" width="163" /></a></div>
+			<div id="main-menu"> 
+				<!-- top menu items are loaded here with javascript --> 
+				
+				<!--show top level menu items for users without Javascript emabled -->
+				<div id="css-menu"> 
+					<!-- spans below are copies of those found in .li-0 --> 
+					<span class="cat-title"><a  class="top-level" href="#" title="About">About</a></span> <span class="cat-title"><a class="top-level" href="#" title="Training &amp; Advice">Training &amp; Advice</a></span> <span class="cat-title"><a  class="top-level" href="#" title="Sponsorship &amp; Partners">Sponsorship &amp; Partners</a></span> <span class="cat-title"><a  class="top-level" href="#" title="News &amp; Events">News &amp; Events</a></span> <span class="cat-title"><a  class="top-level" href="#" title="Videos">Videos</a></span> <span class="cat-title"><a  class="top-level" href="#" title="Shop">Shop</a></span> </div>
+			</div>
+			<!-- 
+			*
+			*
+			*  edited markup for menu 
+			*
+			*
+			*-->
+			<div id="account-menu">
+				<div class="acc-menu-item"><a class="basket-over" href="#"><span>[2 Items]</span></a></div>
+				<div class="acc-menu-item"><a class="basket-over" href="#"><span class="pound">&pound;3619.92</span></a></div>
+				<div class="acc-menu-item"><a class="basket-over" href="#" style="color:#656565">Cart</a></div>
+				<div class="acc-menu-item"><a class="basket-over" href="#"><img src="../img/ui/trolley.png" alt='Cart' title='2 items'  /></a></div>
+				<div class="clear"></div>
+				<div class="mnu-acc-row-two">
+					<div class="acc-menu-item"><a href="/login/register?redirectto=%2f"><span>Register</span></a></div>
+					<div class="acc-menu-item"><a href="/login?redirectto=%2f"><span>Sign In</span></a></div>
+						<div id="no-js-mnu" class="acc-menu-item no-js countries-form">
+						<form id="uk-currency-sel" class="no-js" action="10.1.1-home-flags-APAC.html" method="get" style="display:block">
+						<select name="countries-opt">
+							<optgroup label="Countries">
+								<option value="UK" selected="selected">United Kingdom</option>
+								<option value="NZ">New Zealand</option>
+								<option value="AU">Australia</option>
+								<option value="BD">Bangladesh</option>
+								<option value="MY">Borneo</option>
+								<option value="CN">China</option>
+								<option value="CK">Cook Islands</option>
+								<option value="FJ">Fiji</option>
+								<option value="HK">Hong Kong</option>
+								<option value="IN">India</option>
+								<option value="ID">Indonesia</option>
+								<option value="JP">Japan</option>
+								<option value="KR">Korea</option>
+								<option value="MY">Malaysia</option>
+								<option value="KP">North Korea</option>
+								<option value="PK">Pakistan</option>
+								<option value="PG">Papua New Guinea</option>
+								<option value="PH">Philippines</option>
+								<option value="RU">Russia</option>
+								<option value="WS">Samoa</option>
+								<option value="SG">Singapore</option>
+								<option value="TH">Thailand</option>
+								<option value="TO">Tonga</option>
+							</optgroup>
+							<optgroup label="Continents">
+								<option value="AF">Africa</option>
+								<option value="EU">Europe</option>
+								<option value="NA">North America</option>
+								<option value="SA">South America</option>
+							</optgroup>
+						</select>
+						<button type="submit">Submit</button>
+					</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="countries-selector" style="display:none">
+				<div id="country-code" title="UK">UK</div>
+				<div id="country-flag"><img id="dyn-flag" src="../img/flags/UK.png" alt="Flag" title="UK" /></div>
+				<div id="country-changer"><img id="country-button" src="../img/flags/button-gray.png" width="11" height="11" alt="Change" title="Change" /></div>
+			</div>
+			<!-- show and hide the correct components depending on JavaScript availability -->
+			<script>
+				document.getElementById('no-js-mnu').style.display = "none";
+				document.getElementById('countries-selector').style.display = "block";
+			</script>
+			<div id="js-countries">
+				<div id="js-countries-inner">
+					<table class="flags" cellspacing="4" border="0">
+						<tr>
+							<td><img id="flag-image-0" src="../img/flags/UK.png" alt="UK" /></td>
+							<td><span id="flag-label-0">United Kingdom</span></td>
+							<td><img id="flag-image-1" src="../img/flags/IN.png" alt="IN" /></td>
+							<td><span id="flag-label-1">India</span></td>
+							<td><img id="flag-image-2" src="../img/flags/RU.png" alt="RU" /></td>
+							<td><span id="flag-label-2">Russia</span></td>
+						</tr>
+						<tr>
+							<td><img id="flag-image-3" src="../img/flags/NZ.png" alt="NZ" /></td>
+							<td><span id="flag-label-3">New Zealand</span></td>
+							<td><img id="flag-image-4" src="../img/flags/ID.png" alt="ID" /></td>
+							<td><span id="flag-label-4">Indonesia</span></td>
+							<td><img id="flag-image-5" src="../img/flags/WS.png" alt="WS" /></td>
+							<td><span id="flag-label-5">Samoa</span></td>
+						</tr>
+						<tr>
+							<td><img id="flag-image-6" src="../img/flags/AU.png" alt="AU" /></td>
+							<td><span id="flag-label-6">Australia</span></td>
+							<td><img id="flag-image-7" src="../img/flags/JP.png" alt="JP" /></td>
+							<td><span id="flag-label-7">Japan</span></td>
+							<td><img id="flag-image-8" src="../img/flags/SG.png" alt="SG" /></td>
+							<td><span id="flag-label-8">Singapore</span></td>
+						</tr>
+						<tr>
+							<td><img id="flag-image-9" src="../img/flags/BD.png" alt="BD" /></td>
+							<td><span id="flag-label-9">Bangladesh</span></td>
+							<td><img id="flag-image-10" src="../img/flags/KR.png" alt="KR" /></td>
+							<td><span id="flag-label-10">Korea</span></td>
+							<td><img id="flag-image-11" src="../img/flags/TH.png" alt="TH" /></td>
+							<td><span id="flag-label-11">Thailand</span></td>
+						</tr>
+						<tr>
+							<td><img id="flag-image-12" src="../img/flags/MY.png" alt="MY" /></td>
+							<td><span id="flag-label-12">Borneo</span></td>
+							<td><img id="flag-image-13" src="../img/flags/MY.png" alt="MY" /></td>
+							<td><span id="flag-label-13">Malaysia</span></td>
+							<td><img id="flag-image-14" src="../img/flags/TO.png" alt="TO" /></td>
+							<td><span id="flag-label-14">Tonga</span></td>
+						</tr>
+						<tr>
+							<td><img id="flag-image-15" src="../img/flags/CN.png" alt="CN" /></td>
+							<td><span id="flag-label-15">China</span></td>
+							<td><img id="flag-image-16" src="../img/flags/KP.png" alt="KP" /></td>
+							<td><span id="flag-label-16">North Korea</span></td>
+							<td><img id="flag-image-17" src="../img/flags/AF.png" alt="AF" /></td>
+							<td><span id="flag-label-17">Africa</span></td>
+						</tr>
+						<tr>
+							<td><img id="flag-image-18" src="../img/flags/CK.png" alt="CK" /></td>
+							<td><span id="flag-label-18">Cook Islands</span></td>
+							<td><img id="flag-image-19" src="../img/flags/PK.png" alt="PK" /></td>
+							<td><span id="flag-label-19">Pakistan</span></td>
+							<td><img id="flag-image-20" src="../img/flags/EU.png" alt="EU" /></td>
+							<td><span id="flag-label-20">Europe</span></td>
+						</tr>
+						<tr>
+							<td><img id="flag-image-21" src="../img/flags/FJ.png" alt="FJ" /></td>
+							<td><span id="flag-label-21">Fiji</span></td>
+							<td><img id="flag-image-22" src="../img/flags/PG.png" alt="PG" /></td>
+							<td><span id="flag-label-22">Papua New Guinea</span></td>
+							<td><img id="flag-image-23" src="../img/flags/NA.png" alt="NA" /></td>
+							<td><span id="flag-label-23">North America</span></td>
+						</tr>
+						<tr>
+							<td><img id="flag-image-24" src="../img/flags/HK.png" alt="HK" /></td>
+							<td><span id="flag-label-24">Hong Kong</span></td>
+							<td><img id="flag-image-25" src="../img/flags/PH.png" alt="PH" /></td>
+							<td><span id="flag-label-25">Philippines</span></td>
+							<td><img id="flag-image-26" src="../img/flags/SA.png" alt="SA" /></td>
+							<td><span id="flag-label-26">South America</span></td>
+						</tr>
+	
+					</table>
+				</div>
+			</div>
+			<!-- 
+			*
+			*
+			*  End of edit
+			*
+			*
+			*-->
+			<div id="mega-dropdown"> 
+				<!-- example menu -->
+				<ul class="ul-0">
+					<li class="li-0"><span class="cat-title"><a  class="top-level" href="#" title="About">About</a></span>
+						<ul class="ul-1">
+							<li class="li-1"><a href="#" title="About Science in sport">About Science in sport</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="">About Science in sport</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Banned Substance Testing">Banned Substance Testing</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="The Science in Sport Promise">The Science in Sport Promise</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Our Quality Commitment">Our Quality Commitment</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="International Distributors">International Distributors</a></li>
+								</ul>
+								<div class="menu-more"><a href="#" title="See more 'About Science in Sport'">See more 'About Science in Sport'</a></div>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="ul-0">
+					<li class="li-0"><span class="cat-title"><a class="top-level" href="#" title="Training &amp; Advice">Training &amp; Advice</a></span>
+						<ul class="ul-1">
+							<li class="li-1"><a href="#" title="Why endurance nutrition?">Why endurance nutrition?</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nitrates for endurance">Nitrates for endurance</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Hydration for perfomance">Hydration for perfomance</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Prepare to perform">Prepare to perform</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="11 years of the SiS go iso gel">11 years of the SiS go iso gel</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="SiS go hydro - superior hydration for athletes">SiS go hydro - superior hydration for athletes</a></li>
+								</ul>
+								<div class="menu-more"><a href="#" title="See more 'Why endurance nutrition?'">See more 'Why endurance nutrition?'</a></div>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for running">Nutrition for running</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="A beginner's guide to running">A beginner's guide to running</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - half marathon">Nutrition for running - half marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon ">Nutrition for running - marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon des sables">Nutrition for running - marathon des sables</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Sprint triathlon">Sprint triathlon</a></li>
+								</ul>
+								<div class="menu-more"><a href="#" title="See more 'Nutrition for running'">See more 'Nutrition for running'</a></div>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for cycling">Nutrition for running</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="A beginner's guide to running">A beginner's guide to running</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - half marathon">Nutrition for running - half marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon ">Nutrition for running - marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon des sables">Nutrition for running - marathon des sables</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Sprint triathlon">Sprint triathlon</a></li>
+								</ul>
+								<div class="menu-more"><a href="#" title="See more 'Nutrition for running'">See more 'Nutrition for running'</a></div>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for cycling">Nutrition for cycling</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for cycling: 10 &amp; 25 mile time trials">Nutrition for cycling: 10 &amp; 25 mile time trials</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for cycling: 100 mile sportive">Nutrition for cycling: 100 mile sportive</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Fuelling the professional: sis and madison genesis">Fuelling the professional: sis and madison genesis</a></li>
+								</ul>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for other sports">Nutrition for other sports</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Ironman">Ironman</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Olympic distance triathlon">Olympic distance triathlon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for rowing">Nutrition for rowing</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="ul-0">
+					<li class="li-0"><span class="cat-title"><a  class="top-level" href="#" title="Sponsorship &amp; Partners">Sponsorship &amp; Partners</a></span>
+						<ul class="ul-1">
+							<li class="li-1"><a href="#" title="About Science in sport">About Science in sport</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="">About Science in sport</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Banned Substance Testing">Banned Substance Testing</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="The Science in Sport Promise">The Science in Sport Promise</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Our Quality Commitment">Our Quality Commitment</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="International Distributors">International Distributors</a></li>
+								</ul>
+							</li>
+							<li class="li-1"><a href="#" title="Why endurance nutrition?">Why endurance nutrition?</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nitrates for endurance">Nitrates for endurance</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Hydration for perfomance">Hydration for perfomance</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Prepare to perform">Prepare to perform</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="11 years of the SiS go iso gel">11 years of the SiS go iso gel</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="SiS go hydro - superior hydration for athletes">SiS go hydro - superior hydration for athletes</a></li>
+								</ul>
+								<div class="menu-more"><a href="#" title="See more 'Why endurance nutrition?'">See more 'Why endurance nutrition?'</a></div>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for running">Nutrition for running</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="A beginner's guide to running">A beginner's guide to running</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - half marathon">Nutrition for running - half marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon ">Nutrition for running - marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon des sables">Nutrition for running - marathon des sables</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Sprint triathlon">Sprint triathlon</a></li>
+								</ul>
+								<div class="menu-more"><a href="#" title="See more 'Nutrition for running'">See more 'Nutrition for running'</a></div>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for cycling">Nutrition for running</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="A beginner's guide to running">A beginner's guide to running</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - half marathon">Nutrition for running - half marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon ">Nutrition for running - marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon des sables">Nutrition for running - marathon des sables</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Sprint triathlon">Sprint triathlon</a></li>
+								</ul>
+								<div class="menu-more"><a href="#" title="See more 'Nutrition for running'">See more 'Nutrition for running'</a></div>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for cycling">Nutrition for cycling</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for cycling: 10 &amp; 25 mile time trials">Nutrition for cycling: 10 &amp; 25 mile time trials</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for cycling: 100 mile sportive">Nutrition for cycling: 100 mile sportive</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Fuelling the professional: sis and madison genesis">Fuelling the professional: sis and madison genesis</a></li>
+								</ul>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for other sports">Nutrition for other sports</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Ironman">Ironman</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Olympic distance triathlon">Olympic distance triathlon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for rowing">Nutrition for rowing</a></li>
+								</ul>
+							</li>
+							<li class="li-1"><a href="#" title="Why endurance nutrition?">Why endurance nutrition?</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nitrates for endurance">Nitrates for endurance</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Hydration for perfomance">Hydration for perfomance</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Prepare to perform">Prepare to perform</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="11 years of the SiS go iso gel">11 years of the SiS go iso gel</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="SiS go hydro - superior hydration for athletes">SiS go hydro - superior hydration for athletes</a></li>
+								</ul>
+								<div class="menu-more"><a href="#" title="See more 'Why endurance nutrition?'">See more 'Why endurance nutrition?'</a></div>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for running">Nutrition for running</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="A beginner's guide to running">A beginner's guide to running</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - half marathon">Nutrition for running - half marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon ">Nutrition for running - marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon des sables">Nutrition for running - marathon des sables</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Sprint triathlon">Sprint triathlon</a></li>
+								</ul>
+								<div class="menu-more"><a href="#" title="See more 'Nutrition for running'">See more 'Nutrition for running'</a></div>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for cycling">Nutrition for running</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="A beginner's guide to running">A beginner's guide to running</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - half marathon">Nutrition for running - half marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon ">Nutrition for running - marathon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for running - marathon des sables">Nutrition for running - marathon des sables</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Sprint triathlon">Sprint triathlon</a></li>
+								</ul>
+								<div class="menu-more"><a href="#" title="See more 'Nutrition for running'">See more 'Nutrition for running'</a></div>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for cycling">Nutrition for cycling</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for cycling: 10 &amp; 25 mile time trials">Nutrition for cycling: 10 &amp; 25 mile time trials</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for cycling: 100 mile sportive">Nutrition for cycling: 100 mile sportive</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Fuelling the professional: sis and madison genesis">Fuelling the professional: sis and madison genesis</a></li>
+								</ul>
+							</li>
+							<li class="li-1"><a href="#" title="Nutrition for other sports">Nutrition for other sports</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Ironman">Ironman</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Olympic distance triathlon">Olympic distance triathlon</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Nutrition for rowing">Nutrition for rowing</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="ul-0">
+					<li class="li-0"><span class="cat-title"><a  class="top-level" href="#" title="News &amp; Events">News &amp; Events</a></span>
+						<ul class="ul-1">
+							<li class="li-1"><a href="#" title="News &amp; Events category">News &amp; Events category</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="News &amp; Events sub category 1">News &amp; Events sub category 1</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="News &amp; Events sub category 2">News &amp; Events sub category 2</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="News &amp; Events sub category 3">News &amp; Events sub category 3</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="ul-0">
+					<li class="li-0"><span class="cat-title"><a  class="top-level" href="#" title="Videos">Videos</a></span>
+						<ul class="ul-1">
+							<li class="li-1"><a href="#" title="Videos category">Videos category</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Videos sub category 1">Videos sub category 1</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Videos sub category 2">Videos sub category 2</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Videos sub category 3">Videos sub category 3</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Videos sub category 4">Videos sub category 4</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="ul-0">
+					<li class="li-0"><span class="cat-title"><a  class="top-level" href="#" title="Shop">Shop</a></span>
+						<ul class="ul-1">
+							<li class="li-1"><a href="#" title="Shop category">Shop category</a>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Shop sub category 1">Shop sub category 1</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Shop sub category 2">Shop sub category 2</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Shop sub category 3">Shop sub category 3</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Shop sub category 4">Shop sub category 4</a></li>
+								</ul>
+								<ul class="ul-2">
+									<li class="li-2"><a href="#" title="Shop sub category 5">Shop sub category 5</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div id="search-box-bg"><img src="../img/ui/hdrSearchBg.png" height="32" width="277" alt="" />
+				<div id="top-search-glass"><img src="../img/ui/magnifier.gif" height="16" width="16" alt="Search" title="Search" /></div>
+			</div>
+			<div id="search-box"> 
+				<!-- uses html5 search field - might need to add js alternative too -->
+				<input name="search" type="text" value="ENTER KEYWORD OR PRODUCT CODE"  maxlength="50" />
+			</div>
+			<div id="ajax-menu-container"></div><div id="ajax-search-container"></div>
+		</div>
+		<!-- #header -->
+		
+		<div id="content"> 
+			<!-- product listing content -->
+			<div id="product-list-content">
+				<div id="breadcrumb" class="grey">
+					<div> <a href="#" title="home"><span class="higher-level grey">Home</span></a> &raquo; <a href="#" title="home"><span class="higher-level grey">SiS Rego Range</span></a> &raquo; <a href="#" title="Sponsorshop &amp; Partners"><span class="this-level dark-gray">SiS Rego Rapid Recovery range</span></a> </div>
+				</div>
+				<div id="product-listing-wrapper">
+					<div id="ad-title-space">
+						<div id="checkout-ad" class="check-advert"> <img src="../img/dummy/header-advert-zone-variant-2.jpg" alt="SiS advertisement" width="994" height="244" /> </div>
+						<h1 class="near-black"> SiS Online Store </h1>
+						<p class="h1-sub-heading grey">Free Delivery on all UK orders</p>
+					</div>
+					<!-- grey background content area -->
+					<div id="category-grey-bg-wrapper">
+						<div id="product-listing-content">
+							<p>Sort:</p>
+							<!-- filter dd -->
+							<div id="dd-filter">
+								<select id="filter-products" name="filter-products">
+									<option value="address1">By Name</option>
+									<option value="address2">By Price</option>
+								</select>
+							</div>
+							<div class="clear"></div>
+							
+							<!-- wysiwyg -->
+							<div id="prod-list-wysiwyg">
+								<div id="group-title">
+									<h3>SiS Rego Rapid Recovery</h3>
+								</div>
+								
+							</div>
+							<div class="clear"></div>
+							
+							<!-- pagination -->
+							<div class="prod-list-pagination">
+								<div class="pag-controls small near-black">
+									<p><a href="#" class="pag-prev pag-disabled">PREVIOUS</a> ... <a href="#" class="pag-disabled">1</a> <a href="#">2</a> ... <a href="#" class="pag-next">NEXT</a> </p>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<!-- MORE THAN FOUR PRODUCTS WILL BREAK TO NEW LINE -->
+							
+							<div id="product-list">
+								<form id="products-form" action="#" method="post"  target="_self">
+									<!-- start loop -->
+									
+									<div class="product-display-box-a">
+										<div class="product-img-a"><img src="../img/dummy/rego-rapid-1-6.png" alt="SiS Rego Rapid Recovery 1.6kg" title="SiS Rego Rapid Recovery 1.6kg" width="189" height="194" /></div>
+										<div class="product-promo-icon-a"><img src="../img/dummy/promosave25percicon.png" alt="promo-icon" /></div>
+										<div class="product-info-container-a">
+											<div class="product-name-a near-black">Example product on new row with a long title!</div>
+											<div class="product-price-a"><span class="pound">&pound;</span>31.80</div>
+											<div class="product-info-a"><a href="#" class="get-info" title="Info"><span>Info</span></a></div>
+											<div class="product-buy-a">
+												<input class="buy-button" type="submit" value="Buy" />
+												<div class="dropshadow _110"><img src="../img/ui/drop-shadow.png" alt="" /></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-display-box-a">
+										<div class="product-img-a"><img src="../img/dummy/rego-rapid-0-05.png" alt="SiS Rego Rapid Recovery 50g" title="SiS Rego Rapid Recovery 50g" width="174" height="188" /></div>
+										<div class="product-info-container-a">
+											<div class="product-name-a near-black">SiS Rego Rapid Recovery 50g</div>
+											<div class="product-price-a"><span class="from grey">From: </span><span class="pound">&pound;</span>1.50</div>
+											<div class="product-info-a"><a href="#" class="get-info" title="Info"><span>Info</span></a></div>
+											<div class="product-buy-a">
+												<input class="buy-button" type="submit" value="Buy" />
+												<div class="dropshadow _110"><img src="../img/ui/drop-shadow.png" alt="" /></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-display-box-a">
+										<div class="product-img-a"><img src="../img/dummy/rego-rapid-0-5.png" alt="SiS Rego Rapid Recovery 500g" title="SiS Rego Rapid Recovery 500g" width="129" height="190" /></div>
+										<div class="product-promo-icon-a"><img src="../img/dummy/promosave25percicon.png" alt="promo-icon" /></div>
+										<div class="product-info-container-a">
+											<div class="product-name-a near-black">SiS Rego Rapid Recovery 500g</div>
+											<div class="product-price-a"><span class="pound">&pound;</span>10.80</div>
+											<div class="product-info-a"><a href="#" class="get-info" title="Info"><span>Info</span></a></div>
+											<div class="product-buy-a">
+												<input class="buy-button" type="submit" value="Buy" />
+												<div class="dropshadow _110"><img src="../img/ui/drop-shadow.png" alt="" /></div>
+											</div>
+										</div>
+									</div>
+									<div class="product-display-box-a">
+										<div class="product-img-a"><img src="../img/dummy/rego-rapid-0-05-2.png" alt="SiS Rego Rapid Recovery 50g" title="SiS Rego Rapid Recovery 50g" width="174" height="185" /></div>
+										<div class="product-info-container-a">
+											<div class="product-name-a near-black">SiS Rego Rapid Recovery 50g</div>
+											<div class="product-price-a"><span class="pound">&pound;</span>1.80</div>
+											<div class="product-info-a"><a href="#" class="get-info" title="Info"><span>Info</span></a></div>
+											<div class="product-buy-a">
+												<input class="buy-button" type="submit" value="Buy" />
+												<div class="dropshadow _110"><img src="../img/ui/drop-shadow.png" alt="" /></div>
+											</div>
+										</div>
+									</div>
+									
+									<!-- end loop -->
+									<div class="clear"></div>
+									<input class="show-all-submit" type="image" name="submit" src="../img/ui/show-all-button.png" width="184" height="48" alt="Show all products" />
+
+								</form>
+								
+							</div>
+							
+							<!-- pagination -->
+							<div class="prod-list-pagination">
+								<div class="pag-controls small near-black">
+									<p><a href="#" class="pag-prev pag-disabled">PREVIOUS</a> ... <a href="#" class="pag-disabled">1</a> <a href="#">2</a> ... <a href="#" class="pag-next">NEXT</a> </p>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div><img src="../img/dummy/payment-logos.png" alt="Card logos" /></div>
+						</div>
+					</div>
+					<!-- end of grey bg area --> 
+				</div>
+			</div>
+		</div>
+		<!-- #content --> 
+		
+	</div>
+</div>
+<div id="sticky-footer">
+	<div id="footer-nav">
+		<div id="footer-columns">
+			<div class="footer-column">
+				<p>About Science in Sport</p>
+				<ul>
+					<li><a href="#" title="Contact Us">Contact Us</a></li>
+					<li><a href="#" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+					<li><a href="#" title="Cookies and Privacy Policy">Cookies and Privacy Policy</a></li>
+					<li><a href="#" title="Affiliate Programme">Affiliate Programme</a></li>
+				</ul>
+			</div>
+			<div class="footer-column">
+				<p>Customer Service</p>
+				<ul>
+					<li><a href="#" title="Contact Us">Contact Us</a></li>
+					<li><a href="#" title="FAQs">FAQs</a></li>
+					<li><a href="#" title="Delivery &amp; Returns">Delivery &amp; Returns</a></li>
+				</ul>
+			</div>
+			<div class="footer-column">
+				<p>Product Range</p>
+				<ul>
+					<li><a href="#" title="SiS Go Range">SiS Go Range</a></li>
+					<li><a href="#" title="SiS Rego range">SiS Rego range</a></li>
+					<li><a href="#" title="Delivery and Returns">Delivery and Returns</a></li>
+				</ul>
+			</div>
+			<div id="last-footer-column">
+				<div id="sign-up-copy"> <span class="sign-up">Sign up for</span><br />
+					<span class="news-offers">News, Offers and More</span> </div>
+				<div id="footer-email">
+					<form action="#" method="post" name="newsletter" target="_self">
+						<input name="customerEmail" type="text" value="E-mail address"  maxlength="128" />
+						<input name="sign-up" type="submit" value="Sign-Up" />
+					</form>
+					<div id="contact-info"> <span class="white call-us">Call us on:</span><span class="telephone">+44(0) 1282 440 980</span><br />
+						<span class="opening-hours">8:00am to 5:00pm, Mon to Fri </span> </div>
+					<div id="i-s-logo"><a href="http://www.informed-sport.com/" target="_blank"><img src="../img/ui/informed-sport.png" alt="Informed Sport" title="Informed Sport" height="44" width="87" /></a></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	<div id="footer-legal"><span>&copy; SiS (Science in Sport) Limited, The Innovation Centre, 35 Churchill Way, Lancashire, BB9 6RT. Company reg number: 2742833, VAT reg number: GB 604598037</span></div>
+	<div id="footer-follow">
+		<h2>Follow Us: </h2>
+		<a target="blank" href="https://twitter.com/ScienceinSport" class="social-icon twitter"></a> <a target="blank" href="https://www.facebook.com/ScienceInSportOfficial" class="social-icon facebook"></a> <a target="blank" href="http://www.youtube.com/user/scienceinsport/" class="social-icon youtube"></a> </div>
+</div>
+<!-- #footer --> 
+
+<!-- quick buy layer - not sure how RED want to implement this, so this just demonstrates the component -->
+<div id="qb-overlay">
+	<div id="qb-outer-frame">
+		<div id="qb-inner-frame">
+			<div class="qb-xclose" onclick="javascript:qbclose();"><img src="../img/ui/close_btn.png" alt="Close" title="Close" height="20" width="20" /></div>
+			<div class="clear"></div>
+			<div id="qb-header">
+				<h2 class="near-black">SiS Rego Rapid Recovery 1.6Kg</h2>
+				<p class="grey">Performance Recovery</p>
+			</div>
+			<div class="qb-form">
+				<form id="add-to-basket" action="#" method="post" name="add-to-basket" target="_self">
+					<div id="qb-dd-product-selectors">
+						<select id="qb-prod-selection-2" name="prod-selection-2" >
+							<option >Flavour</option>
+							<option value="sel2-1">Chocolate</option>
+							<option value="sel2-2">Banana</option>
+							<option value="sel2-3">Vanilla</option>
+							<option value="sel2-4">Strawberry</option>
+						</select>
+						<select id="qb-prod-selection-1" name="prod-selection-1">
+							<option>Size</option>
+							<option value="sel1-1">1.6kg (20 servings)</option>
+							<option value="sel1-2">500g (8 servings)</option>
+							<option value="sel1-3">50g (1 serving)</option>
+							<option value="sel1-4">1.6kg (20 servings)</option>
+						</select>
+						<button type="submit" class="yellow-btn add-button">Add To Basket</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	jQuery('.show-all-submit').bind('click', function(e){
+			jQuery('#products-form').append(jQuery('#products-form').html());
+			jQuery('.show-all-submit').css('display','none');
+			e.preventDefault();
+			
+		});
+</script>
+
+<!-- add to basket component -->
+<!--<div id="ab-overlay">
+	<div id="ab-outer-frame">
+		<div id="ab-inner-frame">
+			<div id="ab-header">
+				<h2 class="near-black">Add To Basket</h2>
+				<h3>The following product has been added to your basket but part of the quantity requested is not available:</h3>
+			</div>
+			<div class="ab-form">	
+				<table class="ab-table" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<th>&nbsp;</th>
+						<th class="left bold">Product</th>
+						<th class="bold">Available Quantity</th>
+						<th class="bold">Line total</th>
+					</tr>
+					<tr>
+						<td><div class="check-item-image"> <a href="#" title="SIS Rego Rapid Recovery"><img src="../img/dummy/product.png" alt="Product Image" /></a> </div></td>
+						<td class="small border-top">
+							<ul class="check-item-item">
+								<li class="check-row-product-name"><a href="#" title="SIS Rego Rapid Recovery" class="near-black">SIS Rego Rapid Recovery</a></li>
+								<li class="clear grey">#002962 </li>
+								<li class="pound">&pound;<span class="pound clear">29.99</span> </li>
+							</ul>
+						</td>
+						<td class="centered border-top">2</td>
+						<td class="centered border-top"><span class="pound">&pound;</span><span class="pound">29.99</span></td>
+					</tr>
+				</table>
+				
+				<div class="ab-buttons">
+					<div class="continue-shopping">
+						<div class="_205"><a class="cta-btn _205" href="#" title="CTA"><span>Continue Shopping</span></a></div>
+						<div class="dropshadow _205"><img src="../img/ui/drop-shadow.png" alt="" /></div>
+					</div>
+					<div class="view-basket">
+						<div class="_184"><a class="cta-btn _184" href="#" title="CTA"><span>View basket</span></a></div>
+						<div class="dropshadow _184"><img src="../img/ui/drop-shadow.png" alt="" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>-->
+
+</body>
+</html>
